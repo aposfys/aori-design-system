@@ -1,0 +1,31 @@
+/* Patterns and grounds — the painted repeats, at three strengths only.
+   Never two patterns on one screen. */
+:root{
+  --pattern-wave:url("../assets/patterns/wave.jpg");     /* @kind other */
+  --pattern-spiral:url("../assets/patterns/spiral.jpg"); /* @kind other */
+  --pattern-olive:url("../assets/patterns/olive.jpg");   /* @kind other */
+
+  /* Printed grounds — the receipt stock. */
+  --ground-ledger:url("../assets/textures/ledger-sheet.jpg");  /* @kind other */
+  --ground-grid:url("../assets/textures/invoice-grid.jpg");     /* @kind other */
+  --ground-carbon:url("../assets/textures/carbon-copy.jpg");    /* @kind other */
+
+  --pattern-tile:520px;      /* full-bleed sections and hero bands */
+  --pattern-tile-sm:180px;   /* packaging, small surfaces, swatches */
+  /* packaging / section grounds / behind long prose */
+  --pattern-opacity-full:1; /* @kind other */
+  --pattern-opacity-section:.30; /* @kind other */
+  --pattern-opacity-quiet:.08; /* @kind other */
+}
+/* Apply a repeat as its own layer so the opacity never touches the text. */
+.u-pattern{position:relative;isolation:isolate}
+.u-pattern::before{content:"";position:absolute;inset:0;z-index:-1;background-repeat:repeat;background-size:var(--pattern-tile)}
+.u-pattern-sm::before{background-size:var(--pattern-tile-sm)}
+.u-pattern-wave::before{background-image:var(--pattern-wave)}
+.u-pattern-spiral::before{background-image:var(--pattern-spiral)}
+.u-pattern-olive::before{background-image:var(--pattern-olive)}
+.u-strength-full::before{opacity:var(--pattern-opacity-full)}
+.u-strength-section::before{opacity:var(--pattern-opacity-section)}
+.u-strength-quiet::before{opacity:var(--pattern-opacity-quiet)}
+.u-ground-ledger{background:var(--surface-page) var(--ground-ledger) center/cover no-repeat}
+.u-ground-grid{background:var(--surface-page) var(--ground-grid) center/cover no-repeat}

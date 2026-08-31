@@ -1,0 +1,22 @@
+/* Surfaces — the two paper stocks, reproduced as reusable backgrounds. */
+:root{
+  --texture-paper:url("../assets/textures/paper-warm.png"); /* @kind other */
+  --texture-ledger:url("../assets/textures/paper-ledger-grid.png"); /* @kind other */
+
+  /* Warm paper: flat colour plus a very low-opacity scan of the real stock */
+  --surface-paper-textured:var(--surface-page);
+
+  /* The printed ledger grid, drawn in CSS so it tiles at any size.
+     5mm squares, hairline rules, matching the real form stock. */
+  --grid-ledger:repeating-linear-gradient(to right,transparent 0 19px,var(--ledger-300) 19px 20px),
+                repeating-linear-gradient(to bottom,transparent 0 19px,var(--ledger-300) 19px 20px);
+  --grid-ledger-size:20px 20px;
+
+  /* Painted plate: a square field of pigment with an unpainted paper margin.
+     Applied as a border, never a radius. */
+  --plate-margin:var(--border-plate);
+  --plate-default-field:var(--pigment-sky);
+}
+.u-paper{background-color:var(--surface-page)}
+.u-ledger{background-color:var(--surface-ledger);background-image:var(--grid-ledger);background-size:var(--grid-ledger-size)}
+.u-ground{background-color:var(--surface-ground)}

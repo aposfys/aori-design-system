@@ -1,0 +1,129 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><title>AORI — κατευθύνσεις τυπογραφίας</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=GFS+Neohellenic:wght@400;700&family=Bodoni+Moda:opsz,wght@6..96,400..900&family=Cormorant+Garamond:wght@300;400;600&family=EB+Garamond:wght@400;500;600&family=Commissioner:wght@300..800&family=Alegreya+Sans:wght@300;400;500;700&family=Alegreya:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300..700&family=Literata:opsz,wght@7..72,300..700&family=Archivo:wght@400..800&family=Mynerve&family=Caveat:wght@400..700&family=Fira+Sans:wght@300;400;500;700&display=swap">
+<style>
+body{background:var(--surface-page);padding:56px 64px 110px;max-width:1220px;margin:0 auto}
+h1{font-size:38px;letter-spacing:.1em}
+.lede{font:var(--type-body);max-width:66ch;margin-top:22px;font-size:16px}
+.warn{background:var(--surface-ledger);box-shadow:inset 0 0 0 1px var(--ledger-300);padding:20px 24px;margin-top:26px;font:var(--type-body);font-size:14px;line-height:1.7;max-width:none}
+.warn b{font-family:var(--font-annotation);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:13px}
+.dir{margin-top:44px;background:var(--surface-raised);box-shadow:var(--edge-inset);padding:0;overflow:hidden}
+.hd{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:18px 26px;border-bottom:var(--border-ink) solid var(--rule-ink);flex-wrap:wrap}
+.hd .n{font:var(--type-ui);letter-spacing:var(--tracking-annotation);text-transform:uppercase;font-size:16px}
+.hd .fam{font:var(--type-body);font-size:12.5px;color:var(--text-muted)}
+.pick{display:inline-flex;align-items:center;gap:8px;font:var(--type-form-label);letter-spacing:.05em;text-transform:uppercase;color:var(--text-muted);cursor:pointer}
+.pick input{accent-color:var(--pigment-red);width:15px;height:15px}
+.body{display:grid;grid-template-columns:1.25fr 1fr;gap:0}
+.spec{padding:28px 26px 30px;border-right:var(--border-hair) solid var(--rule-hair)}
+.lat{margin:0}
+.gr{margin:10px 0 0}
+.sub{font-size:15px;letter-spacing:.055em;text-transform:uppercase;margin-top:16px}
+.prose{font-size:14px;line-height:1.75;margin-top:18px;max-width:46ch}
+.meta{font-size:11.5px;letter-spacing:.04em;color:var(--text-muted);margin-top:14px}
+.note{padding:28px 26px;background:var(--surface-page)}
+.note p{font:var(--type-body);font-size:13px;line-height:1.7;margin:0;color:var(--text-muted)}
+.tags{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.tag{font:var(--type-form-label);letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border:1px solid var(--rule-hair);white-space:nowrap}
+.ok{border-color:var(--pigment-forest);color:var(--pigment-forest)}
+.no{border-color:var(--pigment-red);color:var(--pigment-red)}
+.card{margin-top:20px;padding:16px;background:var(--pigment-red);color:var(--paper-200)}
+.card .w{line-height:1;letter-spacing:.16em;text-transform:uppercase}
+.card .t{font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;margin-top:9px;opacity:.9}
+</style></head><body>
+<h1>Κατευθύνσεις τυπογραφίας</h1>
+<p class="lede">Έξι ολοκληρωμένες κατευθύνσεις, όχι λίστα γραμματοσειρών. Κάθε μία δείχνει τίτλο, υπότιτλο, κείμενο προϊόντος και κάρτα — στα λατινικά <b>και στα ελληνικά</b>. Διάλεξε κατεύθυνση και την περνάω στα tokens.</p>
+<div class="warn"><b>Ο περιορισμός που αλλάζει τα πάντα</b><br>Το AORI γράφει <i>Ψηλορείτης</i>, <i>Λιβυκό</i>, <i>Ελιά</i>, <i>Κνωσός</i>. Οι hand-lettered γραμματοσειρές που δοκιμάσαμε πριν — Permanent Marker, Caveat Brush, Shantell Sans — <b>δεν έχουν ελληνικό αλφάβητο</b>. Ό,τι δεν έχει ελληνικά πέφτει σε system fallback και σπάει η ταυτότητα. Ο έλεγχος δίπλα σε κάθε γραμματοσειρά τρέχει ζωντανά στη σελίδα.</div>
+
+<div id="dirs"></div>
+
+<script>
+const DIRS = [
+  {id:'didot', name:'01 · Didot', fam:'GFS Didot + Commissioner',
+   disp:"'GFS Didot',serif", dw:400, dsize:56, dtrack:'.10em', dcaps:true,
+   ann:"'Commissioner',sans-serif", aw:600,
+   body:"'GFS Didot',serif", bw:400,
+   note:'Ο ελληνικός νεοκλασικός Didot, από το Greek Font Society. Λεπτός, υψηλής αντίθεσης, με αυθεντικά σχεδιασμένα ελληνικά — όχι λατινικά με ελληνικά κολλημένα από πάνω. Το πιο «κοσμηματοπωλείο» από όλα, και το πιο ελληνικό.'},
+  {id:'bodoni', name:'02 · Bodoni', fam:'Bodoni Moda + Commissioner',
+   disp:"'Bodoni Moda',serif", dw:500, dsize:54, dtrack:'.13em', dcaps:true,
+   ann:"'Commissioner',sans-serif", aw:600,
+   body:"'Commissioner',sans-serif", bw:400,
+   note:'Σύγχρονος οίκος κοσμημάτων. Υψηλή αντίθεση, κοφτές σερίφες, πολύ ανοιχτό tracking στα κεφαλαία. Δουλεύει άψογα πάνω σε επίπεδα χρώματα — η αντίθεση της γραμματοσειράς αντικαθιστά την αντίθεση που δεν έχουν οι εικόνες.'},
+  {id:'neohellenic', name:'03 · Neohellenic', fam:'GFS Neohellenic + Source Serif 4',
+   disp:"'GFS Neohellenic',sans-serif", dw:700, dsize:54, dtrack:'.12em', dcaps:true,
+   ann:"'GFS Neohellenic',sans-serif", aw:700,
+   body:"'Source Serif 4',serif", bw:400,
+   note:'Ανθρωπιστικό ελληνικό, βασισμένο στα σχέδια του Victor Scholderer για τη Νέα Ελληνική. Ζεστό, χαμηλής αντίθεσης, καθόλου εμπορικό. Το πλησιέστερο σε «γραμμένο με το χέρι» χωρίς να είναι marker font.'},
+  {id:'garamond', name:'04 · Garamond', fam:'Cormorant Garamond + Alegreya Sans',
+   disp:"'Cormorant Garamond',serif", dw:600, dsize:58, dtrack:'.11em', dcaps:true,
+   ann:"'Alegreya Sans',sans-serif", aw:500,
+   body:"'EB Garamond',serif", bw:400,
+   note:'Ζεστό και χειροποίητο. Ο Cormorant είναι λεπτός και ανάλαφρος σε μεγάλα μεγέθη, ο Alegreya Sans έχει ελαφριά ανομοιομορφία που δένει με τη γκουάς. Η πιο «μικρού εργαστηρίου» επιλογή.'},
+  {id:'grotesque', name:'05 · Grotesque', fam:'Archivo + Literata',
+   disp:"'Archivo',sans-serif", dw:800, dsize:50, dtrack:'.14em', dcaps:true,
+   ann:"'Archivo',sans-serif", aw:600,
+   body:"'Literata',serif", bw:400,
+   note:'Γκαλερί, όχι μπουτίκ. Βαριά κεφαλαία, πολύ ανοιχτό tracking, καθαρό κείμενο. Αφήνει όλη τη δουλειά στις εικονογραφήσεις. Η πιο ασφαλής και η πιο ουδέτερη.'},
+  {id:'hand', name:'06 · Hand', fam:'Caveat + Fira Sans',
+   disp:"'Caveat',cursive", dw:700, dsize:62, dtrack:'.06em', dcaps:false,
+   ann:"'Fira Sans',sans-serif", aw:500,
+   body:"'Fira Sans',sans-serif", bw:400,
+   note:'Κρατά τον δεσμό με τις ζωγραφισμένες εικόνες. <b>Ο έλεγχος την κόβει:</b> ο Caveat δεν έχει ελληνικά και ο τίτλος πέφτει σε system serif — το βλέπεις δίπλα, τα δύο αλφάβητα δεν είναι καν η ίδια γραμματοσειρά. Αυτή η κατεύθυνση δουλεύει μόνο αν παραγγείλεις χειρόγραφο ελληνικό λογότυπο και κρατήσεις τη γραμματοσειρά για τα λατινικά.'}
+];
+
+const root = document.getElementById('dirs');
+root.innerHTML = DIRS.map(d => `
+<div class="dir">
+  <div class="hd">
+    <div><div class="n">${d.name}</div><div class="fam">${d.fam}</div></div>
+    <div class="tags" data-check="${d.id}"></div>
+    <label class="pick"><input type="radio" name="dir" value="${d.id}"> Διάλεξε αυτή</label>
+  </div>
+  <div class="body">
+    <div class="spec">
+      <div class="lat" style="font-family:${d.disp};font-weight:${d.dw};font-size:${d.dsize}px;letter-spacing:${d.dtrack};line-height:1.05;${d.dcaps?'text-transform:uppercase':''}">Psiloritis</div>
+      <div class="gr" style="font-family:${d.disp};font-weight:${d.dw};font-size:${d.dsize}px;letter-spacing:${d.dtrack};line-height:1.05;${d.dcaps?'text-transform:uppercase':''}">Ψηλορείτης</div>
+      <div class="sub" style="font-family:${d.ann};font-weight:${d.aw}">Sterling silver, 18mm · Ασήμι 925</div>
+      <p class="prose" style="font-family:${d.body};font-weight:${d.bw}">Blue enamel over 18k gold. The colour of the Libyan Sea in August. Twelve pieces in this run.</p>
+      <p class="prose" style="font-family:${d.body};font-weight:${d.bw}">Μπλε σμάλτο πάνω σε χρυσό 18k. Το χρώμα του Λιβυκού τον Αύγουστο. Δώδεκα κομμάτια σε αυτή τη σειρά.</p>
+      <div class="meta" style="font-family:${d.body}">AORI · Ηράκλειο · 180,00 €</div>
+    </div>
+    <div class="note">
+      <p>${d.note}</p>
+      <div class="card">
+        <div class="w" style="font-family:${d.disp};font-weight:${d.dw};font-size:30px">Aori</div>
+        <div class="t" style="font-family:${d.ann};font-weight:${d.aw}">Κοσμήματα από την Κρήτη · Ηράκλειο</div>
+      </div>
+      <div class="card" style="background:var(--pigment-ultramarine);margin-top:10px">
+        <div class="w" style="font-family:${d.disp};font-weight:${d.dw};font-size:30px">Λιβυκό</div>
+        <div class="t" style="font-family:${d.ann};font-weight:${d.aw}">Σμάλτο σε χρυσό 18k · Σειρά των δέκα</div>
+      </div>
+    </div>
+  </div>
+</div>`).join('');
+
+// live Greek-coverage check: measure a Greek string in the target font vs a forced fallback
+function measure(txt, fam){
+  const c = document.createElement('canvas').getContext('2d');
+  c.font = '72px ' + fam;
+  return c.measureText(txt).width;
+}
+function hasGreek(fam){
+  const g = 'ΨΗΛΟΡΕΙΤΗΣαβγδ';
+  const a = measure(g, fam + ', monospace');
+  const b = measure(g, 'monospace');
+  return Math.abs(a - b) > 0.5;
+}
+document.fonts.ready.then(() => {
+  DIRS.forEach(d => {
+    const box = document.querySelector(`[data-check="${d.id}"]`);
+    const fams = [['Τίτλος', d.disp], ['Λεζάντα', d.ann], ['Κείμενο', d.body]];
+    const seen = new Set();
+    box.innerHTML = fams.filter(([, f]) => !seen.has(f) && seen.add(f))
+      .map(([label, f]) => {
+        const ok = hasGreek(f);
+        return `<span class="tag ${ok ? 'ok' : 'no'}">${label}: ${ok ? 'ΕΛ ✓' : 'ΧΩΡΙΣ ΕΛ'}</span>`;
+      }).join('');
+  });
+});
+</script>
+</body></html>

@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Style references</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);padding:56px 64px 96px;max-width:1180px;margin:0 auto}
+h1{font-size:40px;letter-spacing:.1em}
+h2{font-size:24px;letter-spacing:.09em;margin:0}
+.lede{font:var(--type-body);max-width:64ch;margin-top:22px;font-size:16px}
+.sect{margin-top:60px}
+.sect>header{display:flex;align-items:baseline;gap:18px;border-bottom:var(--border-ink) solid var(--rule-ink);padding-bottom:12px;margin-bottom:28px}
+.sect>header .hint{font:var(--type-caption);letter-spacing:var(--tracking-annotation);text-transform:uppercase;color:var(--text-muted)}
+.lin{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.lin .c{background:var(--surface-raised);box-shadow:var(--edge-inset);padding:20px}
+.lin .yr{font:var(--type-form-label);color:var(--text-muted);letter-spacing:.05em}
+.lin .nm{font:var(--type-ui);letter-spacing:var(--tracking-annotation);text-transform:uppercase;margin-top:8px}
+.lin p{font:var(--type-body);font-size:12.5px;line-height:1.65;color:var(--text-muted);margin:10px 0 0;max-width:none}
+.tr{display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:center;padding:22px 0;border-bottom:var(--border-hair) solid var(--rule-hair)}
+.demo{height:104px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.th{font:var(--type-ui);letter-spacing:var(--tracking-annotation);text-transform:uppercase}
+.tr p{font:var(--type-body);font-size:14px;line-height:1.7;color:var(--text-body);margin:8px 0 0;max-width:74ch}
+table{border-collapse:collapse;width:100%;font:var(--type-body);font-size:13.5px}
+th{text-align:left;font:var(--type-caption);letter-spacing:var(--tracking-annotation);text-transform:uppercase;padding:0 14px 10px 0;border-bottom:var(--border-ink) solid var(--rule-ink)}
+td{padding:14px 14px 14px 0;border-bottom:var(--border-hair) solid var(--rule-hair);vertical-align:top;line-height:1.6}
+td:first-child{font:var(--type-ui);letter-spacing:var(--tracking-annotation);text-transform:uppercase;white-space:nowrap;padding-right:26px}
+.note{background:var(--surface-ground);color:var(--paper-200);padding:30px 34px;margin-top:56px}
+.note h3{font-family:var(--font-display);font-size:22px;letter-spacing:var(--tracking-title);text-transform:uppercase;margin:0}
+.note p{font:var(--type-body);font-size:14px;line-height:1.7;margin:14px 0 0;max-width:72ch;color:var(--paper-300)}
+</style></head><body>
+<h1>Style references</h1>
+<p class="lede">This design system is built on a style, not on one person. The style has a name in the trade — <b>flat opaque gouache with naive figuration and hand-lettered titles</b> — and a clear lineage. What follows is where it comes from, the eight traits that define it, and where to look. No third-party images are reproduced here; the demonstrations are plain colour fields drawn in CSS.</p>
+
+<section class="sect"><header><h2>Lineage</h2><span class="hint">Where the vocabulary comes from</span></header>
+<div class="lin">
+<div class="c"><div class="yr">1943 – 1954</div><div class="nm">Matisse cut-outs</div><p>Sheets hand-painted in gouache, then cut freehand and pinned. <i>Drawing with scissors.</i> Establishes the whole grammar: unmodulated colour, organic silhouettes, imprecise edges as a virtue.</p></div>
+<div class="c"><div class="yr">1890s – 1910s</div><div class="nm">Naive painting</div><p>Rousseau and the self-taught tradition. Flattened perspective, deliberate awkwardness in the figure, dreamlike calm. This is where the <i>charmingly clumsy</i> figure comes from.</p></div>
+<div class="c"><div class="yr">1940s – 1960s</div><div class="nm">Commercial gouache</div><p>Gouache was the default for posters, fashion plates and animation because it reproduced flat and bright. This is why the style reads as <i>printed</i>, not as <i>painted</i>.</p></div>
+<div class="c"><div class="yr">2015 – now</div><div class="nm">Small-press and riso</div><p>Zines, artist books and risograph printing. Limited ink sets, visible registration, hand-lettered covers, short runs. Supplies the paper stock and the informality.</p></div>
+</div>
+</section>
+
+<section class="sect"><header><h2>The eight traits</h2><span class="hint">What makes something read as this style</span></header>
+<div class="tr"><div class="demo"><div style="display:flex;width:132px;height:88px"><div style="flex:1;background:var(--pigment-red)"></div><div style="flex:1;background:var(--pigment-pink)"></div><div style="flex:1;background:var(--pigment-crimson)"></div></div></div><div><div class="th">Unmodulated colour</div><p>Every shape is one flat colour, laid opaque, edge to edge. No shading, no gradient, no tint of the same hue. A lighter red is pink — a different pigment, not the same pigment weakened.</p></div></div>
+<div class="tr"><div class="demo"><div style="width:120px;height:88px;background:var(--pigment-olive);border-radius:46% 54% 51% 49% / 52% 47% 53% 48%"></div></div><div><div class="th">The imprecise edge</div><p>Shapes stop where the brush or the scissors stopped. Edges wobble, corners are not square, the field does not reach the paper margin evenly. Perfection breaks the illusion faster than anything else.</p></div></div>
+<div class="tr"><div class="demo"><div style="width:132px;height:88px;background:var(--paper-200);box-shadow:inset 0 0 0 1px var(--paper-400);display:flex;align-items:center;justify-content:center"><div style="width:52px;height:52px;background:var(--pigment-ultramarine)"></div></div></div><div><div class="th">Paper as the ground, not the background</div><p>The unpainted paper is an active part of the composition — usually 30–40% of the page. It is warm off-white, never pure white, and never a texture applied on top of a colour.</p></div></div>
+<div class="tr"><div class="demo"><div style="display:flex;gap:4px"><div style="width:18px;height:88px;background:var(--pigment-red)"></div><div style="width:18px;height:88px;background:var(--pigment-yellow)"></div><div style="width:18px;height:88px;background:var(--pigment-olive)"></div><div style="width:18px;height:88px;background:var(--pigment-teal)"></div><div style="width:18px;height:88px;background:var(--pigment-ultramarine)"></div><div style="width:18px;height:88px;background:var(--pigment-pink)"></div></div></div><div><div class="th">A small closed palette</div><p>Four to six pigments per piece, drawn from the same tube set. The saturation is high but the hues are earthy — chalk in them, never neon. One connective colour links the rest.</p></div></div>
+<div class="tr"><div class="demo"><div style="width:132px;height:88px;background:var(--pigment-sky);position:relative"><div style="position:absolute;left:0;bottom:0;width:100%;height:44%;background:var(--pigment-olive)"></div><div style="position:absolute;left:18px;bottom:14px;width:22px;height:44px;background:var(--pigment-umber)"></div><div style="position:absolute;right:16px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--pigment-yellow)"></div></div></div><div><div class="th">Flattened space</div><p>No perspective, no horizon line, no cast shadow. Objects sit on the picture plane rather than in a room. Scale is decided by importance, not by distance.</p></div></div>
+<div class="tr"><div class="demo"><div style="font-family:var(--font-display);font-size:23px;letter-spacing:.16em;text-transform:uppercase;line-height:1">Water</div></div><div><div class="th">Hand-lettered titles, tracked wide</div><p>Titles are drawn, not set. They are uppercase because printing by hand favours caps, and they are spaced generously because the hand leaves gaps a font would not. Wide tracking is the cheapest way to fake this.</p></div></div>
+<div class="tr"><div class="demo"><div style="display:flex;gap:0"><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-pink)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-red)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-pink)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-ultramarine)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-pink)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-yellow)"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--pigment-teal)"></div></div></div><div><div class="th">The circle as the only curve</div><p>Everything else is a straight-sided field. The full circle — a dot of paint, a sun, a fruit — is the single geometric curve the style allows. It becomes the bullet, the marker and the ornament.</p></div></div>
+<div class="tr"><div class="demo"><div style="font-family:var(--font-annotation);font-weight:600;font-size:15px;letter-spacing:.055em;text-transform:uppercase;line-height:1.5;transform:rotate(-1.2deg)">Anything that<br>isn&rsquo;t about<br>the outcome</div></div><div><div class="th">Nothing is corrected</div><p>A struck-through word stays struck through. A missing apostrophe stays missing. Registration is off by a millimetre. These are not errors to fix — they are the evidence that a person made it, which is the entire commercial argument for the style in 2026.</p></div></div>
+</section>
+
+<section class="sect"><header><h2>Where to look</h2><span class="hint">Reference only — never lift assets, compositions or lettering</span></header>
+<table>
+<thead><tr><th>Reference</th><th>What it is</th><th>What to take from it</th></tr></thead>
+<tbody>
+<tr><td>Matisse — The Cut-Outs</td><td>Tate Modern, 2014. The definitive survey; catalogue widely available.</td><td>The grammar itself. How a flat shape carries a figure. How to place four colours and stop.</td></tr>
+<tr><td>Henri Rousseau</td><td>Naive painting, late 19th century.</td><td>The awkward figure, the airless calm, scale by importance.</td></tr>
+<tr><td>Nieves Books</td><td>nieves.ch — Zurich small-press artist zines since 2001.</td><td>The publishing model closest to a small painted guide. Format, binding, price point.</td></tr>
+<tr><td>Colorama</td><td>colorama.shop — Berlin risograph artist books.</td><td>Limited ink sets, cover typography, how a zine is merchandised.</td></tr>
+<tr><td>The Poster Club</td><td>theposterclub.com — Copenhagen print publisher.</td><td>How this aesthetic is framed and sold commercially. Photography of prints in rooms.</td></tr>
+<tr><td>PSTR studio</td><td>pstrstudio.com — print publisher, rougher editorial house style.</td><td>Product pages, artist framing, edition language.</td></tr>
+<tr><td>People of Print — Risograph</td><td>peopleofprint.com/category/risograph</td><td>An ongoing feed of current small-press work in exactly this register.</td></tr>
+<tr><td>Wrap Magazine</td><td>Illustration-led print and stationery, UK.</td><td>How to run illustration across a stationery range without diluting it.</td></tr>
+<tr><td>Pintachan Studio</td><td>Northern Spain. Retro, naive, whimsical.</td><td>The warmer, brighter end of the same vocabulary applied commercially.</td></tr>
+<tr><td>Decur (Guillermo Decurgez)</td><td>Rosario, Argentina. Self-taught cartoonist.</td><td>Quiet, childlike narrative at miniature scale — the storytelling end.</td></tr>
+<tr><td>Ashley Ronning</td><td>ashleyronning.com — Melbourne. Gouache and pencil, riso zines.</td><td>A working practice that runs painting and small-press publishing side by side.</td></tr>
+<tr><td>Charley Harper</td><td>Mid-century American. <i>Minimal realism.</i></td><td>Reduction to the fewest possible shapes while staying legible.</td></tr>
+</tbody>
+</table>
+</section>
+
+<div class="note">
+<h3>What is ours and what is not</h3>
+<p>Every image in <code>assets/</code> is cropped from the six photographs supplied with this brief — nothing has been taken from any reference above. The palette in <code>tokens/colors.css</code> was sampled from those same photographs. The references exist to argue about direction and to prove the style has a history; they are not a source of assets.</p>
+<p>If this system is going to belong to a brand rather than to the artist who painted the source, it needs its own artwork commissioned in this vocabulary. The eight traits above are the brief you would hand an illustrator.</p>
+</div>
+</body></html>

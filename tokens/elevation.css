@@ -1,0 +1,12 @@
+/* Elevation. Gouache on paper casts no shadow. Shadow is reserved for one idea:
+   a physical sheet resting on a surface. Never use it for hover, cards, or menus. */
+:root{
+  --shadow-none:none;
+  --shadow-sheet:0 1px 2px rgba(53,4,6,.10), 0 6px 18px rgba(53,4,6,.14);
+  --shadow-sheet-lifted:0 2px 4px rgba(53,4,6,.12), 0 18px 40px rgba(53,4,6,.20);
+  --shadow-overlay:0 24px 64px rgba(11,10,8,.28);
+
+  /* Depth without shadow: a hairline of the page's own shade */
+  --edge-inset:inset 0 0 0 1px var(--paper-400);
+  --edge-ledger:inset 0 0 0 1px var(--ledger-300);
+}

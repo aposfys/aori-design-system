@@ -1,0 +1,24 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Forms" subtitle="Field stock, select, checkbox and the stone-grey ledger cell" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>html,body{width:700px;height:300px;overflow:hidden;margin:0}body{padding:20px 22px;background:var(--surface-page);box-sizing:border-box}.lbl{font:var(--type-form-label);color:var(--text-muted);letter-spacing:var(--tracking-form);margin-bottom:7px}.row{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../lib/ds-bundle.js"></script></head><body><div id="root"></div><script type="text/babel">
+const { Button, Tag, Rule, Mark, Plate, PlateCard, Caption, PullQuote, StepList, Dot, DotChain, Input, Textarea, Checkbox, Select, LedgerField } = window.AORIDesignSystem_12e58c;
+
+function Card(){const [on,setOn]=React.useState(true);return (<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:18}}>
+<div style={{display:'grid',gap:14,alignContent:'start'}}>
+<Input label="Email" placeholder="you@example.com" hint="For the order, nothing else." />
+<Input label="Ring size" defaultValue="54" error="We need this in millimetres." />
+<Checkbox label="Tell me when a new run is made" checked={on} onChange={e=>setOn(e.target.checked)} />
+</div>
+<div style={{display:'grid',gap:14,alignContent:'start'}}>
+<Select label="Size" options={['52 · 16,6 mm','54 · 17,2 mm','56 · 17,8 mm']} hint="Not sure? Read the sizing guide." />
+<Textarea label="Message" rows={2} />
+<div style={{display:'flex',gap:0}}>
+<LedgerField label="Material" value="Sterling silver" width="40%" />
+<LedgerField label="Width" value="18 mm" width="28%" />
+<LedgerField label="Weight" value="14 g" width="32%" align="right" />
+</div></div></div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card />);
+</script></body></html>

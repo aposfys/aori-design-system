@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AORI — brand book</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:var(--surface-page);color:var(--text-body);margin:0 auto;padding:0 58px 140px;max-width:1400px;font-family:var(--font-body)}
+a{color:var(--link);text-underline-offset:.18em}a:hover{color:var(--link-hover)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted)}
+.cap b{color:var(--ink-900);font-weight:600}
+h1{margin:0;font-family:var(--font-display);text-transform:uppercase;font-weight:400;letter-spacing:.1em;line-height:1.04}
+h2{margin:0;font-family:var(--font-display);font-size:29px;letter-spacing:.09em;text-transform:uppercase;font-weight:400}
+h3{margin:0 0 9px;font-family:var(--font-annotation);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-700)}
+p{max-width:78ch;font-size:15px;line-height:1.75}
+.sec{margin-top:64px;border-top:2px solid var(--ink-900);padding-top:13px;display:flex;gap:16px;align-items:baseline}
+figure{margin:0}
+code{font-size:12.5px;background:var(--paper-400);padding:1px 4px}
+
+/* masthead */
+.mast{padding:74px 0 0;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.mast img{width:230px;display:block}
+.rule{height:2px;background:var(--ink-900);margin-top:26px}
+
+/* contents */
+.toc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400);margin-top:2px}
+.toc a{display:block;background:var(--paper-200);padding:15px 16px 17px;text-decoration:none;color:var(--ink-900)}
+.toc a:hover{background:var(--paper-100)}
+.toc .n{font-family:var(--font-annotation);font-size:10px;letter-spacing:.1em;color:var(--pigment-terracotta);font-weight:600}
+.toc .t{font-family:var(--font-display);font-size:17px;letter-spacing:.06em;text-transform:uppercase;margin-top:5px}
+.toc .d{font-size:12px;line-height:1.5;color:var(--text-muted);margin-top:5px}
+
+.cards{display:grid;gap:18px;margin-top:24px}
+.cards img{width:100%;display:block;box-shadow:inset 0 0 0 1px var(--paper-400)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.g6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px 14px;margin-top:22px}
+.g6 img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--paper-300)}
+.marks{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:16px;margin-top:22px;align-items:center}
+.marks img{width:100%;display:block}
+.logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--paper-400);margin-top:22px}
+.logos div{background:var(--paper-200);padding:22px 18px;display:flex;flex-direction:column;gap:12px;justify-content:space-between}
+.logos img{width:100%;display:block}
+.note{background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px 20px;margin-top:22px;max-width:78ch}
+.rules{margin:22px 0 0;padding:0;list-style:none;max-width:80ch}
+.rules li{padding:11px 0;border-top:1px solid var(--paper-400);font-size:14.5px;line-height:1.6}
+.rules li:first-child{border-top:0}
+.rules b{font-family:var(--font-annotation);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:3px}
+.deep{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px}
+.deep a{font-family:var(--font-annotation);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink-900);background:var(--paper-300);padding:7px 11px}
+.deep a:hover{background:var(--pigment-terracotta);color:var(--paper-200)}
+.status{display:inline-block;font-family:var(--font-annotation);font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;margin-left:10px;vertical-align:middle}
+.s-full{background:var(--pigment-forest);color:var(--paper-200)}
+.s-part{background:var(--pigment-saffron);color:var(--ink-900)}
+.s-gap{background:var(--paper-400);color:var(--ink-700)}
+@media(max-width:900px){body{padding:0 22px 90px}.toc,.logos{grid-template-columns:1fr 1fr}.g6{grid-template-columns:repeat(3,1fr)}.marks{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:1fr}}
+</style></head><body>
+
+<header class="mast">
+  <div>
+    <div class="cap" style="letter-spacing:.14em">Brand book · Edition one · Silver 925 · Heraklion, Crete</div>
+    <h1 style="font-size:64px;margin-top:16px">AÓRI</h1>
+    <p style="margin:20px 0 0;font-size:17px">Handmade silver jewellery, made in runs of twelve, each run named for a place on
+    the island. When a run is gone it is not remade — the next sheet of silver is a little different,
+    and so is the next run.</p>
+  </div>
+  <img src="assets/logos/wordmark.svg" alt="AORI wordmark">
+</header>
+<div class="rule"></div>
+
+<nav class="toc">
+  <a href="#philosophy"><div class="n">01</div><div class="t">Philosophy</div><div class="d">What the workshop is, and the voice it speaks in.</div></a>
+  <a href="#logotype"><div class="n">02</div><div class="t">Logotype</div><div class="d">The wordmark, its colourways, and the emblems beneath it.</div></a>
+  <a href="#colour"><div class="n">03</div><div class="t">Colour</div><div class="d">Two registers — pigment and stone — laid flat and opaque.</div></a>
+  <a href="#typography"><div class="n">04</div><div class="t">Typography</div><div class="d">Three faces, three jobs, and the tracking that binds them.</div></a>
+  <a href="#illustration"><div class="n">05</div><div class="t">Illustration</div><div class="d">The painted hand, and the unresolved photography question.</div></a>
+  <a href="#iconography"><div class="n">06</div><div class="t">Iconography</div><div class="d">Motifs are circles. Patterns are squares.</div></a>
+  <a href="#layout"><div class="n">07</div><div class="t">Grid &amp; layout</div><div class="d">Spacing, edges, elevation, motion.</div></a>
+  <a href="#application"><div class="n">08</div><div class="t">Application</div><div class="d">Components, templates and the storefront kit.</div></a>
+</nav>
+
+<!-- ============================================ 01 -->
+<div class="sec" id="philosophy"><span class="cap">01</span><h2>Philosophy</h2><span class="status s-full">Documented</span></div>
+<p>The system exists to make one thing possible: a shop, a document or a post that looks like it came
+from a workshop rather than a brand studio. The voice is a maker talking, not a brand announcing.</p>
+
+<ul class="rules">
+  <li><b>Person</b>First person plural for the workshop, second person for the reader. “We make twelve. When they are gone we make something else.” Never “AORI is proud to present”.</li>
+  <li><b>Numbers are load-bearing</b>Twelve in a run. Four left. Silver 925. 24&nbsp;mm. Two working days. The brand’s honesty is arithmetic, so numbers are stated plainly and never rounded up for effect.</li>
+  <li><b>Scarcity is stated, never sold</b>“Four left of twelve”, not “Selling fast”. A closed run says “All twelve gone” and keeps its page. The piece stays visible; only the price goes.</li>
+  <li><b>Casing</b>Sentence case in prose. Uppercase only in the annotation voice — labels, buttons, metadata, section markers — where it is always tracked.</li>
+  <li><b>No exclamation marks, no emoji</b>The Instagram bio’s decorative rule is the one ornamental flourish in the brand, and it belongs to the bio only.</li>
+  <li><b>Greek is reserved for the brand book</b>Product surfaces are Latin only. Place names keep their Latin spelling: Psiloritis, Livyko, Elia, Knosos.</li>
+</ul>
+
+<div class="note"><span class="cap"><b>Verbatim</b></span>
+<p style="margin:9px 0 0;font-size:15px">“Made by hand in Heraklion, in runs of twelve, and named after the places they came from.”</p>
+<p style="margin:9px 0 0;font-size:15px">“Silver 925, hammered on the bench and left matte. Named for the beach below the village, where the water goes flat at six in the evening.”</p>
+<p style="margin:9px 0 0;font-size:15px">“We will make more, but not the same.”</p></div>
+
+<!-- ============================================ 02 -->
+<div class="sec" id="logotype"><span class="cap">02</span><h2>Logotype</h2><span class="status s-part">Partial</span></div>
+<p>The wordmark is a vector trace of painted lettering and is <b>the only mark</b>. It is never re-set in
+type above 28px, and no second mark may be invented. The five painted files that arrived named as
+logos carry no readable brand name; they are filed as <b>emblems</b> and always sit subordinate to the
+wordmark.</p>
+
+<div class="logos">
+  <div><img src="assets/logos/wordmark-ink.svg" alt="Wordmark, ink"><span class="cap"><b>Ink</b> — default</span></div>
+  <div><img src="assets/logos/wordmark-terracotta.svg" alt="Wordmark, terracotta"><span class="cap"><b>Terracotta</b> — action ground</span></div>
+  <div><img src="assets/logos/wordmark-aegean.svg" alt="Wordmark, aegean"><span class="cap"><b>Aegean</b> — cool ground</span></div>
+  <div><img src="assets/logos/wordmark-paper.svg" alt="Wordmark, paper"><span class="cap"><b>Paper</b> — reversed on pigment</span></div>
+</div>
+<p class="cap" style="margin-top:12px">Each colourway also exists with a macron — <code>-macron</code> — for the AŌRI styling used in the Instagram bio.</p>
+
+<div class="note"><span class="cap"><b>Gap — not yet written</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">Clear space, minimum sizes, and a misuse sheet (do-not-stretch, do-not-recolour,
+do-not-outline, do-not-place-on-busy-painting) are the three pages a complete logotype section
+carries and this one does not. The wordmark file is also a trace with an oil-pastel filter that
+drops out in print; the original painted artwork is still wanted at full size.</p></div>
+<div class="deep"><a href="guidelines/logo-proposals.html">Logo proposals</a></div>
+
+<!-- ============================================ 03 -->
+<div class="sec" id="colour"><span class="cap">03</span><h2>Colour</h2><span class="status s-full">Documented</span></div>
+<p>Two registers, and they do not mix arbitrarily. <b>Lime</b> is the ground — sun-bleached plaster, not
+white. <b>Pigments</b> are sampled by frequency out of the paintings themselves, laid flat and opaque,
+never tinted, shaded or gradiented. <b>Stone</b> is the clerical register, used for anything
+administrative: sizing, shipping, order status, specification.</p>
+
+<ul class="rules">
+  <li><b>The one rule</b>Terracotta acts, aegean links, saffron highlights. Four to six colours carry a composition; never more. Maximum two background colours in any one document.</li>
+</ul>
+
+<div class="cards">
+  <img src="docs/brandbook/cards/colors-grounds.png" alt="Grounds — paper and stock">
+  <img src="docs/brandbook/cards/colors-warms.png" alt="Saffron and scrub">
+  <img src="docs/brandbook/cards/colors-reds.png" alt="Earth — ochre and wine">
+  <img src="docs/brandbook/cards/colors-cools.png" alt="Two seas">
+  <img src="docs/brandbook/cards/colors-ink.png" alt="Carbon">
+  <img src="docs/brandbook/cards/colors-metals.png" alt="Metals">
+  <img src="docs/brandbook/cards/colors-semantic-surface.png" alt="Semantic — surfaces">
+  <img src="docs/brandbook/cards/colors-semantic-action.png" alt="Semantic — action">
+  <img src="docs/brandbook/cards/colors-status.png" alt="Status">
+</div>
+
+<!-- ============================================ 04 -->
+<div class="sec" id="typography"><span class="cap">04</span><h2>Typography</h2><span class="status s-full">Documented</span></div>
+<p>Three faces, three jobs. <b>GFS Didot</b> for display — names, headings, prices — uppercase and
+tracked, and Greek-capable, which is why it won. <b>Commissioner</b> for the annotation voice: labels,
+buttons, metadata, nav, always uppercase and tracked at weight 600. <b>Source Serif 4</b> for body
+prose, sentence case, 15–17px at line-height 1.7. All three are Google-hosted substitutions; no
+licensed font files were provided.</p>
+
+<div class="cards">
+  <img src="docs/brandbook/cards/type-display.png" alt="Display lettering">
+  <img src="docs/brandbook/cards/type-annotation.png" alt="Annotation">
+  <img src="docs/brandbook/cards/type-body.png" alt="Body serif">
+  <img src="docs/brandbook/cards/type-scale.png" alt="Type scale">
+  <img src="docs/brandbook/cards/type-tracking.png" alt="Tracking">
+</div>
+<p class="cap" style="margin-top:14px">Minimum sizes — 24px in a 1920×1080 slide, 12pt in print, 44px hit targets in a mobile mock.</p>
+<div class="deep"><a href="guidelines/type-decision.html">Type decision</a><a href="guidelines/font-candidates.html">Font candidates</a></div>
+
+<!-- ============================================ 05 -->
+<div class="sec" id="illustration"><span class="cap">05</span><h2>Illustration &amp; photography</h2><span class="status s-full">Documented</span></div>
+<p>One hand, two jobs. Everything is watercolour and gouache on cotton paper — saturated fields held
+inside a drawn contour, the paper reading through the lighter passages, nothing opaque white, nothing
+greyed to recede. Twenty-three places, figures and still lifes as <b>full plates</b>, mounted with a 5px
+unpainted margin on toned stock.</p>
+
+<div class="g6">
+  <figure><img src="assets/illustrations-v2-web/harbour.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>harbour</b></figcaption></figure>
+  <figure><img src="assets/illustrations-v2-web/cove.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>cove</b></figcaption></figure>
+  <figure><img src="assets/illustrations-v2-web/psiloritis.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>psiloritis</b></figcaption></figure>
+  <figure><img src="assets/illustrations-v2-web/livyko.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>livyko</b></figcaption></figure>
+  <figure><img src="assets/illustrations-v2-web/terraces.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>terraces</b></figcaption></figure>
+  <figure><img src="assets/illustrations-v2-web/olive.jpg" alt=""><figcaption class="cap" style="margin-top:6px"><b>olive</b></figcaption></figure>
+</div>
+
+<div class="note"><span class="cap"><b>The photography problem — unresolved</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">The paintings are the loudest thing in the system: maximum chroma, hard contour, white paper.
+Every treatment that makes a photograph quieter moves it <i>further</i> from them. Four routes are
+documented; the standing recommendation is <b>route 3 now, route 2 over time</b> — shoot on the painted
+paper, and have the pieces painted as the range settles. A photograph never opens the site and never
+appears on packaging.</p>
+<p style="margin:9px 0 0;font-size:14.5px"><b>The eight stand-in photographs are not in this repository.</b> Their paths hold labelled
+placeholder tiles so the pages lay out correctly; none showed an AORI piece in any case.</p></div>
+<div class="deep"><a href="guidelines/illustration-library.html">Illustration library</a><a href="guidelines/photo-blending.html">Photo blending</a><a href="guidelines/image-jobs.html">Image jobs</a><a href="guidelines/photography-standins.html">Stand-ins</a><a href="guidelines/illustration-proposals.html">Proposals</a></div>
+
+<!-- ============================================ 06 -->
+<div class="sec" id="iconography"><span class="cap">06</span><h2>Iconography</h2><span class="status s-part">Partial</span></div>
+<p><b>Motifs are circles. Patterns are squares.</b> That is the shape rule, and it holds everywhere. A
+motif is never redrawn — every one is cut out of a finished painting. Four are knocked out of their
+painted field, two are cropped to a disc. If a subject has no painting, it has no mark.</p>
+
+<div class="marks">
+  <img src="assets/motifs-v2/sun.png" alt="sun"><img src="assets/motifs-v2/spiral.png" alt="spiral"><img src="assets/motifs-v2/dolphin.png" alt="dolphin"><img src="assets/motifs-v2/octopus.png" alt="octopus"><img src="assets/motifs-v2/olive-wreath.png" alt="olive wreath"><img src="assets/motifs-v2/hoop.png" alt="hoop"><img src="assets/motifs-v2/crescent.svg" alt="crescent">
+</div>
+<img src="docs/brandbook/cards/brand-motifs.png" alt="Motif rules" style="width:100%;display:block;margin-top:20px;box-shadow:inset 0 0 0 1px var(--paper-400)">
+
+<div class="note"><span class="cap"><b>Gap — the thinnest section</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">This is illustration reused as marks, not an icon system. There is no functional icon set —
+no cart, search, account, filter, close — and no grid, stroke weight, corner or optical-size
+rules to draw one on. Three motifs (spiral, hoop, beaded strand) still have no painting and stand
+in as disc crops. A Coca-Cola-depth pass would start here: keystone grid, stroke and terminal
+rules, a do/don’t sheet, and a named set at two optical sizes.</p></div>
+
+<!-- ============================================ 07 -->
+<div class="sec" id="layout"><span class="cap">07</span><h2>Grid &amp; layout</h2><span class="status s-full">Documented</span></div>
+<p>Corner radius is zero and there are no shadows. Depth is a 2px carbon rule, a 1px hairline, or a
+flat pigment field — never a blur. A painting opens a page; a photograph shows a piece. Photographs
+go full bleed with no border; paintings keep a 5px unpainted margin on toned stock.</p>
+
+<div class="cards">
+  <img src="docs/brandbook/cards/spacing-scale.png" alt="Spacing scale">
+  <img src="docs/brandbook/cards/spacing-margins.png" alt="Margins in use">
+  <img src="docs/brandbook/cards/shape-edges.png" alt="Edges and line weights">
+  <img src="docs/brandbook/cards/shape-plate.png" alt="The plate">
+  <img src="docs/brandbook/cards/elevation.png" alt="Shadow">
+  <img src="docs/brandbook/cards/motion.png" alt="Motion">
+  <img src="docs/brandbook/cards/brand-grounds.png" alt="Surfaces">
+  <img src="docs/brandbook/cards/brand-collections.png" alt="Collections">
+</div>
+
+<!-- ============================================ 08 -->
+<div class="sec" id="application"><span class="cap">08</span><h2>Application</h2><span class="status s-full">Documented</span></div>
+<p>Twenty components in five groups, each with a <code>.jsx</code>, a <code>.d.ts</code> and a
+<code>.prompt.md</code>. Three templates a consuming project can copy, and a click-through storefront
+composed from the components.</p>
+
+<div class="g2">
+  <div>
+    <h3>Components</h3>
+    <ul class="rules">
+      <li><b>core</b>Button · Tag · Mark · Rule</li>
+      <li><b>content</b>Plate · PlateCard · Caption · PullQuote · Dot · DotChain · StepList</li>
+      <li><b>forms</b>Input · Textarea · LedgerField · Select · Checkbox</li>
+      <li><b>feedback</b>Notice · Dialog</li>
+      <li><b>navigation</b>NavBar · Tabs</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Templates &amp; kits</h3>
+    <ul class="rules">
+      <li><b>brand-book</b>A4 landscape, print-ready.</li>
+      <li><b>collection-grid</b>The shop index; closed runs stay visible.</li>
+      <li><b>media-kit</b>The press sheet.</li>
+      <li><b>storefront</b>Home and product page, click-through.</li>
+    </ul>
+    <p class="cap" style="margin-top:14px">Specified but never built: <b>Stamp</b> (emblem-as-seal) and <b>LedgerRow</b> (the clerical table row).</p>
+  </div>
+</div>
+<div class="deep"><a href="components/core/core.card.html">Core</a><a href="components/content/content.card.html">Content</a><a href="components/forms/forms.card.html">Forms</a><a href="components/feedback/feedback.card.html">Feedback</a><a href="components/navigation/navigation.card.html">Navigation</a><a href="ui_kits/storefront/index.html">Storefront</a><a href="templates/brand-book/BrandBook.dc.html">Brand book</a><a href="templates/collection-grid/CollectionGrid.dc.html">Collection grid</a><a href="templates/media-kit/MediaKit.dc.html">Media kit</a></div>
+
+<div class="sec"><span class="cap">—</span><h2>Coverage</h2></div>
+<p>Measured against the section set common to the IBM, SeatGeek and Slack brand books.</p>
+<ul class="rules">
+  <li><b>Documented</b>Philosophy · Colour · Typography · Illustration &amp; photography · Grid &amp; layout · Application</li>
+  <li><b>Partial</b>Logotype — colourways exist; clear space, minimum sizes and a misuse sheet do not. Iconography — motif rules exist; a functional icon set and its construction grid do not.</li>
+  <li><b>Open</b>The photography route · licensed fonts · the wordmark master artwork · three motifs without paintings</li>
+</ul>
+
+<p class="cap" style="margin-top:64px;border-top:2px solid var(--ink-900);padding-top:14px">
+AORI design system · Edition one · All rights reserved · Collections, prices and run counts throughout are placeholder data
+</p>
+
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../../lib/support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Collection grid" description="A shop index: Didot caps header, uppercase filter row, and a five-up grid of painted collection plates with ledger metadata and run counts." -->
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<script src="./ds-base.js"></script>
+</helmet>
+<div style="min-height:100vh;background:#fbf7ef;font-family:'Source Serif 4',Georgia,serif;color:#2a2622">
+<nav style="display:flex;align-items:center;gap:56px;padding:20px 64px;border-bottom:1px solid #b4b6ae;position:sticky;top:0;background:#fbf7ef;z-index:5">
+<a href="#" style="font-family:'GFS Didot',Didot,Georgia,serif;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#2a2622;text-decoration:none;line-height:1;flex:0 0 auto">AÓRI</a>
+<span style="display:flex;gap:34px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex:1">
+<a href="#" style="color:#2a2622;text-decoration:none;padding-bottom:3px;border-bottom:2px solid #c05a28;white-space:nowrap">Collections</a>
+<a href="#" style="color:#2a2622;text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent;opacity:.62;white-space:nowrap">The workshop</a>
+<a href="#" style="color:#2a2622;text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent;opacity:.62;white-space:nowrap">Journal</a>
+<a href="#" style="color:#2a2622;text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent;opacity:.62;white-space:nowrap">Stockists</a>
+</span>
+<a href="#" style="font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#1890a8;text-decoration:underline;text-underline-offset:4px;flex:0 0 auto">Basket · 2</a>
+</nav>
+<section style="padding:56px 64px 96px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+<div>
+<h1 style="margin:0;font-family:'GFS Didot',Didot,Georgia,serif;font-weight:400;font-size:52px;letter-spacing:.1em;line-height:1;text-transform:uppercase">Collections</h1>
+<p style="margin:16px 0 0;max-width:56ch;font-size:16px;line-height:1.72">Ten places on Crete, ten short runs. Each one is made until the silver runs out, and then it stops. When a run is gone we make more, but not the same.</p>
+</div>
+<div style="font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#6e675c;text-align:right;flex:0 0 auto;line-height:1.9">
+<div>10 collections</div>
+<div>132 pieces made</div>
+<div style="color:#c05a28">3 runs closed</div>
+</div>
+</div>
+<div style="display:flex;gap:4px;border-bottom:1px solid #b4b6ae;margin-top:36px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:12px;letter-spacing:.09em;text-transform:uppercase">
+<span style="padding:9px 16px;margin-bottom:-1px;background:#c05a28;color:#fbf7ef">All <span style="opacity:.75;font-variant-numeric:tabular-nums">10</span></span>
+<span style="padding:9px 16px;margin-bottom:-1px;color:#6e675c">Rings <span style="opacity:.6;font-variant-numeric:tabular-nums">4</span></span>
+<span style="padding:9px 16px;margin-bottom:-1px;color:#6e675c">Hoops <span style="opacity:.6;font-variant-numeric:tabular-nums">3</span></span>
+<span style="padding:9px 16px;margin-bottom:-1px;color:#6e675c">Chains <span style="opacity:.6;font-variant-numeric:tabular-nums">2</span></span>
+<span style="padding:9px 16px;margin-bottom:-1px;color:#6e675c">Cuffs <span style="opacity:.6;font-variant-numeric:tabular-nums">1</span></span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:40px 26px;margin-top:44px">
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/livyko.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Livyko</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 001 · 925 silver · 12 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">165 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/olive.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Elia</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 002 · bronze · 12 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">165 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/psiloritis.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Knosos</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 003 · 925 silver · 8 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">240 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/cove.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Vathý</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 004 · 925 silver · 14 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">140 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/terraces.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Pezoúles</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 005 · bronze · 18 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">120 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf;position:relative"><img src="../../assets/illustrations-v2-web/harbour.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;opacity:.55"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Limáni</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#c05a28">N° 006 · closed · 9 made</div>
+<div style="margin-top:5px;font-size:14px;color:#6e675c">All nine gone</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/sun-sea.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Ílios</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 007 · bronze · 16 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">185 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf;position:relative"><img src="../../assets/illustrations-v2-web/rocks.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;opacity:.55"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Kavoúsi</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#c05a28">N° 008 · closed · 11 made</div>
+<div style="margin-top:5px;font-size:14px;color:#6e675c">All eleven gone</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf"><img src="../../assets/illustrations-v2-web/village.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Chorió</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6e675c">N° 009 · 925 silver · 10 made</div>
+<div style="margin-top:5px;font-size:14px;font-variant-numeric:tabular-nums">210 €</div>
+</figure>
+<figure style="margin:0">
+<div style="border:6px solid #efe3cf;box-shadow:0 0 0 1px #ebe2d2;background:#efe3cf;position:relative"><img src="../../assets/illustrations-v2-web/taverna.jpg" alt="" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;opacity:.55"></div>
+<figcaption style="margin-top:13px;font-family:'GFS Didot',Didot,Georgia,serif;font-size:21px;letter-spacing:.09em;text-transform:uppercase;line-height:1.1">Tavérna</figcaption>
+<div style="margin-top:6px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#c05a28">N° 010 · closed · 12 made</div>
+<div style="margin-top:5px;font-size:14px;color:#6e675c">All twelve gone</div>
+</figure>
+</div>
+<div style="margin-top:64px;border-top:1px solid #b4b6ae;padding-top:20px;display:flex;justify-content:space-between;gap:32px;font-family:Commissioner,system-ui,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#6e675c">
+<span>Made in Heraklion · Placeholder data</span>
+<span>Every price includes Greek VAT</span>
+</div>
+</section>
+</div>
+</x-dc>
+</body>
+</html>

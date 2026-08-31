@@ -1,0 +1,125 @@
+<!-- @dsCard group="Brand" viewport="1400x1000" name="Photography — blending" subtitle="Six surface treatments that make a photograph behave like the paintings" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — blending photography into the paintings</title><link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);color:var(--text-body);margin:0 auto;padding:52px 60px 120px;max-width:1400px;font-family:var(--font-body)}
+a{color:var(--link)}a:hover{color:var(--link-hover)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted)}
+h2{margin:0;font-family:var(--font-display);font-size:28px;letter-spacing:.09em;text-transform:uppercase;font-weight:400}
+.sec{margin-top:60px;border-top:2px solid var(--ink-900);padding-top:13px;display:flex;gap:16px;align-items:baseline}
+code{font-size:12.5px;background:var(--paper-400);padding:1px 5px}
+figure{margin:0}
+.note{background:var(--surface-raised);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px 22px}
+/* the treated-photo primitives */
+.ph{position:relative;overflow:hidden;display:block;isolation:isolate}
+.ph>img{width:100%;height:100%;object-fit:cover;display:block}
+/* each treatment owns its own layer so the four never collide */
+.lift>img{filter:contrast(.72) brightness(1.13) saturate(.88)}
+.lift::after{content:"";position:absolute;inset:0;z-index:2;background:var(--paper-200);mix-blend-mode:screen;opacity:.20;pointer-events:none}
+.grain::before{content:"";position:absolute;inset:0;z-index:3;background-image:url(../assets/textures/paper-grain.png);background-size:420px;mix-blend-mode:soft-light;opacity:.60;pointer-events:none}
+.ph>i.w{position:absolute;inset:0;z-index:4;background:radial-gradient(ellipse 86% 66% at 20% 16%,rgba(24,144,168,.42),transparent 66%),radial-gradient(ellipse 78% 86% at 86% 90%,rgba(192,90,40,.38),transparent 62%),linear-gradient(166deg,rgba(192,168,96,.20),rgba(24,144,168,.08));mix-blend-mode:multiply;pointer-events:none;display:none}
+.wash>i.w{display:block}
+.soft{mask-image:radial-gradient(ellipse 92% 94% at 50% 50%,#000 74%,rgba(0,0,0,.72) 90%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 92% 94% at 50% 50%,#000 74%,rgba(0,0,0,.72) 90%,transparent 100%)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--paper-400)}
+</style></head><body>
+
+<div class="cap" style="letter-spacing:.14em">AORI · Photography · Blending, not arranging</div>
+<div style="background:var(--pigment-terracotta);color:var(--paper-200);padding:14px 20px;margin:18px 0 0;max-width:96ch"><div class="cap" style="color:var(--paper-400)"><b style="color:var(--paper-200)">Retired — kept as a record</b></div><p style="margin:6px 0 0;font-size:14px;line-height:1.6">This whole page is superseded. All four treatments were answers to the wrong question. The resolution is <a href="image-jobs.html" style="color:var(--paper-200);text-underline-offset:3px"><b>Image jobs</b></a>: painting and photograph do different jobs and never occupy the same slot. Nothing here needs a decision.</p></div>
+<h1 style="margin:15px 0 0;font-family:var(--font-display);font-size:50px;letter-spacing:.1em;text-transform:uppercase;font-weight:400;line-height:1.06">Making a photograph<br>behave like a painting</h1>
+<p style="margin:20px 0 0;max-width:76ch;font-size:16px;line-height:1.75">The nine positions were all about arrangement — where a photograph sits relative to a painting. That was the wrong question, which is why none of them felt seamless. A photograph reads as pasted on for four reasons that have nothing to do with placement: it has a <b>hard rectangular edge</b>, it contains <b>values darker and lighter than any wash does</b>, it carries <b>no paper grain</b>, and its <b>colour is unmediated</b>. Move it wherever you like and all four survive.</p>
+<p style="margin:14px 0 0;max-width:76ch;font-size:16px;line-height:1.75">So treat the surface instead. Four treatments below, each one addressing a single cause, then the combination. Every demo is the same stand-in photograph on the same painting so you can judge the treatment and nothing else. Left is untouched; right is treated.</p>
+
+<div class="sec"><span class="cap">01</span><h2>Lifted range</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">The single biggest cause. A watercolour on toned paper has no true black and no true white — its darkest value is a loaded wash, its lightest is the paper. A photograph has both extremes, and the eye reads that extra range as a different material. Pull the blacks up and the whites down until the photograph occupies the same span the paintings do. Nothing else changes: no colour shift, no texture, no soft edge.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px">
+<figure><div class="ab"><div class="ph" style="aspect-ratio:1"><img src="../assets/photography/hand-ring-bracelet.jpg" alt=""></div><div class="ph lift" style="aspect-ratio:1"><img src="../assets/photography/hand-ring-bracelet.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Untouched · lifted</figcaption></figure>
+<figure><div style="background:var(--paper-200);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center"><img src="../assets/illustrations-v2-web/cove.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"><div class="ph lift" style="aspect-ratio:1"><img src="../assets/photography/hand-ring-bracelet.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Beside a painting — same value span</figcaption></figure>
+</div>
+
+<div class="sec"><span class="cap">02</span><h2>Paper through</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">The paintings all sit on cotton paper and the grain is visible in every one of them. A photograph has the grain of a sensor, which is to say none. Print the photograph onto the same sheet: a neutral grain scan laid over the image in soft light — no colour of its own, so it adds tooth without adding a pattern — and one continuous surface then runs across both. This is what letterpress and risograph do, and it is the reason a printed catalogue feels unified when a screen does not.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px">
+<figure><div class="ab"><div class="ph" style="aspect-ratio:1"><img src="../assets/photography/ear-hoop.jpg" alt=""></div><div class="ph grain" style="aspect-ratio:1"><img src="../assets/photography/ear-hoop.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Untouched · paper through</figcaption></figure>
+<figure><div style="background:var(--paper-200);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center"><img src="../assets/illustrations-v2-web/olive.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"><div class="ph grain" style="aspect-ratio:1"><img src="../assets/photography/ear-hoop.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Beside a painting — one sheet</figcaption></figure>
+</div>
+
+<div class="sec"><span class="cap">03</span><h2>Dissolved edge</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">A wash has no boundary — it thins out and stops. A photograph has four straight sides and four right angles, and that rectangle is what announces it as an insert. Take the rectangle away: feather the image into the page along an uneven soft edge so it ends the way a wash ends. The photograph is then on the paper rather than on top of it.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px">
+<figure><div class="ab" style="background:var(--paper-200)"><div class="ph" style="aspect-ratio:1"><img src="../assets/photography/neck-pendant.jpg" alt=""></div><div class="ph soft" style="aspect-ratio:1"><img src="../assets/photography/neck-pendant.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Untouched · dissolved</figcaption></figure>
+<figure><div style="background:var(--paper-200);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center"><img src="../assets/illustrations-v2-web/sun-sea.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"><div class="ph soft" style="aspect-ratio:1"><img src="../assets/photography/neck-pendant.jpg" alt=""></div></div><figcaption class="cap" style="margin-top:8px">Beside a painting — no seam</figcaption></figure>
+</div>
+
+<div class="sec"><span class="cap">04</span><h2>Wash over</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">A translucent pass of the brand's own pigments laid unevenly across the print — teal pooling in one corner, terracotta in another, the way a wash actually settles. Not a flat tint and not a duotone: the photograph keeps its own colour underneath and picks up the palette on top. This is the treatment that makes a photograph look like it was made in the same room as the paintings.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px">
+<figure><div class="ab"><div class="ph" style="aspect-ratio:1"><img src="../assets/photography/hand-stack.jpg" alt=""></div><div class="ph wash" style="aspect-ratio:1"><img src="../assets/photography/hand-stack.jpg" alt=""><i class="w"></i></div></div><figcaption class="cap" style="margin-top:8px">Untouched · washed</figcaption></figure>
+<figure><div style="background:var(--paper-200);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center"><img src="../assets/illustrations-v2-web/terraces.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"><div class="ph wash" style="aspect-ratio:1"><img src="../assets/photography/hand-stack.jpg" alt=""><i class="w"></i></div></div><figcaption class="cap" style="margin-top:8px">Beside a painting — shared pigment</figcaption></figure>
+</div>
+
+<div class="sec"><span class="cap">05</span><h2>All four together — and why it fails</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">Applied together, dialled back. Here is the nine-tile test — mixed paintings and treated photographs, no captions. <b>It does not pass, and it is not close.</b></p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;max-width:760px">
+<img src="../assets/illustrations-v2-web/cove.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
+<div class="ph lift grain soft wash" style="aspect-ratio:1"><img src="../assets/photography/hand-ring-bracelet.jpg" alt=""><i class="w"></i></div>
+<img src="../assets/illustrations-v2-web/olive.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
+<div class="ph lift grain soft wash" style="aspect-ratio:1"><img src="../assets/photography/ear-hoop.jpg" alt=""><i class="w"></i></div>
+<img src="../assets/illustrations-v2-web/sun-sea.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
+<div class="ph lift grain soft wash" style="aspect-ratio:1"><img src="../assets/photography/neck-pendant.jpg" alt=""><i class="w"></i></div>
+<img src="../assets/illustrations-v2-web/terraces.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
+<div class="ph lift grain soft wash" style="aspect-ratio:1"><img src="../assets/photography/hand-thin-rings.jpg" alt=""><i class="w"></i></div>
+<img src="../assets/illustrations-v2-web/harbour.jpg" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">
+</div>
+<div class="note" style="margin-top:26px;max-width:96ch;box-shadow:inset 0 0 0 2px var(--pigment-terracotta)">
+<div class="cap" style="color:var(--pigment-terracotta)"><b style="color:var(--pigment-terracotta)">The finding</b></div>
+<p style="margin:9px 0 0;font-size:14px;line-height:1.7">Every treatment on this page makes the photograph <b>quieter</b> — narrower range, softer edge, more paper. But look at the paintings: they are <b>maximum chroma with a hard ink contour on white paper</b>. They are the loudest thing in the system. So each treatment moved the photograph further from them, not closer. The four causes named at the top of this page were the wrong four.</p>
+<p style="margin:11px 0 0;font-size:14px;line-height:1.7">The real gap is <b>chroma and line</b>. A photograph of skin and silver is inherently low-chroma and has no contour; these paintings are pure saturated wash bounded by drawn line. To close that gap the photograph would have to be converted into flat washes with a drawn edge — and I tried that twice, procedurally, at pixel level. Both attempts produced a lurid orange posterisation, not a watercolour. <b>Convincing that conversion is an image-generation job, and I cannot generate images.</b> I am not going to keep tuning parameters toward something that needs a different tool.</p>
+</div>
+<div class="sec" style="border-top-width:1px"><span class="cap">05b</span><h2>What actually works</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">Four routes that do not depend on faking a medium. Two cost artist or studio time; two cost nothing but a decision.</p>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:20px">
+<div class="note"><div class="cap" style="color:var(--pigment-forest)"><b style="color:var(--pigment-forest)">1 · The paintings are the product imagery</b></div>
+<p style="margin:9px 0 0;font-size:13.5px;line-height:1.68">No photography in the brand at all. Forty-six paintings is already a complete visual system, and plenty of jewellers run entirely on illustration. Photographs exist only on a plain specification panel — measurements, hallmark, finish — where nobody expects beauty and a sharp true-colour image is what the customer actually wants. <b>Costs nothing. Available today.</b></p></div>
+<div class="note"><div class="cap" style="color:var(--pigment-aegean)"><b style="color:var(--pigment-aegean)">2 · Have the pieces painted</b></div>
+<p style="margin:9px 0 0;font-size:13.5px;line-height:1.68">Send the artist the actual jewellery and have her paint it in the same hand as the places. Then there is nothing to blend, because the product imagery <i>is</i> painting. This is the answer the brand is really asking for. <b>Costs artist time — one painting per piece.</b></p></div>
+<div class="note"><div class="cap" style="color:var(--pigment-terracotta)"><b style="color:var(--pigment-terracotta)">3 · Shoot on the painted paper</b></div>
+<p style="margin:9px 0 0;font-size:13.5px;line-height:1.68">Blend it in camera instead of in software. Lay the pieces on a real painted sheet, or shoot against a painted backdrop, in daylight. The paper grain, the wash colour and the light are then genuinely shared because they are genuinely the same surface. This is what every good craft brand does. <b>Costs one afternoon and a painted sheet.</b></p></div>
+<div class="note"><div class="cap" style="color:var(--ledger-ink)"><b style="color:var(--ledger-ink)">4 · Make the split the identity</b></div>
+<p style="margin:9px 0 0;font-size:13.5px;line-height:1.68">Stop trying to reconcile them. The painted world carries the romance — place, collection, story, packaging. The photograph carries the evidence, on a deliberately clerical stone-and-hairline sheet. The contrast becomes the brand's signature rather than its problem. <b>Costs nothing. This is the receipt logic the system already runs on.</b></p></div>
+</div>
+<p style="margin:22px 0 0;max-width:84ch;font-size:14px;line-height:1.72">My recommendation is <b>3 now and 2 over time</b>: shoot the next run on painted paper so the shop pages work this month, and commission paintings of the signature pieces so the hero imagery becomes painting permanently. Route 4 is the fallback if neither is possible, and it is a legitimate answer rather than a compromise.</p>
+
+<div class="sec"><span class="cap">06</span><h2>In situ — the treatment, for the record</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">Kept so you can see the treatment at working size and judge it yourself. Note that the header is a painting and the four tiles are treated photographs — the row below the header is exactly where the mismatch shows.</p>
+<div style="margin-top:22px;background:var(--paper-200);box-shadow:inset 0 0 0 1px var(--paper-400)">
+<div style="position:relative;height:290px;overflow:hidden"><img src="../assets/illustrations-v2-web/psiloritis.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,38,34,.42),transparent 62%)"></div>
+<div style="position:absolute;left:38px;bottom:30px"><div style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-400)">Collection 04</div><div style="font-family:var(--font-display);font-size:44px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-100);line-height:1.05;margin-top:8px">Psiloritis</div></div>
+</div>
+<div style="padding:30px 38px 38px">
+<div class="cap" style="color:var(--ink-900)">Four pieces · silver 925</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:16px">
+<figure><div class="ph lift grain soft wash" style="aspect-ratio:4/5"><img src="../assets/photography/wrist-cuff.jpg" alt=""><i class="w"></i></div><div style="font-family:var(--font-display);font-size:16px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px">Cuff</div><div class="cap">240 €</div></figure>
+<figure><div class="ph lift grain soft wash" style="aspect-ratio:4/5"><img src="../assets/photography/ear-hoop.jpg" alt=""><i class="w"></i></div><div style="font-family:var(--font-display);font-size:16px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px">Hoop</div><div class="cap">165 €</div></figure>
+<figure><div class="ph lift grain soft wash" style="aspect-ratio:4/5"><img src="../assets/photography/neck-pendant.jpg" alt=""><i class="w"></i></div><div style="font-family:var(--font-display);font-size:16px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px">Pendant</div><div class="cap">190 €</div></figure>
+<figure><div class="ph lift grain soft wash" style="aspect-ratio:4/5"><img src="../assets/photography/hand-thin-rings.jpg" alt=""><i class="w"></i></div><div style="font-family:var(--font-display);font-size:16px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px">Bands</div><div class="cap">95 €</div></figure>
+</div>
+</div>
+</div>
+
+<div class="sec"><span class="cap">07</span><h2>What the treatment would have cost — superseded</h2></div>
+<p style="margin:12px 0 0;max-width:84ch;font-size:14px;line-height:1.72">Kept as a record of the abandoned line of thinking, not as a proposal. Section 05b replaces it. The right-hand column is the part that survives — it applies under whichever of the four routes you pick.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px">
+<div class="note" style="opacity:.62"><div class="cap"><b>What it would have needed</b></div><ul style="margin:9px 0 0;padding-left:18px;font-size:13.5px;line-height:1.7"><li>No reshoot — every photograph on the account would have worked.</li><li>One preset: a CSS class on screen, one adjustment-layer group for print.</li><li>One neutral grain file, <code>assets/textures/paper-grain.png</code>, already generated.</li></ul>
+<p style="margin:11px 0 0;font-size:12.5px;line-height:1.6"><b>Why it is moot:</b> the treatment closes the wrong gap. Cheap and easy is not worth much when the result still reads as a photograph pasted onto a painting.</p></div>
+<div class="note"><div class="cap"><b>Where photography stays untreated — still true</b></div><ul style="margin:9px 0 0;padding-left:18px;font-size:13.5px;line-height:1.7"><li><b>Size and fit photographs.</b> A customer measuring a hoop needs a sharp, true-colour image.</li><li><b>The one detail shot per product page</b> that shows the hallmark and the finish.</li><li><b>Anything a stockist or a magazine receives.</b> The media kit ships untreated files.</li></ul>
+<p style="margin:11px 0 0;font-size:12.5px;line-height:1.6">This holds under all four routes. Even route 1, where the paintings carry the brand, needs plain photographs on the specification panel.</p></div>
+</div>
+
+<div class="sec"><span class="cap">08</span><h2>The decision</h2></div>
+<ul style="margin:16px 0 0;padding-left:20px;max-width:84ch;font-size:15px;line-height:1.9">
+<li><b>Pick one of the four routes in 05b.</b> Not a treatment — a route. Everything downstream depends on it: the shop pages, the brand book's photography spread, the Instagram grid and the media kit.</li>
+<li><b>If you pick 2 or 3, I need one thing from the artist or the studio</b> before I can build: a painting of one piece, or one photograph shot on painted paper. One file is enough to prove it and I will build the pages around it the same day.</li>
+<li><b>If you pick 1 or 4, nothing is blocked</b> and I can rebuild the shop pages immediately.</li>
+</ul>
+</body></html>

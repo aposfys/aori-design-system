@@ -1,0 +1,19 @@
+/* Element defaults. Kept deliberately thin — the system is tokens + components. */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+h1,h2,h3{font-family:var(--font-display);font-weight:var(--weight-regular);letter-spacing:var(--tracking-display);line-height:var(--leading-tight);text-transform:uppercase;color:var(--text-display);margin:0}
+h1{font-size:var(--text-4xl)}
+h2{font-size:var(--text-2xl)}
+h3{font-size:var(--text-xl);letter-spacing:var(--tracking-title)}
+h4,h5,h6{font-family:var(--font-annotation);font-weight:var(--weight-bold);letter-spacing:var(--tracking-annotation);text-transform:uppercase;font-size:var(--text-sm);margin:0;color:var(--text-body)}
+p{margin:0 0 var(--space-4);max-width:var(--measure-prose)}
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:var(--transition-color)}
+a:hover{color:var(--link-hover);text-decoration-thickness:2px}
+a:visited{color:var(--link-visited)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:var(--outline-focus);outline-offset:var(--outline-offset)}
+hr{border:0;border-top:var(--border-ink) solid var(--rule-ink);margin:var(--space-6) 0}
+img{max-width:100%;display:block}
+small{font-size:var(--text-xs)}
+figure{margin:0}
+figcaption{font:var(--type-caption);letter-spacing:var(--tracking-annotation);text-transform:uppercase;color:var(--text-body);margin-top:var(--gap-caption)}
+::selection{background:var(--pigment-yellow);color:var(--ink-900)}

@@ -1,0 +1,13 @@
+.DS_Store
+*.thumbnail
+.thumbnail
+node_modules/
+__pycache__/
+*.pyc
+
+# working-folder scratch that must not come back
+uploads/
+generated-*/
+trials/
+aori-images/
+illustrations-refernce/

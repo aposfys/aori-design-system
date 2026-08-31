@@ -1,0 +1,26 @@
+/* Spacing. 4px base. Page margins are deliberately large — the paintings
+   are surrounded by unpainted paper and the layout should be too. */
+:root{
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:64px;
+  --space-9:96px;
+  --space-10:128px;
+  --space-11:176px;
+
+  /* Semantic */
+  --gutter-plate:var(--space-5);      /* between painted plates */
+  --gap-caption:var(--space-3);       /* plate to its caption */
+  --pad-control:var(--space-3) var(--space-5);
+  --pad-card:var(--space-5);
+  --page-margin:var(--space-8);
+  --page-margin-wide:var(--space-10);
+  --measure-prose:62ch;
+  --measure-annotation:46ch;
+}

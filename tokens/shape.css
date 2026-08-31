@@ -1,0 +1,17 @@
+/* Shape. The brand has no rounded rectangles. Painted edges are ragged and square;
+   the only true curve in the system is the full circle — the painted dot. */
+:root{
+  --radius-none:0;
+  --radius-hair:1px;      /* the most a UI control may soften */
+  --radius-sm:2px;
+  --radius-circle:50%;
+  --radius-pill:999px;    /* dots and dot-chains only */
+
+  --border-hair:1px;      /* printed ledger rule */
+  --border-ink:2px;       /* drawn line */
+  --border-brush:3px;     /* heavy brush stroke */
+  --border-plate:6px;     /* the unpainted margin around a plate */
+
+  --outline-focus:2px solid var(--focus-ring);
+  --outline-offset:3px;
+}

@@ -1,0 +1,20 @@
+/* Fonts — PROPOSAL (direction 01, guidelines/font-candidates.html).
+   Display: GFS Didot — the Greek neoclassical Didot; jewellery credibility, real Greek.
+   Annotation/UI: Commissioner. Body: Source Serif 4. All three cover Greek AND Latin.
+   Runner-up (03, GFS Neohellenic) swaps in by editing this file only. */
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Commissioner:wght@300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,400&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root{
+  /* Base families */
+  --font-lettering: "GFS Didot", "GFS Neohellenic", serif;
+  --font-hand: "Commissioner", "GFS Neohellenic", sans-serif;
+  --font-ledger: "Source Serif 4", "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Semantic aliases */
+  --font-display: var(--font-lettering);   /* page & section titles: PLAY, WATER */
+  --font-annotation: var(--font-hand);     /* captions, instructions, UI copy */
+  --font-body: var(--font-ledger);         /* running prose, metadata, forms */
+  --font-caption: var(--font-hand);
+  --font-ui: var(--font-hand);
+}

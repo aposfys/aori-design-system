@@ -1,0 +1,108 @@
+/* Colours — AORI. The blend: lime plaster keeps the page, the paintings
+   supply the pigments. Grounds are unchanged sun-bleached plaster; every
+   pigment below is sampled by frequency out of assets/illustrations-v2-web/ and
+   assets/motifs-v2/ — teal, terracotta and saffron on toned stock.
+   Laid flat and opaque. Nothing is tinted or shaded. */
+:root{
+  /* --- Lime: the ground. Sun-bleached plaster, not white. --- */
+  --paper-100:#fdfaf4;
+  --paper-200:#fbf7ef;  /* the page */
+  --paper-300:#f5efe3;
+  --paper-400:#ebe2d2;
+  --paper-500:#d8cdb8;
+
+  /* --- Toned stock: the paper the illustrations are actually drawn on. --- */
+  --stock-100:#efe3cf;
+  --stock-200:#d8c0a8;
+  --stock-300:#c0a890;
+
+  /* --- Stone: the cool, quiet register. Marble dust and dry wall. --- */
+  --ledger-100:#f1f1ee;
+  --ledger-200:#e4e5e0;
+  --ledger-300:#cfd0ca;
+  --ledger-400:#b4b6ae;  /* hairline rule */
+  --ledger-500:#83867d;
+  --ledger-ink:#4a5a52;
+  --ledger-ground:#2a231c; /* olive wood, burnt */
+
+  /* --- Carbon: fresco black, thinned. --- */
+  --ink-900:#2a2622;
+  --ink-800:#3f3a33;
+  --ink-700:#57504a;
+  --ink-600:#6e675c;
+  --ink-400:#a79f91;
+  --ink-200:#cfc8ba;
+
+  /* --- Pigments. Four to six carry a composition; never more. --- */
+  --pigment-aegean:#1890a8;       /* the sea — the loudest colour in the work */
+  --pigment-water:#006078;        /* deep water, shadowed */
+  --pigment-shallow:#78c0c0;      /* the shelf */
+  --pigment-haze:#a8c0c0;         /* distance over the ridge */
+  --pigment-terracotta:#c05a28;   /* tile, soil, a painted hull */
+  --pigment-clay:#a87860;         /* warm mid, the skin ground */
+  --pigment-rust:#8a3a22;         /* terracotta in shadow */
+  --pigment-saffron:#c0a860;      /* krokos, the sun */
+  --pigment-ochre:#907848;        /* olive bark */
+  --pigment-olive:#5f7a46;        /* leaf, scrub */
+  --pigment-forest:#34513c;       /* cypress */
+  --pigment-umber:#6b4426;
+  --pigment-slate:#a8a890;        /* limestone in shadow */
+
+  /* Legacy pigment names, kept so nothing breaks. Prefer the names above. */
+  --pigment-red:var(--pigment-terracotta);
+  --pigment-scarlet:#d8784a;
+  --pigment-crimson:var(--pigment-rust);
+  --pigment-pink:var(--pigment-clay);
+  --pigment-rose:#d8a878;
+  --pigment-apricot:#d8c0a8;
+  --pigment-yellow:var(--pigment-saffron);
+  --pigment-teal:var(--pigment-aegean);
+  --pigment-sky:var(--pigment-haze);
+  --pigment-ultramarine:var(--pigment-water);
+
+  /* --- Metals. Matte, never a gradient, never a shine. --- */
+  --metal-gold:#c0a860;
+  --metal-gold-deep:#907848;
+  --metal-silver:#a8a890;
+  --metal-silver-oxide:#6e675c;
+  --metal-bronze:#a87860;
+
+  /* --- Semantic: surfaces --- */
+  --surface-page:var(--paper-200);
+  --surface-raised:var(--paper-100);
+  --surface-sunken:var(--paper-300);
+  --surface-toned:var(--stock-100);   /* where painted plates sit */
+  --surface-ledger:var(--ledger-100);
+  --surface-ground:var(--ledger-ground);
+  --surface-inverse:var(--ink-900);
+
+  /* --- Semantic: text --- */
+  --text-display:var(--ink-900);
+  --text-body:var(--ink-900);
+  --text-muted:var(--ink-600);
+  --text-faint:var(--ink-400);
+  --text-form:var(--ledger-ink);
+  --text-on-pigment:var(--paper-200);
+  --text-on-light-pigment:var(--ink-900);
+
+  /* --- Semantic: rules & edges --- */
+  --rule-ink:var(--ink-900);
+  --rule-hair:var(--ledger-400);
+  --rule-soft:var(--paper-500);
+
+  /* --- Semantic: action. Terracotta acts, Aegean links. --- */
+  --accent:var(--pigment-terracotta);
+  --accent-hover:#d8784a;
+  --accent-press:var(--pigment-rust);
+  --accent-quiet:var(--pigment-clay);
+  --focus-ring:var(--pigment-water);
+  --link:var(--pigment-aegean);
+  --link-hover:var(--pigment-water);
+  --link-visited:var(--pigment-umber);
+
+  /* --- Semantic: status. Named for the island, not for severity. --- */
+  --status-stop:var(--pigment-terracotta);
+  --status-warm:var(--pigment-saffron);
+  --status-calm:var(--pigment-aegean);
+  --status-go:var(--pigment-forest);
+}

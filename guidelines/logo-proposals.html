@@ -1,0 +1,120 @@
+<!-- @dsCard group="Brand" viewport="1180x1700" name="Logo proposals" subtitle="Hand-drawn directions traced from the reference — wordmark, metallic hoop, seal, charm" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Aori — logo proposals</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);padding:52px 60px 96px;max-width:1180px;margin:0 auto}
+h1{font-size:34px;letter-spacing:.1em}
+.lede{font:var(--type-body);max-width:66ch;margin-top:20px;font-size:15px}
+.note{background:var(--surface-ledger);box-shadow:inset 0 0 0 1px var(--ledger-300);padding:16px 20px;margin-top:22px;font-size:13.5px;line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:38px}
+.card{background:var(--surface-raised);box-shadow:var(--edge-inset)}
+.hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:var(--border-ink) solid var(--rule-ink)}
+.hd .n{font-family:var(--font-annotation);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.hd .t{font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.stage{height:200px;display:flex;align-items:center;justify-content:center;padding:18px}
+.foot{display:flex;border-top:var(--border-hair) solid var(--rule-hair)}
+.mini{flex:1;height:88px;display:flex;align-items:center;justify-content:center;gap:12px;border-right:var(--border-hair) solid var(--rule-hair);padding:10px}
+.mini:last-child{border-right:0}
+.cap{font-size:12.5px;line-height:1.65;color:var(--text-muted);padding:14px 20px 18px}
+.hand{font-family:'Caveat',cursive}
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f6e2a8"/><stop offset=".34" stop-color="#d9a94a"/><stop offset=".56" stop-color="#a9781f"/><stop offset=".78" stop-color="#8a5c17"/><stop offset="1" stop-color="#e9c469"/></linearGradient>
+<linearGradient id="goldR" x1="0" y1="1" x2="1" y2="0">
+<stop offset="0" stop-color="#f6e2a8"/><stop offset=".34" stop-color="#d9a94a"/><stop offset=".56" stop-color="#a9781f"/><stop offset=".78" stop-color="#8a5c17"/><stop offset="1" stop-color="#e9c469"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#eef0f0"/><stop offset=".38" stop-color="#c2c4bf"/><stop offset=".6" stop-color="#8a8c86"/><stop offset=".82" stop-color="#6a6c66"/><stop offset="1" stop-color="#d6d7d1"/></linearGradient>
+</defs></svg>
+</head><body>
+<h1>Logo proposals</h1>
+<p class="lede">All nine are hand-drawn, traced from your reference — the thin single-weight marker stroke, the slight wobble, and the tonos over the O (Ό). No typeset lockups this round. The hoop directions rework what you liked in the earlier no.3: the ring is now an irregular hand-pulled oval, aligned to the cap-height and baseline of the letters, with a real metallic gradient and a clasp bead.</p>
+<div class="note"><b>Everything is one continuous marker weight.</b> Copper is the house drawing colour; the hoop and seals carry gold or silver — the two metals Aori works in. Pick a direction and it gets refined into a single clean master, then digitised properly.</div>
+<div class="grid" id="grid"></div>
+
+<script>
+// ---- hand-drawn glyph paths (viewBox 0 0 560 210; cap-top y≈52, baseline y≈166) ----
+const A_="M40,170 Q56,146 82,52 M82,52 Q106,146 122,170 M56,126 Q82,117 110,123";
+const R_="M296,168 Q289,110 299,54 M299,56 Q343,47 341,90 Q340,117 300,111 M314,109 Q333,140 352,168";
+const I_="M403,56 Q399,112 403,164 M381,52 Q403,45 425,52 M381,166 Q403,173 425,166";
+const O_="M236,60 Q198,50 181,95 Q168,132 197,159 Q228,178 248,140 Q264,108 244,74";        // open hand-drawn O
+const TON="M213,42 Q224,33 235,29";                                                            // acute tonos (leans right)
+const RING="M212,52 C251,52 259,95 252,121 C244,151 233,165 212,165 C185,165 171,140 171,107 C171,73 183,52 212,52 Z"; // irregular closed hoop
+const RINGHI="M187,66 C176,80 172,95 173,110";                                                 // highlight arc
+function stroke(d,c,w){return '<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round" stroke-linejoin="round"/>';}
+// full wordmark. opts: color, sw, ring(false|'url(#gold)'|'url(#silver)'), tonosColor
+function mark(o){
+  o=o||{};const c=o.color||'#a96a38',sw=o.sw||6,tc=o.tonosColor||c;
+  const OX=-26,RX=-30,IX=-46;
+  let s='<svg viewBox="20 10 384 182" style="width:100%;height:100%">';
+  s+=stroke(A_,c,sw);
+  s+='<g transform="translate('+RX+',0)">'+stroke(R_,c,sw)+'</g>';
+  s+='<g transform="translate('+IX+',0)">'+stroke(I_,c,sw)+'</g>';
+  s+='<g transform="translate('+OX+',0)">';
+  if(o.ring){s+='<path d="'+RING+'" fill="none" stroke="'+o.ring+'" stroke-width="'+(o.ringSw||14)+'" stroke-linecap="round" stroke-linejoin="round"/>'+stroke(RINGHI,'#fbe7bb',3)+'<circle cx="212" cy="49" r="6" fill="'+o.ring+'"/><circle cx="210" cy="47" r="2" fill="#fbe7bb"/>'+stroke(TON,tc,sw);}
+  else{s+=stroke(O_,c,sw)+stroke(TON,tc,sw);}
+  s+='</g>';
+  return s+'</svg>';
+}
+const copper='#a96a38',ink='#1c140d';
+const P=[
+ {n:'01 · Wordmark',t:'the reference, cleaned',bg:null,mark:{color:copper,sw:6},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#e9c8a6',sw:5}},{bg:null,m:{color:copper,sw:4}}],
+  cap:'Your handwriting tidied into one even marker weight — the wobble and the tonos kept. This is the everyday signature; it should read down to a caption.'},
+ {n:'02 · Reversed',t:'copper on black, as shot',bg:'#14100c',mark:{color:'#c07f4c',sw:6,tonosColor:'#e9c8a6'},
+  mini:[{bg:'#14100c',m:{color:'#c07f4c',sw:5}},{bg:'#14100c',m:{color:'#c07f4c',sw:3.5}}],
+  cap:'The exact look of your photo — warm copper on near-black. This is the hero treatment for the site header, the pouch stamp and social.'},
+ {n:'03 · Gold hoop',t:'the O is a metallic ring',bg:null,mark:{color:copper,sw:6,ring:'url(#gold)',ringSw:14},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#e9c8a6',sw:5,ring:'url(#gold)',ringSw:12}},{bg:null,m:{color:copper,sw:4,ring:'url(#gold)',ringSw:9}}],
+  cap:'Your favourite, reworked: the ring is a hand-pulled oval — not a compass circle — sitting on the exact cap-line and baseline of the letters, with a gold gradient, a highlight and a clasp bead. The product becomes the O.'},
+ {n:'04 · Gold hoop, ink',t:'tighter, letters in ink',bg:null,mark:{color:ink,sw:6.5,ring:'url(#goldR)',ringSw:15,tonosColor:'#a9781f'},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#f2ece0',sw:5,ring:'url(#goldR)',ringSw:12}},{bg:null,m:{color:ink,sw:4,ring:'url(#goldR)',ringSw:9}}],
+  cap:'Same idea with charcoal letters so the gold ring is the only colour. Kerned tighter so AORI reads as one word. The most "fine-jewellery" of the set.'},
+ {n:'05 · Silver hoop',t:'the other metal',bg:null,mark:{color:copper,sw:6,ring:'url(#silver)',ringSw:14},
+  mini:[{bg:'#2a231c',m:{color:'#e9c8a6',sw:5,ring:'url(#silver)',ringSw:12}},{bg:null,m:{color:copper,sw:4,ring:'url(#silver)',ringSw:9}}],
+  cap:'Silver is half of what Aori makes, so the hoop should exist in both metals. Identical geometry, sterling gradient — use per collection.'},
+ {n:'06 · Stacked lockup',t:'name + descriptor',bg:null,stack:'jewellery',mark:{color:copper,sw:6},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#e9c8a6',sw:5}},{bg:null,m:{color:copper,sw:4}}],
+  cap:'The wordmark over a small hand-written "jewellery". For the shopfront and packaging where the category needs saying, still entirely in hand.'},
+ {n:'07 · Charm',t:'a hoop hung on the I',bg:null,charm:true,mark:{color:copper,sw:6},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#e9c8a6',sw:5}},{bg:null,m:{color:copper,sw:4}}],
+  cap:'Wordmark with a little gold hoop hung through the I, like a charm on a chain. Playful; a nice secondary mark for hang-tags and stickers.'},
+ {n:'08 · Hand seal',t:'stamped, irregular',bg:null,seal:true,mark:{color:ink,sw:5.5},
+  mini:[{bg:'var(--pigment-red)',m:{color:'#fbf7ef',sw:5,seal:true}},{bg:null,m:{color:ink,sw:3.5,seal:true}}],
+  cap:'The mark punched into the back of a piece — a hand-drawn ring, never a perfect one, with the name inside and "silver · gold" beneath. Doubles as the round avatar and the wax seal.'},
+ {n:'09 · Bold marker',t:'a fatter pen',bg:null,mark:{color:copper,sw:11},
+  mini:[{bg:'var(--surface-ground)',m:{color:'#e9c8a6',sw:9}},{bg:null,m:{color:copper,sw:6}}],
+  cap:'The same letters drawn with a broad marker for small sizes and embossing, where the thin version would break up. Keep both weights in the kit.'},
+];
+function stack(inner,color){return '<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><div style="width:270px;height:120px">'+inner+'</div><div class="hand" style="font-size:30px;letter-spacing:.28em;color:'+color+';padding-left:.28em">jewellery</div></div>';}
+function charmSVG(o){ // wordmark + a small hoop dangling from the I top bar
+  let s=mark(o); s=s.replace('</svg>','<circle cx="386" cy="45" r="12" fill="none" stroke="url(#gold)" stroke-width="6"/><circle cx="386" cy="32" r="3.5" fill="url(#gold)"/></svg>'); return s;}
+function sealSVG(o,small){
+  const c=o.color||ink,sw=o.sw||5.5;
+  const irr="M118,30 C170,22 228,34 250,86 C266,128 250,190 196,206 C150,220 84,206 58,158 C36,116 52,54 118,30 Z";
+  let s='<svg viewBox="0 0 300 236" style="height:100%"><path d="'+irr+'" fill="none" stroke="'+c+'" stroke-width="'+(sw*0.8)+'" stroke-linecap="round"/>';
+  // name inside, hand
+  s+='<text x="150" y="132" text-anchor="middle" class="hand" font-size="82" letter-spacing="6" fill="'+c+'">aori</text>';
+  if(!small){s+='<text x="150" y="176" text-anchor="middle" class="hand" font-size="26" letter-spacing="4" fill="'+c+'">silver · gold</text>';}
+  return s+'</svg>';}
+function slot(m,bg,kind){
+  let inner;
+  if(kind==='seal')inner=sealSVG(m,true); else if(kind==='charm')inner=charmSVG(m); else inner=mark(m);
+  return '<div class="mini" style="background:'+(bg||'var(--surface-raised)')+'"><div style="width:150px;height:60px;display:flex;align-items:center;justify-content:center">'+inner+'</div></div>';
+}
+document.getElementById('grid').innerHTML=P.map(p=>{
+  let big;
+  if(p.seal)big=sealSVG(p.mark,false);
+  else if(p.charm)big=charmSVG(p.mark);
+  else if(p.stack)big=stack(mark(p.mark),p.mark.color);
+  else big=mark(p.mark);
+  const stageStyle=p.bg?('background:'+p.bg):'';
+  const stageInner=(p.seal||p.stack)?big:'<div style="width:100%;max-width:'+(p.mark.sw>9?'420':'440')+'px">'+big+'</div>';
+  return '<div class="card"><div class="hd"><span class="n">'+p.n+'</span><span class="t">'+p.t+'</span></div>'
+   +'<div class="stage" style="'+stageStyle+'">'+stageInner+'</div>'
+   +'<div class="foot">'+p.mini.map(mi=>slot(Object.assign({},mi.m,{seal:p.seal,charm:false}),mi.bg,p.seal?'seal':'mark')).join('')+'</div>'
+   +'<div class="cap">'+p.cap+'</div></div>';
+}).join('');
+</script>
+</body></html>
