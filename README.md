@@ -53,7 +53,7 @@ The flagship case — the jewellery workshop — across four channels:
 | 08 | Application — components, templates, storefront kit | Documented |
 | 09 | In use — two products: the workshop across four channels, and a taverna website | Documented |
 
-20 components, 35 guideline pages, 187 tokens (also machine-readable in `tokens/tokens.json`), 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
+20 components, 35 guideline pages, 194 tokens (also machine-readable in `tokens/tokens.json`), 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code. `tools/check_contrast.py` is the contrast gate: every declared role pair is measured against its WCAG bar, and the build fails if a token edit reopens one.
 
 ### More
 

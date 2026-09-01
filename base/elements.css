@@ -11,6 +11,8 @@ a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text
 a:hover{color:var(--link-hover);text-decoration-thickness:2px}
 a:visited{color:var(--link-visited)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:var(--outline-focus);outline-offset:var(--outline-offset)}
+/* The checkbox input is visually hidden; its ring lands on the painted square beside it. */
+input[data-aori-check]:focus-visible+span{outline:var(--outline-focus);outline-offset:var(--outline-offset)}
 hr{border:0;border-top:var(--border-ink) solid var(--rule-ink);margin:var(--space-6) 0}
 img{max-width:100%;display:block}
 small{font-size:var(--text-xs)}

@@ -6,4 +6,6 @@ A sheet laid over the page — sizing guide, care instructions, an order confirm
 </Dialog>
 ```
 
-Composes `Button` and `Rule`. Default footer is one secondary Close button; pass `footer={null}` for a dialog with no actions, or your own node for confirm/cancel. Clicking the scrim closes it.
+Composes `Button` and `Rule`. Default footer is one secondary Close button; pass `footer={null}` for a dialog with no actions, or your own node for confirm/cancel. Clicking the scrim closes it, and so does Escape.
+
+While open, focus is trapped inside the sheet and returns to the opener on close. The title is an `h2` wired in with `aria-labelledby`; for a dialog without a `title`, pass `aria-label`.

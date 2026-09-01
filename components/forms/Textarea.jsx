@@ -12,13 +12,23 @@ const field = {
   transition: 'var(--transition-color)'
 };
 
-export function Textarea({ label, hint, rows = 5, id, style, ...rest }) {
+export function Textarea({ label, hint, error, rows = 5, id, style, ...rest }) {
   const inputId = id || 'ta-' + (label || 'field').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const noteId = error ? inputId + '-error' : hint ? inputId + '-hint' : undefined;
   return (
     <div style={{ display: 'grid', gap: 'var(--space-2)', ...style }}>
       {label ? <label htmlFor={inputId} style={{ font: 'var(--type-caption)', letterSpacing: 'var(--tracking-annotation)', textTransform: 'uppercase' }}>{label}</label> : null}
-      <textarea {...rest} id={inputId} rows={rows} style={{ ...field, resize: 'vertical', lineHeight: 'var(--leading-normal)' }} />
-      {hint ? <div style={{ font: 'var(--type-body)', fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>{hint}</div> : null}
+      <textarea
+        {...rest}
+        id={inputId}
+        rows={rows}
+        aria-invalid={error ? true : undefined}
+        aria-describedby={noteId}
+        style={{ ...field, resize: 'vertical', lineHeight: 'var(--leading-normal)', borderColor: error ? 'var(--status-stop-ink)' : 'var(--ledger-400)' }}
+      />
+      {error
+        ? <div id={noteId} role="alert" style={{ font: 'var(--type-caption)', letterSpacing: 'var(--tracking-annotation)', textTransform: 'uppercase', color: 'var(--status-stop-ink)' }}>{error}</div>
+        : hint ? <div id={noteId} style={{ font: 'var(--type-body)', fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>{hint}</div> : null}
     </div>
   );
 }

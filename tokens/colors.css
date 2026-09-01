@@ -35,13 +35,16 @@
 
   /* --- Pigments. Four to six carry a composition; never more. --- */
   --pigment-aegean:#1890a8;       /* the sea — the loudest colour in the work */
+  --pigment-aegean-deep:#117487;  /* aegean one step into shadow — the ink cut, 5.08:1 on paper */
   --pigment-water:#006078;        /* deep water, shadowed */
   --pigment-shallow:#78c0c0;      /* the shelf */
   --pigment-haze:#a8c0c0;         /* distance over the ridge */
   --pigment-terracotta:#c05a28;   /* tile, soil, a painted hull */
+  --pigment-terracotta-deep:#b04e20; /* terracotta's ink cut — 4.97:1 under paper text */
   --pigment-clay:#a87860;         /* warm mid, the skin ground */
   --pigment-rust:#8a3a22;         /* terracotta in shadow */
-  --pigment-saffron:#c0a860;      /* krokos, the sun */
+  --pigment-saffron:#c0a860;      /* krokos, the sun. A highlight, never an ink. */
+  --pigment-saffron-ink:#7d6a2c;  /* saffron's ink cut — 4.95:1 on paper, for text jobs */
   --pigment-ochre:#907848;        /* olive bark */
   --pigment-olive:#5f7a46;        /* leaf, scrub */
   --pigment-forest:#34513c;       /* cypress */
@@ -80,7 +83,7 @@
   --text-display:var(--ink-900);
   --text-body:var(--ink-900);
   --text-muted:var(--ink-600);
-  --text-faint:var(--ink-400);
+  --text-faint:var(--ink-400);   /* disabled states only (contrast-exempt); captions and hints take --text-muted */
   --text-form:var(--ledger-ink);
   --text-on-pigment:var(--paper-200);
   --text-on-light-pigment:var(--ink-900);
@@ -90,19 +93,27 @@
   --rule-hair:var(--ledger-400);
   --rule-soft:var(--paper-500);
 
-  /* --- Semantic: action. Terracotta acts, Aegean links. --- */
-  --accent:var(--pigment-terracotta);
-  --accent-hover:#d8784a;
+  /* --- Semantic: action. Terracotta acts, Aegean links — each through its
+     ink cut, one step into shadow, so 13–17px text on and in them clears AA.
+     Hover darkens like press does; a pigment never lightens under the pointer. --- */
+  --accent:var(--pigment-terracotta-deep);
+  --accent-hover:#a84a1e;
   --accent-press:var(--pigment-rust);
   --accent-quiet:var(--pigment-clay);
   --focus-ring:var(--pigment-water);
-  --link:var(--pigment-aegean);
+  --link:var(--pigment-aegean-deep);
   --link-hover:var(--pigment-water);
   --link-visited:var(--pigment-umber);
 
-  /* --- Semantic: status. Named for the island, not for severity. --- */
+  /* --- Semantic: status. Named for the island, not for severity.
+     The pigment marks (rules, fills, stamps); the ink speaks (text). Every
+     ink clears 4.5:1 on paper; the pigments alone do not all reach it. --- */
   --status-stop:var(--pigment-terracotta);
   --status-warm:var(--pigment-saffron);
   --status-calm:var(--pigment-aegean);
   --status-go:var(--pigment-forest);
+  --status-stop-ink:var(--pigment-rust);
+  --status-warm-ink:var(--pigment-saffron-ink);
+  --status-calm-ink:var(--pigment-aegean-deep);
+  --status-go-ink:var(--pigment-forest);
 }

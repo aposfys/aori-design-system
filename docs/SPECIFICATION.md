@@ -52,9 +52,14 @@ the mount behind a painted plate so it never floats.
 **Pigments** are sampled by frequency out of the paintings themselves — thirteen values,
 laid flat and opaque, never tinted, shaded or gradiented.
 
-- `--pigment-aegean` `#1890a8` — the loudest colour in the work. Takes the links.
-- `--pigment-terracotta` `#c05a28` — acts. Every primary button.
-- `--pigment-saffron` `#c0a860` — highlights. Never a field.
+- `--pigment-aegean` `#1890a8` — the loudest colour in the work. Takes the links
+  through its ink cut `--pigment-aegean-deep` `#117487` (5.08:1 on paper); the full
+  pigment stays for display sizes and fields.
+- `--pigment-terracotta` `#c05a28` — acts. Every primary button, through its ink cut
+  `--pigment-terracotta-deep` `#b04e20` (4.97:1 under paper type); the full pigment
+  stays for illustration and fields.
+- `--pigment-saffron` `#c0a860` — highlights. Never a field, and never an ink: text
+  jobs take `--pigment-saffron-ink` `#7d6a2c` (4.95:1).
 - `--pigment-olive` `#5f7a46`, `--pigment-forest` `#34513c`, `--pigment-rust` `#8a3a22`,
   `--pigment-clay` `#a87860`, and the water range `--pigment-water` / `-shallow` / `-haze`.
 
@@ -64,6 +69,11 @@ shipping, order status, specification.
 
 Rule: **terracotta acts, aegean links, saffron highlights.** Four to six colours carry a
 composition; never more. Maximum two background colours in any one document.
+
+Rule: **the pigment marks, the ink speaks.** Wherever a status colour becomes text —
+a notice label, an error line, a tag — it takes its `--status-*-ink` cut, each of which
+clears 4.5:1 on paper. The full pigments stay on rules, fills and stamps, where 3:1 is
+the bar.
 
 ## Type
 
@@ -157,7 +167,9 @@ margin.
 Restrained to the point of near-absence. Opacity and position only, 140–220ms, standard
 ease. No bounce, no spring, no scale-on-hover, no parallax, no scroll-triggered reveals.
 
-- **Hover:** the underline appears, or opacity lifts from .62 to 1. Colour does not change.
+- **Hover:** the underline appears, or opacity lifts from .62 to 1. Hue does not change;
+  on a pigment field the pigment darkens one step (`--accent-hover`), the same direction
+  as press — it never lightens under the pointer.
 - **Press:** the pigment darkens one step (`--accent-press`). Nothing shrinks.
 - **Focus:** a 2px `--focus-ring` outline in deep water. Never removed.
 - **Disabled:** `--text-faint` on `--paper-300`, no pointer.

@@ -23,10 +23,13 @@ const sizes = {
   lg: { padding: '16px 32px', fontSize: 'var(--text-md)' }
 };
 
-/* Hover changes colour, never geometry. Press adds 1px of travel and nothing else. */
+/* Hover darkens one step — the same direction as press; pigment never lightens
+   under the pointer. Press adds 1px of travel and nothing else. Space and Enter
+   press like the mouse does. */
 export function Button({ variant = 'primary', size = 'md', pigment = 'var(--accent)', as = 'button', disabled = false, fullWidth = false, children, style, ...rest }) {
   const [hover, setHover] = React.useState(false);
   const [press, setPress] = React.useState(false);
+  const isNative = as === 'button';
 
   const skins = {
     primary: {
@@ -55,11 +58,17 @@ export function Button({ variant = 'primary', size = 'md', pigment = 'var(--acce
   return (
     <El
       {...rest}
-      disabled={as === 'button' ? disabled : undefined}
+      disabled={isNative ? disabled : undefined}
+      aria-disabled={!isNative && disabled ? true : undefined}
+      tabIndex={!isNative && disabled ? -1 : rest.tabIndex}
+      onClick={disabled ? (e) => e.preventDefault() : rest.onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => { setHover(false); setPress(false); }}
       onMouseDown={() => setPress(true)}
       onMouseUp={() => setPress(false)}
+      onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') setPress(true); rest.onKeyDown && rest.onKeyDown(e); }}
+      onKeyUp={(e) => { if (e.key === ' ' || e.key === 'Enter') setPress(false); rest.onKeyUp && rest.onKeyUp(e); }}
+      onBlur={(e) => { setPress(false); rest.onBlur && rest.onBlur(e); }}
       style={{
         ...base,
         ...sizes[size],

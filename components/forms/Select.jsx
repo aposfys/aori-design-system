@@ -19,7 +19,7 @@ export function Select({ label, options = [], hint, id, style, ...rest }) {
     <div style={{ display: 'grid', gap: 'var(--space-2)', ...style }}>
       {label ? <label htmlFor={inputId} style={{ font: 'var(--type-caption)', letterSpacing: 'var(--tracking-annotation)', textTransform: 'uppercase' }}>{label}</label> : null}
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-        <select {...rest} id={inputId} style={{ ...field, appearance: 'none', paddingRight: '38px', cursor: 'pointer' }}>
+        <select {...rest} id={inputId} aria-describedby={hint ? inputId + '-hint' : undefined} style={{ ...field, appearance: 'none', paddingRight: '38px', cursor: 'pointer' }}>
           {options.map(o => {
             const value = typeof o === 'string' ? o : o.value;
             const text = typeof o === 'string' ? o : o.label;
@@ -28,7 +28,7 @@ export function Select({ label, options = [], hint, id, style, ...rest }) {
         </select>
         <Mark name="chevron-down" size={16} style={{ position: 'absolute', right: 12, pointerEvents: 'none' }} />
       </div>
-      {hint ? <div style={{ font: 'var(--type-body)', fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>{hint}</div> : null}
+      {hint ? <div id={inputId + '-hint'} style={{ font: 'var(--type-body)', fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>{hint}</div> : null}
     </div>
   );
 }

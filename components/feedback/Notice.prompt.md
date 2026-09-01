@@ -6,4 +6,4 @@ One-line stamped note in the page flow — stock status, a shipping caveat, an o
 <Notice tone="ledger" ground="ledger">Ref 04 · 925 silver · 18mm · hallmarked</Notice>
 ```
 
-Tones map to the four status pigments plus a neutral hairline. `ground="ledger"` puts it on stone stock with form-green ink — use inside a specification panel. The pigment appears only as the 4px left rule and the label; the body stays carbon.
+Tones map to the four status pigments plus a neutral hairline. `ground="ledger"` puts it on stone stock with form-green ink — use inside a specification panel. The pigment appears only as the 4px left rule; the label speaks in the tone's ink (`--status-*-ink`), which clears 4.5:1 on paper, and the body stays carbon.

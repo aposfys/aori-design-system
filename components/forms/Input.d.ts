@@ -8,7 +8,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   label?: string;
   /** Quiet body-serif note under the field. Hidden while an error shows. */
   hint?: string;
-  /** Turns the border red ochre and replaces the hint. */
+  /** Turns the border rust and replaces the hint; wired to the field with aria-invalid/aria-describedby. */
   error?: string;
   style?: React.CSSProperties;
 }
