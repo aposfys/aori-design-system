@@ -22,10 +22,17 @@
 | `feedback/` | Notice, Dialog |
 | `navigation/` | NavBar, Tabs |
 
-**`guidelines/`** — 34 pages: the specimen cards (type, colour, spacing, shape, elevation,
-motion, brand) plus the decision documents `photo-blending.html`,
-`illustration-library.html`, `image-jobs.html`, `type-decision.html`, `asset-audit.html`,
-`illustration-proposals.html`, `photography-standins.html`, `logo-proposals.html`.
+**`guidelines/`** — 35 pages: the specimen cards (type, colour, spacing, shape, elevation,
+motion, brand), the usage sheets `logotype.html` and `iconography.html`, and the decision
+documents `photo-blending.html`, `illustration-library.html`, `image-jobs.html`,
+`type-decision.html`, `illustration-proposals.html`, `photography-standins.html`,
+`logo-proposals.html`.
+
+**`assets/icons/`** — the sixteen functional icons, one SVG each, 24px grid, 2px stroke,
+`currentColor`.
+
+**`cases/`** — the four worked-case artboards (Instagram post and story, order email, A5
+run card); their captures live in `docs/brandbook/cases/`.
 
 **`templates/`** — starting folders a consuming project can copy.
 

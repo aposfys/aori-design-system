@@ -9,9 +9,21 @@ AORI (written **AÓRI**, styled AŌRI in the Instagram bio) makes pieces in **ru
 
 Everything is watercolour and gouache on cotton paper. **Terracotta acts, aegean links, saffron highlights** — four to six colours carry a composition. Three faces, three jobs: GFS Didot for display, Commissioner for annotation and UI, Source Serif 4 for body. Corner radius is zero and there are no shadows; depth is a 2px carbon rule, a 1px hairline, or a flat pigment field — never a blur.
 
+Sixteen functional icons on a 24px keystone grid, drawn at the system's own 2px carbon
+rule — motifs stay paintings, icons do the interface jobs, and the two never trade.
+
+![The functional set](docs/brandbook/cards/iconography-set.png)
+
 ![Grounds](docs/brandbook/cards/colors-grounds.png)
 ![Earth](docs/brandbook/cards/colors-reds.png)
 ![Two seas](docs/brandbook/cards/colors-cools.png)
+
+### In use
+
+| | |
+|---|---|
+| ![Instagram post](docs/brandbook/cases/social-post.png) | ![Instagram story](docs/brandbook/cases/social-story.png) |
+| ![Order email](docs/brandbook/cases/email-order.png) | ![A5 run card](docs/brandbook/cases/run-card.png) |
 
 ### What is real and what is placeholder
 
@@ -24,15 +36,16 @@ Everything is watercolour and gouache on cotton paper. **Terracotta acts, aegean
 | | Section | Status |
 |---|---|---|
 | 01 | Philosophy — what the workshop is, and the voice it speaks in | Documented |
-| 02 | Logotype — the wordmark, its colourways, the emblems beneath it | Partial |
+| 02 | Logotype — clear space, minimums, placement, eight misuses | Documented |
 | 03 | Colour — two registers, laid flat and opaque | Documented |
 | 04 | Typography — three faces, three jobs | Documented |
 | 05 | Illustration & photography — the painted hand, and the open question | Documented |
-| 06 | Iconography — motifs are circles, patterns are squares | Partial |
+| 06 | Iconography — the motif law, plus a sixteen-icon functional set | Documented |
 | 07 | Grid & layout — spacing, edges, elevation, motion | Documented |
 | 08 | Application — components, templates, storefront kit | Documented |
+| 09 | In use — four worked cases: social, email, print | Documented |
 
-20 components, 34 guideline pages, 187 tokens. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
+20 components, 35 guideline pages, 187 tokens, 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
 
 ### More
 

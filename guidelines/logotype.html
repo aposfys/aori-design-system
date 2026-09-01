@@ -1,0 +1,93 @@
+<!-- @dsCard group="Brand" viewport="1400x900" name="Logotype" subtitle="Clear space, minimum sizes, placement, and the eight misuses" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — logotype</title><link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);color:var(--text-body);margin:0 auto;padding:52px 58px 120px;max-width:1400px;font-family:var(--font-body)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted)}
+.cap b{color:var(--ink-900);font-weight:600}
+h2{margin:0;font-family:var(--font-display);font-size:29px;letter-spacing:.09em;text-transform:uppercase;font-weight:400}
+.sec{margin-top:58px;border-top:2px solid var(--ink-900);padding-top:13px;display:flex;gap:16px;align-items:baseline}
+p{max-width:78ch;font-size:15px;line-height:1.75}
+code{font-size:12.5px;background:var(--paper-400);padding:1px 4px}
+.note{background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px 20px;max-width:78ch}
+.rules{margin:22px 0 0;padding:0;list-style:none;max-width:80ch}
+.rules li{padding:11px 0;border-top:1px solid var(--paper-400);font-size:14.5px;line-height:1.6}
+.rules li:first-child{border-top:0}
+.rules b{font-family:var(--font-annotation);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:3px}
+.clear{position:relative;display:inline-block;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:64px;margin-top:24px}
+.clear img{width:280px;display:block}
+.clear::before{content:"";position:absolute;inset:64px;outline:1px dashed var(--pigment-terracotta);outline-offset:0;pointer-events:none}
+.clear .x{position:absolute;font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;color:var(--pigment-terracotta)}
+.mins{display:flex;gap:44px;align-items:flex-end;margin-top:24px;flex-wrap:wrap}
+.mins>div{text-align:left}
+.mins img{display:block}
+.place{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400);margin-top:22px}
+.place>div{padding:30px 22px;display:flex;flex-direction:column;gap:16px;min-height:120px;justify-content:space-between}
+.place img{width:100%;max-width:150px;display:block}
+.dont{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400);margin-top:22px}
+.dont>div{background:var(--paper-200);padding:24px 18px;text-align:center;overflow:hidden}
+.dont .t{height:64px;display:flex;align-items:center;justify-content:center}
+.dont .t img{width:110px}
+.dont .no{font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--pigment-rust);display:block;margin-top:14px;border-top:2px solid var(--pigment-rust);padding-top:8px}
+</style></head><body>
+
+<div class="cap" style="letter-spacing:.14em">AORI · Logotype · Usage</div>
+<h1 style="margin:15px 0 0;font-family:var(--font-display);font-size:50px;letter-spacing:.1em;text-transform:uppercase;font-weight:400;line-height:1.06">One mark,<br>painted once</h1>
+<p style="margin:19px 0 0">The wordmark is a vector trace of painted lettering and is the only mark. It is never re-set in
+type, never redrawn, and no second mark may be invented. The five painted emblems sit subordinate to
+it — an emblem may seal a box or close a page, but it never replaces the name.</p>
+
+<div class="sec"><span class="cap">01</span><h2>Clear space</h2></div>
+<p>The unit is <b>X — the cap height of the A</b>. Nothing enters a margin of one X on all four
+sides: no type, no rule, no motif, no edge of page. On packaging and social crops, where space is
+tight, the margin may fall to <b>½X but never less</b>.</p>
+<div class="clear">
+  <img src="../assets/logos/wordmark-ink.svg" alt="AORI wordmark with clear space">
+  <span class="x" style="top:26px;left:50%;transform:translateX(-50%)">1X</span>
+  <span class="x" style="bottom:26px;left:50%;transform:translateX(-50%)">1X</span>
+  <span class="x" style="left:24px;top:50%;transform:translateY(-50%)">1X</span>
+  <span class="x" style="right:24px;top:50%;transform:translateY(-50%)">1X</span>
+</div>
+
+<div class="sec"><span class="cap">02</span><h2>Minimum sizes</h2></div>
+<div class="mins">
+  <div><img src="../assets/logos/wordmark-ink.svg" style="width:120px" alt=""><div class="cap" style="margin-top:10px"><b>120px</b> — digital minimum</div></div>
+  <div><img src="../assets/logos/wordmark-ink.svg" style="width:220px" alt=""><div class="cap" style="margin-top:10px"><b>220px</b> — hero and masthead</div></div>
+  <div style="max-width:46ch"><p style="margin:0;font-size:14.5px">In print the floor is <b>30&nbsp;mm</b> wide.
+  Below 120px the painted edge breaks up; there, and only there — favicons, avatars — the reversed-R
+  monogram emblem stands in. Type-set letters never substitute for the mark at any size above 28px.</p></div>
+</div>
+
+<div class="sec"><span class="cap">03</span><h2>Placement &amp; colourways</h2></div>
+<p>Four colourways, each also cut with the macron for the AŌRI styling. The choice is decided by the
+ground, never by taste:</p>
+<div class="place">
+  <div style="background:var(--paper-200)"><img src="../assets/logos/wordmark-ink.svg" alt=""><span class="cap"><b>Ink on paper</b> — the default, everywhere</span></div>
+  <div style="background:var(--stock-100)"><img src="../assets/logos/wordmark-terracotta.svg" alt=""><span class="cap"><b>Terracotta on stock</b> — packaging, cards</span></div>
+  <div style="background:var(--pigment-aegean)"><img src="../assets/logos/wordmark-paper.svg" alt=""><span class="cap" style="color:var(--paper-200)"><b style="color:var(--paper-200)">Paper on pigment</b> — hero bands only</span></div>
+  <div style="background:var(--ink-900)"><img src="../assets/logos/wordmark-paper.svg" alt=""><span class="cap" style="color:var(--paper-200)"><b style="color:var(--paper-200)">Paper on carbon</b> — the media kit</span></div>
+</div>
+<ul class="rules">
+  <li><b>On a painting</b>Never directly. The mark sits on a plate — a paper or stock field with its own clear space — laid over or beside the painting.</li>
+  <li><b>On a photograph</b>Never. A photograph shows a piece; the mark stays on the layout, not on the image.</li>
+  <li><b>One per surface</b>A page, a post, a box face carries the mark once. The macron cut and the plain cut never appear together.</li>
+</ul>
+
+<div class="sec"><span class="cap">04</span><h2>Never</h2></div>
+<div class="dont">
+  <div><div class="t"><img src="../assets/logos/wordmark-ink.svg" style="transform:scaleX(1.55)" alt=""></div><span class="no">Stretched</span></div>
+  <div><div class="t"><img src="../assets/logos/wordmark-ink.svg" style="transform:scaleY(1.6)" alt=""></div><span class="no">Squeezed tall</span></div>
+  <div><div class="t"><img src="../assets/logos/wordmark-ink.svg" style="transform:rotate(-14deg)" alt=""></div><span class="no">Rotated</span></div>
+  <div><div class="t"><img src="../assets/logos/wordmark-ink.svg" style="filter:drop-shadow(3px 4px 3px rgba(42,38,34,.5))" alt=""></div><span class="no">Shadowed</span></div>
+  <div><div class="t"><img src="../assets/logos/wordmark-ink.svg" style="filter:hue-rotate(300deg) saturate(3)" alt=""></div><span class="no">Recoloured off-system</span></div>
+  <div><div class="t" style="background:linear-gradient(90deg,var(--pigment-aegean),var(--pigment-terracotta));padding:0 8px"><img src="../assets/logos/wordmark-paper.svg" alt=""></div><span class="no">On a gradient — nothing sits on one</span></div>
+  <div><div class="t" style="background:url('../assets/illustrations-v2-web/harbour.jpg') center/cover"><img src="../assets/logos/wordmark-paper.svg" alt=""></div><span class="no">On a painting without a plate</span></div>
+  <div><div class="t"><span style="font-family:var(--font-display);font-size:30px;letter-spacing:.1em">AÓRI</span></div><span class="no">Re-set in type</span></div>
+</div>
+
+<div class="note" style="margin-top:58px"><span class="cap"><b>Still open</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">The wordmark file is a trace carrying an oil-pastel filter
+that drops out in print and in capture; the traced outlines are used flat. The original painted
+artwork at full size is still wanted — it replaces the trace, not these rules.</p></div>
+
+</body></html>

@@ -1,0 +1,110 @@
+<!-- @dsCard group="Brand" viewport="1400x900" name="Iconography" subtitle="The functional set — sixteen marks on a 24px keystone grid" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — iconography</title><link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);color:var(--text-body);margin:0 auto;padding:52px 58px 120px;max-width:1400px;font-family:var(--font-body)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted)}
+.cap b{color:var(--ink-900);font-weight:600}
+h2{margin:0;font-family:var(--font-display);font-size:29px;letter-spacing:.09em;text-transform:uppercase;font-weight:400}
+.sec{margin-top:58px;border-top:2px solid var(--ink-900);padding-top:13px;display:flex;gap:16px;align-items:baseline}
+p{max-width:78ch;font-size:15px;line-height:1.75}
+code{font-size:12.5px;background:var(--paper-400);padding:1px 4px}
+.note{background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px 20px;max-width:78ch}
+.set{display:grid;grid-template-columns:repeat(8,1fr);gap:1px;background:var(--paper-400);margin-top:22px}
+.set figure{margin:0;background:var(--paper-200);padding:26px 10px 16px;text-align:center}
+.set img{width:24px;height:24px;display:block;margin:0 auto}
+.set figcaption{margin-top:14px;font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700)}
+.rules{margin:22px 0 0;padding:0;list-style:none;max-width:80ch}
+.rules li{padding:11px 0;border-top:1px solid var(--paper-400);font-size:14.5px;line-height:1.6}
+.rules li:first-child{border-top:0}
+.rules b{font-family:var(--font-annotation);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:3px}
+.grid-demo{display:flex;gap:40px;align-items:flex-start;margin-top:24px;flex-wrap:wrap}
+.keystone{position:relative;width:192px;height:192px;background:
+  repeating-linear-gradient(0deg,transparent,transparent 7px,rgba(42,38,34,.08) 7px,rgba(42,38,34,.08) 8px),
+  repeating-linear-gradient(90deg,transparent,transparent 7px,rgba(42,38,34,.08) 7px,rgba(42,38,34,.08) 8px),
+  var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400)}
+.keystone::before{content:"";position:absolute;inset:16px;box-shadow:inset 0 0 0 1px var(--pigment-terracotta)}
+.keystone img{position:absolute;inset:0;width:192px;height:192px;padding:24px;box-sizing:border-box}
+.sizes{display:flex;gap:34px;align-items:flex-end;margin-top:24px}
+.sizes>div{text-align:center}
+.pair{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.09em;text-transform:uppercase;background:var(--pigment-terracotta);color:var(--paper-200);padding:11px 16px;margin-top:20px;margin-right:10px}
+.pair img{width:16px;height:16px;filter:invert(96%) sepia(4%) saturate(300%) hue-rotate(340deg)}
+.dont{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400);margin-top:22px}
+.dont>div{background:var(--paper-200);padding:22px 18px;text-align:center}
+.dont .t{height:56px;display:flex;align-items:center;justify-content:center;gap:10px;color:var(--ink-900)}
+.dont .no{font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--pigment-rust);display:block;margin-top:12px;border-top:2px solid var(--pigment-rust);padding-top:8px}
+.dont img{width:24px;height:24px}
+</style></head><body>
+
+<div class="cap" style="letter-spacing:.14em">AORI · Iconography · The functional set</div>
+<h1 style="margin:15px 0 0;font-family:var(--font-display);font-size:50px;letter-spacing:.1em;text-transform:uppercase;font-weight:400;line-height:1.06">Sixteen marks,<br>one bench</h1>
+<p style="margin:19px 0 0">The motifs are paintings and stay paintings. The interface needs a different tool: a
+functional set that can say search, basket, account, close — jobs no painting should be asked to do.
+The two sets never trade jobs: <b>a motif never acts as a control, and an icon never decorates.</b></p>
+
+<div class="sec"><span class="cap">01</span><h2>Construction</h2></div>
+<p>Every icon is drawn once, on a <b>24px grid</b> with a 16px keystone — the live area the stroke may
+not leave except for a deliberate overshoot on diagonals. The stroke is <b>2px, butt caps, mitre
+joins</b>: the same carbon rule that draws the system's borders, so an icon sits in a layout like a
+rule that learned a shape. Corners are square because every corner in the system is square.
+Circles are lawful — motifs are circles, and the law holds here too.</p>
+<div class="grid-demo">
+  <div class="keystone"><img src="../assets/icons/bag.svg" alt=""></div>
+  <div class="keystone"><img src="../assets/icons/search.svg" alt=""></div>
+  <div class="keystone"><img src="../assets/icons/package.svg" alt=""></div>
+  <div style="max-width:52ch"><p style="margin:0;font-size:14.5px">The terracotta frame is the 16px keystone
+  inside the 24px grid. Fills are forbidden with one exception: the 1.6px centre dot of
+  <code>seal</code>, which marks the hallmark and is the set's one solid.</p></div>
+</div>
+
+<div class="sec"><span class="cap">02</span><h2>The set</h2></div>
+<div class="set">
+  <figure><img src="../assets/icons/search.svg" alt=""><figcaption>search</figcaption></figure>
+  <figure><img src="../assets/icons/bag.svg" alt=""><figcaption>bag</figcaption></figure>
+  <figure><img src="../assets/icons/account.svg" alt=""><figcaption>account</figcaption></figure>
+  <figure><img src="../assets/icons/filter.svg" alt=""><figcaption>filter</figcaption></figure>
+  <figure><img src="../assets/icons/close.svg" alt=""><figcaption>close</figcaption></figure>
+  <figure><img src="../assets/icons/arrow-left.svg" alt=""><figcaption>arrow-left</figcaption></figure>
+  <figure><img src="../assets/icons/arrow-right.svg" alt=""><figcaption>arrow-right</figcaption></figure>
+  <figure><img src="../assets/icons/plus.svg" alt=""><figcaption>plus</figcaption></figure>
+  <figure><img src="../assets/icons/minus.svg" alt=""><figcaption>minus</figcaption></figure>
+  <figure><img src="../assets/icons/check.svg" alt=""><figcaption>check</figcaption></figure>
+  <figure><img src="../assets/icons/ruler.svg" alt=""><figcaption>ruler · sizing</figcaption></figure>
+  <figure><img src="../assets/icons/package.svg" alt=""><figcaption>package · shipping</figcaption></figure>
+  <figure><img src="../assets/icons/seal.svg" alt=""><figcaption>seal · hallmark</figcaption></figure>
+  <figure><img src="../assets/icons/mail.svg" alt=""><figcaption>mail</figcaption></figure>
+  <figure><img src="../assets/icons/pin.svg" alt=""><figcaption>pin · workshop</figcaption></figure>
+  <figure><img src="../assets/icons/sparkle.svg" alt=""><figcaption>sparkle · care</figcaption></figure>
+</div>
+<p class="cap" style="margin-top:14px">Sixteen icons. A new icon needs a job no existing icon covers, drawn on the same grid, at the same stroke — or it does not enter the set.</p>
+
+<div class="sec"><span class="cap">03</span><h2>Sizes &amp; colour</h2></div>
+<div class="sizes">
+  <div><img src="../assets/icons/bag.svg" width="24" height="24" alt=""><div class="cap" style="margin-top:10px"><b>24</b> — default</div></div>
+  <div><img src="../assets/icons/bag.svg" width="16" height="16" alt=""><div class="cap" style="margin-top:10px"><b>16</b> — dense UI</div></div>
+  <div><img src="../assets/icons/bag.svg" width="40" height="40" alt=""><div class="cap" style="margin-top:10px"><b>40</b> — feature, max</div></div>
+</div>
+<ul class="rules">
+  <li><b>currentColor, always</b>An icon takes the colour of the text it sits with — carbon ink on paper, paper on pigment. It is never given a colour of its own, and never a pigment field of its own.</li>
+  <li><b>Two rendered sizes</b>24px beside body text and in nav; 16px inside the clerical stone register and dense tables. Above 40px an icon becomes decoration, and decoration is the motifs' job.</li>
+  <li><b>Icon plus word</b>An icon never carries meaning alone. Buttons and nav say the word; the icon confirms it. The exceptions are <code>close</code> and the arrows, which carry <code>aria-label</code>.</li>
+</ul>
+<div>
+  <span class="pair"><img src="../assets/icons/bag.svg" alt="">Add to basket</span><span class="pair" style="background:var(--pigment-aegean)"><img src="../assets/icons/ruler.svg" alt="">Find your size</span><span class="pair" style="background:var(--ink-900)"><img src="../assets/icons/package.svg" alt="">Ships in two working days</span>
+</div>
+
+<div class="sec"><span class="cap">04</span><h2>Never</h2></div>
+<div class="dont">
+  <div><div class="t"><img src="../assets/icons/bag.svg" style="filter:drop-shadow(2px 3px 2px rgba(42,38,34,.45))" alt=""></div><span class="no">No shadows — nothing in the system casts one</span></div>
+  <div><div class="t"><img src="../assets/icons/bag.svg" style="transform:scaleX(1.6)" alt=""></div><span class="no">No stretching — the grid is the grid</span></div>
+  <div><div class="t"><img src="../assets/icons/bag.svg" style="width:24px;height:24px;background:var(--pigment-saffron);padding:6px" alt=""></div><span class="no">No pigment tiles behind icons</span></div>
+  <div><div class="t"><img src="../assets/motifs-v2/sun.png" style="width:28px" alt=""><span style="font-family:var(--font-annotation);font-size:10px;font-weight:600;letter-spacing:.08em">CHECKOUT</span></div><span class="no">No motif doing an icon's job</span></div>
+</div>
+
+<div class="note" style="margin-top:58px"><span class="cap"><b>Files</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">One SVG per icon in <code>assets/icons/</code>, drawn at
+<code>viewBox="0 0 24 24"</code>, <code>stroke="currentColor"</code>, <code>stroke-width="2"</code>,
+butt caps, mitre joins. Inline them so <code>currentColor</code> works; decorative uses carry
+<code>aria-hidden="true"</code>.</p></div>
+
+</body></html>

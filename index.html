@@ -75,6 +75,7 @@ code{font-size:12.5px;background:var(--paper-400);padding:1px 4px}
   <a href="#iconography"><div class="n">06</div><div class="t">Iconography</div><div class="d">Motifs are circles. Patterns are squares.</div></a>
   <a href="#layout"><div class="n">07</div><div class="t">Grid &amp; layout</div><div class="d">Spacing, edges, elevation, motion.</div></a>
   <a href="#application"><div class="n">08</div><div class="t">Application</div><div class="d">Components, templates and the storefront kit.</div></a>
+  <a href="#cases"><div class="n">09</div><div class="t">In use</div><div class="d">Four cases — social, email, print.</div></a>
 </nav>
 
 <!-- ============================================ 01 -->
@@ -97,7 +98,7 @@ from a workshop rather than a brand studio. The voice is a maker talking, not a 
 <p style="margin:9px 0 0;font-size:15px">“We will make more, but not the same.”</p></div>
 
 <!-- ============================================ 02 -->
-<div class="sec" id="logotype"><span class="cap">02</span><h2>Logotype</h2><span class="status s-part">Partial</span></div>
+<div class="sec" id="logotype"><span class="cap">02</span><h2>Logotype</h2><span class="status s-full">Documented</span></div>
 <p>The wordmark is a vector trace of painted lettering and is <b>the only mark</b>. It is never re-set in
 type above 28px, and no second mark may be invented. The five painted files that arrived named as
 logos carry no readable brand name; they are filed as <b>emblems</b> and always sit subordinate to the
@@ -111,12 +112,13 @@ wordmark.</p>
 </div>
 <p class="cap" style="margin-top:12px">Each colourway also exists with a macron — <code>-macron</code> — for the AŌRI styling used in the Instagram bio.</p>
 
-<div class="note"><span class="cap"><b>Gap — not yet written</b></span>
-<p style="margin:9px 0 0;font-size:14.5px">Clear space, minimum sizes, and a misuse sheet (do-not-stretch, do-not-recolour,
-do-not-outline, do-not-place-on-busy-painting) are the three pages a complete logotype section
-carries and this one does not. The wordmark file is also a trace with an oil-pastel filter that
-drops out in print; the original painted artwork is still wanted at full size.</p></div>
-<div class="deep"><a href="guidelines/logo-proposals.html">Logo proposals</a></div>
+<div class="note"><span class="cap"><b>Usage rules</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">Clear space is <b>1X — the cap height of the A</b> — on all four
+sides, ½X at absolute minimum. Digital floor 120px wide, print floor 30&nbsp;mm; below that the
+reversed-R monogram stands in. Eight misuses are ruled out on the usage sheet: stretched, squeezed,
+rotated, shadowed, recoloured, on a gradient, on a painting without a plate, re-set in type. Still
+open: the original painted artwork at full size, to replace the trace.</p></div>
+<div class="deep"><a href="guidelines/logotype.html">Logotype usage</a><a href="guidelines/logo-proposals.html">Logo proposals</a></div>
 
 <!-- ============================================ 03 -->
 <div class="sec" id="colour"><span class="cap">03</span><h2>Colour</h2><span class="status s-full">Documented</span></div>
@@ -186,7 +188,7 @@ placeholder tiles so the pages lay out correctly; none showed an AORI piece in a
 <div class="deep"><a href="guidelines/illustration-library.html">Illustration library</a><a href="guidelines/photo-blending.html">Photo blending</a><a href="guidelines/image-jobs.html">Image jobs</a><a href="guidelines/photography-standins.html">Stand-ins</a><a href="guidelines/illustration-proposals.html">Proposals</a></div>
 
 <!-- ============================================ 06 -->
-<div class="sec" id="iconography"><span class="cap">06</span><h2>Iconography</h2><span class="status s-part">Partial</span></div>
+<div class="sec" id="iconography"><span class="cap">06</span><h2>Iconography</h2><span class="status s-full">Documented</span></div>
 <p><b>Motifs are circles. Patterns are squares.</b> That is the shape rule, and it holds everywhere. A
 motif is never redrawn — every one is cut out of a finished painting. Four are knocked out of their
 painted field, two are cropped to a disc. If a subject has no painting, it has no mark.</p>
@@ -196,12 +198,18 @@ painted field, two are cropped to a disc. If a subject has no painting, it has n
 </div>
 <img src="docs/brandbook/cards/brand-motifs.png" alt="Motif rules" style="width:100%;display:block;margin-top:20px;box-shadow:inset 0 0 0 1px var(--paper-400)">
 
-<div class="note"><span class="cap"><b>Gap — the thinnest section</b></span>
-<p style="margin:9px 0 0;font-size:14.5px">This is illustration reused as marks, not an icon system. There is no functional icon set —
-no cart, search, account, filter, close — and no grid, stroke weight, corner or optical-size
-rules to draw one on. Three motifs (spiral, hoop, beaded strand) still have no painting and stand
-in as disc crops. A Coca-Cola-depth pass would start here: keystone grid, stroke and terminal
-rules, a do/don’t sheet, and a named set at two optical sizes.</p></div>
+<h3 style="margin-top:34px">The functional set</h3>
+<p style="margin:8px 0 0;max-width:78ch;font-size:14.5px;line-height:1.7">Sixteen marks on a 24px keystone grid — 2px stroke, butt caps, mitre joins, square corners,
+<code>currentColor</code>. The same carbon rule that draws the system's borders, taught sixteen
+shapes. The two sets never trade jobs: a motif never acts as a control, and an icon never
+decorates.</p>
+<div class="marks" style="grid-template-columns:repeat(16,minmax(0,1fr));gap:10px;align-items:center">
+  <img src="assets/icons/search.svg" alt="search"><img src="assets/icons/bag.svg" alt="bag"><img src="assets/icons/account.svg" alt="account"><img src="assets/icons/filter.svg" alt="filter"><img src="assets/icons/close.svg" alt="close"><img src="assets/icons/arrow-left.svg" alt="arrow left"><img src="assets/icons/arrow-right.svg" alt="arrow right"><img src="assets/icons/plus.svg" alt="plus"><img src="assets/icons/minus.svg" alt="minus"><img src="assets/icons/check.svg" alt="check"><img src="assets/icons/ruler.svg" alt="ruler"><img src="assets/icons/package.svg" alt="package"><img src="assets/icons/seal.svg" alt="seal"><img src="assets/icons/mail.svg" alt="mail"><img src="assets/icons/pin.svg" alt="pin"><img src="assets/icons/sparkle.svg" alt="sparkle">
+</div>
+<div class="note" style="margin-top:24px"><span class="cap"><b>Still open</b></span>
+<p style="margin:9px 0 0;font-size:14.5px">Three motifs (spiral, hoop, beaded strand) still have no painting and stand in as disc
+crops. The functional set answers the icon question; it does not close the painting one.</p></div>
+<div class="deep"><a href="guidelines/iconography.html">Iconography — construction, sizes, misuse</a></div>
 
 <!-- ============================================ 07 -->
 <div class="sec" id="layout"><span class="cap">07</span><h2>Grid &amp; layout</h2><span class="status s-full">Documented</span></div>
@@ -250,11 +258,21 @@ composed from the components.</p>
 </div>
 <div class="deep"><a href="components/core/core.card.html">Core</a><a href="components/content/content.card.html">Content</a><a href="components/forms/forms.card.html">Forms</a><a href="components/feedback/feedback.card.html">Feedback</a><a href="components/navigation/navigation.card.html">Navigation</a><a href="ui_kits/storefront/index.html">Storefront</a><a href="templates/brand-book/BrandBook.dc.html">Brand book</a><a href="templates/collection-grid/CollectionGrid.dc.html">Collection grid</a><a href="templates/media-kit/MediaKit.dc.html">Media kit</a></div>
 
+<div class="sec" id="cases"><span class="cap">09</span><h2>In use</h2><span class="status s-full">Documented</span></div>
+<p>The system doing work in four channels. Each is built from the tokens and rules above —
+no one-off colours, no new type, numbers stated plainly. Source artboards live in
+<code>cases/</code>.</p>
+<div class="g2">
+  <figure><img src="docs/brandbook/cases/social-post.png" alt="Instagram post — new run announcement" style="width:100%;display:block;box-shadow:inset 0 0 0 1px var(--paper-400)"><figcaption class="cap" style="margin-top:8px"><b>Instagram post</b> — a run opens: painting, name, the numbers</figcaption></figure>
+  <figure><img src="docs/brandbook/cases/social-story.png" alt="Instagram story — four left of twelve" style="width:100%;display:block;box-shadow:inset 0 0 0 1px var(--paper-400)"><figcaption class="cap" style="margin-top:8px"><b>Instagram story</b> — scarcity stated, never sold</figcaption></figure>
+  <figure><img src="docs/brandbook/cases/email-order.png" alt="Order confirmation email" style="width:100%;display:block;box-shadow:inset 0 0 0 1px var(--paper-400)"><figcaption class="cap" style="margin-top:8px"><b>Order email</b> — the clerical stone register, one terracotta action</figcaption></figure>
+  <figure><img src="docs/brandbook/cases/run-card.png" alt="A5 run card" style="width:100%;display:block;box-shadow:inset 0 0 0 1px var(--paper-400)"><figcaption class="cap" style="margin-top:8px"><b>A5 run card</b> — print, packed with every piece</figcaption></figure>
+</div>
+
 <div class="sec"><span class="cap">—</span><h2>Coverage</h2></div>
 <p>Measured against the section set common to the IBM, SeatGeek and Slack brand books.</p>
 <ul class="rules">
-  <li><b>Documented</b>Philosophy · Colour · Typography · Illustration &amp; photography · Grid &amp; layout · Application</li>
-  <li><b>Partial</b>Logotype — colourways exist; clear space, minimum sizes and a misuse sheet do not. Iconography — motif rules exist; a functional icon set and its construction grid do not.</li>
+  <li><b>Documented</b>Philosophy · Logotype · Colour · Typography · Illustration &amp; photography · Iconography · Grid &amp; layout · Application · In use</li>
   <li><b>Open</b>The photography route · licensed fonts · the wordmark master artwork · three motifs without paintings</li>
 </ul>
 
