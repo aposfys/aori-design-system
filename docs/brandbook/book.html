@@ -5,45 +5,55 @@
 @page{size:297mm 210mm;margin:0}
 html,body{margin:0;padding:0}
 body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:var(--font-body);color:var(--ink-900)}
-.page{width:1123px;height:794px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper-200);padding:58px 66px 72px;page-break-after:always;break-after:page}
-.folio{position:absolute;left:66px;right:66px;bottom:34px;display:flex;justify-content:space-between;font-family:var(--font-annotation);font-weight:600;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-600)}
+.page{width:1123px;height:794px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper-200);padding:54px 66px 72px;page-break-after:always;break-after:page}
+.folio{position:absolute;left:66px;right:66px;bottom:32px;display:flex;justify-content:space-between;font-family:var(--font-annotation);font-weight:600;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-600)}
 .cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-700)}
 .secno{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--pigment-terracotta)}
-h2{margin:6px 0 0;font-family:var(--font-display);font-size:40px;letter-spacing:.09em;text-transform:uppercase;font-weight:400;line-height:1.05}
-.head{border-top:2px solid var(--ink-900);padding-top:12px;margin-bottom:30px}
-p{font-size:14px;line-height:1.7;max-width:66ch;margin:0 0 12px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+h2{margin:6px 0 0;font-family:var(--font-display);font-size:38px;letter-spacing:.09em;text-transform:uppercase;font-weight:400;line-height:1.05}
+.head{border-top:2px solid var(--ink-900);padding-top:12px;margin-bottom:26px}
+p{font-size:13.5px;line-height:1.68;max-width:66ch;margin:0 0 11px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:42px}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px}
 .rules{margin:0;padding:0;list-style:none}
-.rules li{padding:11px 0;border-top:1px solid var(--paper-500);font-size:13px;line-height:1.6;max-width:60ch}
+.rules li{padding:10px 0;border-top:1px solid var(--paper-500);font-size:12.5px;line-height:1.55;max-width:60ch}
 .rules li:first-child{border-top:0}
 .rules b{font-family:var(--font-annotation);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:2px}
-.q{font-family:var(--font-body);font-style:italic;font-size:17px;line-height:1.7;border-left:2px solid var(--ink-900);padding-left:18px;margin:16px 0;max-width:56ch}
+.q{font-style:italic;font-size:16px;line-height:1.65;border-left:2px solid var(--ink-900);padding-left:16px;margin:14px 0;max-width:56ch}
 .sw{display:grid;gap:10px}
-.sw .s{display:flex;flex-direction:column}
-.sw .c{height:56px;box-shadow:inset 0 0 0 1px rgba(42,38,34,.12)}
+.sw .c{height:52px;box-shadow:inset 0 0 0 1px rgba(42,38,34,.12)}
 .sw .l{font-family:var(--font-annotation);font-weight:600;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:5px}
 .sw .h{font-family:var(--font-mono);font-size:9.5px;color:var(--ink-600)}
-.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .plate{background:var(--paper-100);padding:8px}
 .plate img{width:100%;display:block;border:5px solid var(--paper-100);outline:1px solid rgba(42,38,34,.14)}
 .plate figcaption{font-family:var(--font-annotation);font-weight:600;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-700);padding:8px 2px 2px;text-align:center}
 figure{margin:0}
 table{border-collapse:collapse;width:100%}
 th{font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ledger-ink);text-align:left;padding:8px 10px 6px;border-bottom:1px solid var(--ledger-400)}
-td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;vertical-align:top}
-.mono{font-family:var(--font-mono);font-size:11px}
-.contents li{padding:9px 0;border-top:1px solid var(--paper-500);font-size:14px;display:flex;gap:16px;max-width:44ch}
+td{padding:7px 10px;border-bottom:1px solid var(--ledger-300);font-size:12px;vertical-align:top}
+.mono{font-family:var(--font-mono);font-size:10.5px}
+.num{font-variant-numeric:tabular-nums;text-align:right}
 .contents{list-style:none;margin:0;padding:0}
-.contents .n{font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.1em;color:var(--pigment-terracotta);width:24px;flex:none;padding-top:2px}
+.contents li{padding:8px 0;border-top:1px solid var(--paper-500);font-size:13px;display:flex;gap:14px}
+.contents .n{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.1em;color:var(--pigment-terracotta);width:22px;flex:none;padding-top:2px}
+.contents .pg{margin-left:auto;font-family:var(--font-mono);font-size:10px;color:var(--ink-600)}
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+.dd .col h4{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
+.dd .yes h4{color:var(--pigment-forest)}
+.dd .no h4{color:var(--pigment-rust)}
+.dd .it{border-top:1px solid var(--paper-500);padding:9px 0;font-size:13px;line-height:1.55}
+.mis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mis .m{background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px 10px 12px;text-align:center;overflow:hidden}
+.mis .m .box{height:64px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mis img{width:92px}
+.mis .lab{font-family:var(--font-annotation);font-weight:600;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pigment-rust);margin-top:10px}
+.mis .lab::before{content:"✕ ";color:var(--pigment-rust)}
 </style></head><body>
 
-<!-- 01 · COVER -->
-<div class="page" style="background:var(--stock-100);display:flex;flex-direction:column;padding-bottom:58px">
-  <span class="cap">Brand book · First edition · September MMXXVI</span>
-  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:34px">
-    <img src="../../assets/logos/wordmark-ink.svg" alt="AORI" style="width:420px">
+<!-- p01 · COVER -->
+<div class="page" style="background:var(--stock-100);display:flex;flex-direction:column;padding-bottom:56px">
+  <span class="cap">Brand book · Second edition · September MMXXVI</span>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px">
+    <img src="../../assets/logos/wordmark-ink.svg" alt="AORI" style="width:410px">
     <div class="cap" style="letter-spacing:.22em">Handmade · In runs of twelve · Heraklion, Crete</div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
@@ -55,21 +65,23 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
   <div class="folio"><span>AORI — Design System</span><span>All product data placeholder</span></div>
 </div>
 
-<!-- 02 · CONTENTS + PHILOSOPHY -->
+<!-- p02 · CONTENTS -->
 <div class="page">
   <div class="head"><span class="secno">The system</span><h2>What this book holds</h2></div>
   <div class="two">
     <div>
       <ol class="contents">
-        <li><span class="n">01</span>Philosophy — the workshop, and the voice it speaks in</li>
-        <li><span class="n">02</span>Logotype — the wordmark and its space</li>
-        <li><span class="n">03</span>Colour — grounds, pigments, and the two registers</li>
-        <li><span class="n">04</span>Typography — three faces, three jobs</li>
-        <li><span class="n">05</span>Illustration — the painted hand and the drawn register</li>
-        <li><span class="n">06</span>Iconography — the motif law and the functional set</li>
-        <li><span class="n">07</span>Shape, space and motion</li>
-        <li><span class="n">08</span>Application — the component layer</li>
-        <li><span class="n">09</span>In use — six channels, two products</li>
+        <li><span class="n">01</span>Philosophy &amp; voice<span class="pg">03 — 05</span></li>
+        <li><span class="n">02</span>Logotype — space, sizes, colourways, misuse<span class="pg">06 — 08</span></li>
+        <li><span class="n">03</span>Colour — grounds, pigments, semantics, proof<span class="pg">09 — 12</span></li>
+        <li><span class="n">04</span>Typography — faces, scale, setting<span class="pg">13 — 15</span></li>
+        <li><span class="n">05</span>Illustration — painted, motifs, patterns, drawn<span class="pg">16 — 20</span></li>
+        <li><span class="n">05b</span>Photography — the problem and the jobs<span class="pg">21 — 22</span></li>
+        <li><span class="n">06</span>Iconography<span class="pg">23</span></li>
+        <li><span class="n">07</span>Grid, surface, motion<span class="pg">24 — 25</span></li>
+        <li><span class="n">08</span>Application — the component layer<span class="pg">26 — 27</span></li>
+        <li><span class="n">09</span>In use — six channels, two products<span class="pg">28 — 29</span></li>
+        <li><span class="n">10</span>Governance — tokens, the gate, extending<span class="pg">30</span></li>
       </ol>
     </div>
     <div>
@@ -80,15 +92,48 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
       <p>Everything visual is watercolour and gouache on cotton paper. Corner radius is
       zero, there are no shadows, and depth is a 2px carbon rule, a 1px hairline, or a flat
       pigment field — never a blur.</p>
+      <p>This book is generated from the repository — <span class="mono">docs/brandbook/book.html</span>
+      is its source, and the live pages under <span class="mono">guidelines/</span> carry
+      the same rules with working demonstrations. Where the book compresses, the guideline
+      page it names is the authority.</p>
       <div class="q">We make twelve. When they are gone we make something else.</div>
     </div>
   </div>
   <div class="folio"><span>AORI — Brand Book</span><span>02</span></div>
 </div>
 
-<!-- 03 · VOICE -->
+<!-- p03 · PHILOSOPHY -->
 <div class="page">
-  <div class="head"><span class="secno">01 · Philosophy</span><h2>The voice is a maker talking</h2></div>
+  <div class="head"><span class="secno">01 · Philosophy</span><h2>A workshop, not a brand studio</h2></div>
+  <div class="two">
+    <div>
+      <p>The system exists to make one thing possible: a shop, a document or a post that
+      looks like it came from a workshop rather than a brand studio. Its centre of gravity
+      is the bench — things are made in small numbers, by hand, and the visual language
+      keeps that honesty: paint instead of photography-gloss, arithmetic instead of
+      superlatives, paper instead of chrome.</p>
+      <p>Three materials carry everything. <strong>The paintings</strong> — watercolour and
+      gouache on cotton paper — are the loudest thing in the system and take the romance.
+      <strong>The clerical sheet</strong> — stone ground, form-green ink, hairlines — takes
+      the evidence: sizes, prices, shipping, specification. <strong>The carbon line</strong>
+      draws everything functional: rules, icons, and the drawn register.</p>
+      <p>Every layout is a negotiation between those three, and the negotiation has rules —
+      that is what the rest of this book is.</p>
+    </div>
+    <div>
+      <figure class="plate" style="max-width:420px"><img src="../../assets/illustrations-v2-web/bench.jpg" alt="The bench, painted"><figcaption>The bench — the centre of gravity</figcaption></figure>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;max-width:420px">
+        <figure class="plate"><img src="../../assets/illustrations-v2-web/hands.jpg" alt=""><figcaption>The hands</figcaption></figure>
+        <figure class="plate"><img src="../../assets/illustrations-v2-web/village.jpg" alt=""><figcaption>The place</figcaption></figure>
+      </div>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Philosophy</span><span>03</span></div>
+</div>
+
+<!-- p04 · VOICE RULES -->
+<div class="page">
+  <div class="head"><span class="secno">01 · Voice</span><h2>The voice is a maker talking</h2></div>
   <div class="two">
     <ul class="rules">
       <li><b>Person</b>First person plural for the workshop, second person for the reader.
@@ -100,9 +145,12 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
       days. The brand's honesty is arithmetic; numbers are stated plainly and never rounded
       up for effect.</li>
       <li><b>Scarcity is stated, never sold</b>"Four left of twelve", not "Selling fast". A
-      closed run says "All twelve gone" and keeps its page.</li>
-      <li><b>No exclamation marks. No emoji.</b>Greek is reserved for the brand book;
-      product surfaces are Latin only.</li>
+      closed run says "All twelve gone" and keeps its page — the piece stays visible; only
+      the price goes.</li>
+      <li><b>No exclamation marks. No emoji.</b>The one ornamental flourish in the brand is
+      the decorative unicode rule in the Instagram bio, and it belongs to the bio only.</li>
+      <li><b>Greek is reserved for the brand book</b>Product surfaces are Latin only. Place
+      names keep their Latin spelling: Psiloritis, Livyko, Elia, Knosos.</li>
     </ul>
     <div>
       <span class="cap">Verbatim, from the system</span>
@@ -111,94 +159,210 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
       <div class="q">Silver 925, hammered on the bench and left matte. Named for the beach
       below the village, where the water goes flat at six in the evening.</div>
       <div class="q">We will make more, but not the same.</div>
+      <p style="margin-top:14px;font-size:12.5px;color:var(--ink-700)">The register test: if
+      a sentence could open a perfume advert, it fails. If it could be said across the
+      bench, plainly, to one customer, it passes.</p>
     </div>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Philosophy</span><span>03</span></div>
+  <div class="folio"><span>AORI — Brand Book · Voice</span><span>04</span></div>
 </div>
 
-<!-- 04 · LOGOTYPE -->
+<!-- p05 · VOICE DO/DONT -->
 <div class="page">
-  <div class="head"><span class="secno">02 · Logotype</span><h2>One wordmark, and its subordinates</h2></div>
+  <div class="head"><span class="secno">01 · Voice</span><h2>Write like this, never like that</h2></div>
+  <div class="dd">
+    <div class="col yes">
+      <h4>The maker says</h4>
+      <div class="it">Four left of twelve.</div>
+      <div class="it">All twelve gone. We will make more, but not the same.</div>
+      <div class="it">Silver 925, hammered on the bench and left matte.</div>
+      <div class="it">Two working days to Athens. Five to everywhere else.</div>
+      <div class="it">One free resize, always.</div>
+      <div class="it">Named for the mountain you can see from the bench on a clear morning.</div>
+    </div>
+    <div class="col no">
+      <h4>The brand studio says — never this</h4>
+      <div class="it">Only a few left — selling fast!</div>
+      <div class="it">SOLD OUT — don't miss the restock!</div>
+      <div class="it">Premium artisanal silver, crafted with passion.</div>
+      <div class="it">Lightning-fast shipping, worldwide!</div>
+      <div class="it">Hassle-free returns guaranteed.</div>
+      <div class="it">AORI is proud to present its exclusive new collection.</div>
+    </div>
+  </div>
+  <p style="margin-top:22px;max-width:76ch">Each left-hand line states a number, a material,
+  a place or a promise, and stops. Each right-hand line sells, exclaims, or speaks about
+  the brand in the third person — three separate failures, and any one of them is enough.</p>
+  <div class="folio"><span>AORI — Brand Book · Voice</span><span>05</span></div>
+</div>
+
+<!-- p06 · LOGOTYPE: THE MARK -->
+<div class="page">
+  <div class="head"><span class="secno">02 · Logotype</span><h2>One mark, painted once</h2></div>
   <div class="two">
     <div>
-      <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:44px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-ink.svg" style="width:300px" alt="AORI wordmark, ink"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
-        <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:22px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-terracotta.svg" style="width:150px" alt="Wordmark, terracotta"></div>
-        <div style="background:var(--ink-900);padding:22px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-paper.svg" style="width:150px" alt="Wordmark, paper on ink"></div>
+      <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:38px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-ink.svg" style="width:280px" alt="AORI wordmark, ink"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+        <div style="background:var(--stock-100);box-shadow:inset 0 0 0 1px var(--paper-500);padding:20px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-terracotta.svg" style="width:130px" alt="Terracotta on stock"></div>
+        <div style="background:var(--pigment-aegean);padding:20px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-paper.svg" style="width:130px" alt="Paper on pigment"></div>
+        <div style="background:var(--ink-900);padding:20px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-paper.svg" style="width:130px" alt="Paper on carbon"></div>
+        <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:20px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-olive.svg" style="width:130px" alt="Olive on paper"></div>
       </div>
     </div>
     <ul class="rules">
-      <li><b>The only mark</b>The wordmark — a vector trace of painted lettering supplied by
-      the workshop — is the only logo. No mark was invented for this system.</li>
-      <li><b>Emblems sit under it</b>The five painted emblem files contain no readable brand
-      name; they are filed as emblems and always sit subordinate to the wordmark, never in
-      its place.</li>
-      <li><b>Colour</b>The wordmark runs in ink, terracotta, aegean, olive or paper — the
-      palette and nothing outside it. Never on a photograph, never over a pattern at full
-      strength.</li>
-      <li><b>Space and minimums</b>Clear space, minimum sizes, placement and the eight
-      misuses are drawn in full at <span class="mono">guidelines/logotype.html</span>.</li>
+      <li><b>The only mark</b>The wordmark is a vector trace of painted lettering and is the
+      only mark. It is never re-set in type, never redrawn, and no second mark may be
+      invented.</li>
+      <li><b>Emblems sit under it</b>An emblem may seal a box or close a page, but it never
+      replaces the name.</li>
+      <li><b>Four colourways, cut plain and with the macron</b>The choice is decided by the
+      ground, never by taste: ink on paper (the default, everywhere), terracotta on stock
+      (packaging, cards), paper on pigment (hero bands only), paper on carbon (the media
+      kit). The macron cut and the plain cut never appear together on one surface.</li>
+      <li><b>One per surface</b>A page, a post, a box face carries the mark once.</li>
     </ul>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Logotype</span><span>04</span></div>
+  <div class="folio"><span>AORI — Brand Book · Logotype</span><span>06</span></div>
 </div>
 
-<!-- 05 · COLOUR: GROUNDS -->
+<!-- p07 · LOGOTYPE: SPACE & SIZES -->
+<div class="page">
+  <div class="head"><span class="secno">02 · Logotype</span><h2>Clear space and minimums</h2></div>
+  <div class="two">
+    <div>
+      <span class="cap">The unit is X — the cap height of the A</span>
+      <div style="margin-top:14px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:56px;display:flex;justify-content:center">
+        <div style="position:relative;border:1px dashed var(--pigment-water);padding:44px 52px">
+          <img src="../../assets/logos/wordmark-ink.svg" style="width:210px;display:block" alt="">
+          <span class="mono" style="position:absolute;top:12px;left:50%;transform:translateX(-50%);color:var(--pigment-water)">1X</span>
+          <span class="mono" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);color:var(--pigment-water)">1X</span>
+          <span class="mono" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--pigment-water)">1X</span>
+          <span class="mono" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--pigment-water)">1X</span>
+        </div>
+      </div>
+      <p style="margin-top:12px;font-size:12.5px">Nothing enters the margin of one X on all
+      four sides: no type, no rule, no motif, no edge of page. On packaging and social
+      crops the margin may fall to ½X, but never less.</p>
+    </div>
+    <div>
+      <span class="cap">Minimums</span>
+      <table style="margin-top:12px">
+        <tr><td class="mono" style="width:110px">220px</td><td>Hero and masthead</td></tr>
+        <tr><td class="mono">120px</td><td>Digital minimum — below this the painted edge breaks up</td></tr>
+        <tr><td class="mono">30 mm</td><td>The floor in print</td></tr>
+        <tr><td class="mono">&lt; 120px</td><td>Favicons and avatars only: the reversed-R monogram emblem stands in</td></tr>
+      </table>
+      <div style="display:flex;gap:22px;align-items:flex-end;margin-top:22px">
+        <div style="text-align:center"><img src="../../assets/logos/wordmark-ink.svg" style="width:220px" alt=""><div class="mono" style="margin-top:8px">220px</div></div>
+        <div style="text-align:center"><img src="../../assets/logos/wordmark-ink.svg" style="width:120px" alt=""><div class="mono" style="margin-top:8px">120px</div></div>
+        <div style="text-align:center"><img src="../../assets/illustrations-v2-web/logo_reversed_r_monogram.jpg" style="width:44px;outline:1px solid var(--paper-500)" alt=""><div class="mono" style="margin-top:8px">monogram</div></div>
+      </div>
+      <p style="margin-top:16px;font-size:12.5px">Type-set letters never substitute for the
+      mark at any size above 28px. On a painting, the mark never sits directly — it sits on
+      a plate, a paper or stock field with its own clear space, laid over or beside the
+      painting. On a photograph, never: a photograph shows a piece; the mark stays on the
+      layout.</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Logotype</span><span>07</span></div>
+</div>
+
+<!-- p08 · LOGOTYPE: MISUSE -->
+<div class="page">
+  <div class="head"><span class="secno">02 · Logotype</span><h2>Eight ways to ruin it</h2></div>
+  <div class="mis">
+    <div class="m"><div class="box"><img src="../../assets/logos/wordmark-ink.svg" style="transform:scaleX(1.6)" alt=""></div><div class="lab">Stretched</div></div>
+    <div class="m"><div class="box"><img src="../../assets/logos/wordmark-ink.svg" style="transform:scaleY(1.7)" alt=""></div><div class="lab">Squeezed tall</div></div>
+    <div class="m"><div class="box"><img src="../../assets/logos/wordmark-ink.svg" style="transform:rotate(-14deg)" alt=""></div><div class="lab">Rotated</div></div>
+    <div class="m"><div class="box"><img src="../../assets/logos/wordmark-ink.svg" style="filter:drop-shadow(4px 5px 3px rgba(42,38,34,.45))" alt=""></div><div class="lab">Shadowed</div></div>
+    <div class="m"><div class="box"><img src="../../assets/logos/wordmark-ink.svg" style="filter:sepia(1) saturate(9) hue-rotate(240deg)" alt=""></div><div class="lab">Recoloured off-system</div></div>
+    <div class="m"><div class="box" style="background:linear-gradient(120deg,#c05a28,#1890a8)"><img src="../../assets/logos/wordmark-paper.svg" alt=""></div><div class="lab">On a gradient</div></div>
+    <div class="m"><div class="box" style="background:url('../../assets/illustrations-v2-web/cove.jpg') center/cover"><img src="../../assets/logos/wordmark-paper.svg" alt=""></div><div class="lab">On a painting, no plate</div></div>
+    <div class="m"><div class="box"><span style="font-family:var(--font-display);font-size:34px;letter-spacing:.1em">AÓRI</span></div><div class="lab">Re-set in type</div></div>
+  </div>
+  <p style="margin-top:24px;max-width:76ch">Nothing in the system sits on a gradient, so the
+  mark never does either. The last one is the subtle failure: the painted letterforms are
+  the identity, and a typeset "AÓRI" — however close the face — is a different brand
+  wearing the same name.</p>
+  <div class="folio"><span>AORI — Brand Book · Logotype</span><span>08</span></div>
+</div>
+
+<!-- p09 · COLOUR: GROUNDS -->
 <div class="page">
   <div class="head"><span class="secno">03 · Colour</span><h2>Grounds — plaster, stock, stone, carbon</h2></div>
   <p>Lime plaster carries every page; toned stock is the paper the paintings are drawn on;
   stone is the clerical register; carbon is fresco black, thinned. Laid flat and opaque,
-  never tinted, never gradiented.</p>
-  <div class="sw" style="grid-template-columns:repeat(5,1fr);margin-top:8px">
-    <div class="s"><div class="c" style="background:#fdfaf4"></div><div class="l">paper-100</div><div class="h">#FDFAF4</div></div>
+  never tinted, never gradiented. Maximum two background colours in any one document.</p>
+  <div class="sw" style="grid-template-columns:repeat(5,1fr);margin-top:6px">
+    <div class="s"><div class="c" style="background:#fdfaf4"></div><div class="l">paper-100 · raised</div><div class="h">#FDFAF4</div></div>
     <div class="s"><div class="c" style="background:#fbf7ef"></div><div class="l">paper-200 · the page</div><div class="h">#FBF7EF</div></div>
-    <div class="s"><div class="c" style="background:#f5efe3"></div><div class="l">paper-300</div><div class="h">#F5EFE3</div></div>
-    <div class="s"><div class="c" style="background:#ebe2d2"></div><div class="l">paper-400</div><div class="h">#EBE2D2</div></div>
-    <div class="s"><div class="c" style="background:#d8cdb8"></div><div class="l">paper-500</div><div class="h">#D8CDB8</div></div>
+    <div class="s"><div class="c" style="background:#f5efe3"></div><div class="l">paper-300 · sunken</div><div class="h">#F5EFE3</div></div>
+    <div class="s"><div class="c" style="background:#ebe2d2"></div><div class="l">paper-400 · card edge</div><div class="h">#EBE2D2</div></div>
+    <div class="s"><div class="c" style="background:#d8cdb8"></div><div class="l">paper-500 · soft rule</div><div class="h">#D8CDB8</div></div>
     <div class="s"><div class="c" style="background:#efe3cf"></div><div class="l">stock-100 · the mount</div><div class="h">#EFE3CF</div></div>
     <div class="s"><div class="c" style="background:#d8c0a8"></div><div class="l">stock-200</div><div class="h">#D8C0A8</div></div>
     <div class="s"><div class="c" style="background:#f1f1ee"></div><div class="l">ledger-100 · stone</div><div class="h">#F1F1EE</div></div>
-    <div class="s"><div class="c" style="background:#4a5a52"></div><div class="l">ledger-ink</div><div class="h">#4A5A52</div></div>
-    <div class="s"><div class="c" style="background:#2a2622"></div><div class="l">ink-900 · carbon</div><div class="h">#2A2622</div></div>
+    <div class="s"><div class="c" style="background:#b4b6ae"></div><div class="l">ledger-400 · hairline</div><div class="h">#B4B6AE</div></div>
+    <div class="s"><div class="c" style="background:#4a5a52"></div><div class="l">ledger-ink · 6.45:1</div><div class="h">#4A5A52</div></div>
   </div>
-  <p style="margin-top:26px">Maximum two background colours in any one document. The stone
-  register takes anything administrative — sizing, shipping, order status, specification —
-  with form-green ink and 1px hairlines.</p>
-  <div class="folio"><span>AORI — Brand Book · Colour</span><span>05</span></div>
+  <div class="two" style="margin-top:22px">
+    <div>
+      <span class="cap">The carbon inks</span>
+      <div class="sw" style="grid-template-columns:repeat(4,1fr);margin-top:10px">
+        <div class="s"><div class="c" style="background:#2a2622;height:34px"></div><div class="l">ink-900 · 14.05:1</div><div class="h">#2A2622</div></div>
+        <div class="s"><div class="c" style="background:#57504a;height:34px"></div><div class="l">ink-700</div><div class="h">#57504A</div></div>
+        <div class="s"><div class="c" style="background:#6e675c;height:34px"></div><div class="l">ink-600 · muted · 5.23:1</div><div class="h">#6E675C</div></div>
+        <div class="s"><div class="c" style="background:#a79f91;height:34px"></div><div class="l">ink-400 · disabled only</div><div class="h">#A79F91</div></div>
+      </div>
+    </div>
+    <p style="align-self:end">The stone register takes anything administrative — sizing,
+    shipping, order status, specification — with form-green ink and 1px hairlines. Ink-400
+    is contrast-exempt because it marks only disabled states; captions and hints take
+    ink-600, never lighter.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>09</span></div>
 </div>
 
-<!-- 06 · COLOUR: PIGMENTS -->
+<!-- p10 · COLOUR: PIGMENTS -->
 <div class="page">
   <div class="head"><span class="secno">03 · Colour</span><h2>Thirteen pigments, out of the paintings</h2></div>
-  <p>Sampled by frequency from the plates themselves. Four to six carry a composition;
-  never more. <strong>Terracotta acts, aegean links, saffron highlights.</strong></p>
-  <div class="sw" style="grid-template-columns:repeat(7,1fr);margin-top:8px">
-    <div class="s"><div class="c" style="background:#1890a8"></div><div class="l">aegean</div><div class="h">#1890A8</div></div>
-    <div class="s"><div class="c" style="background:#006078"></div><div class="l">water</div><div class="h">#006078</div></div>
-    <div class="s"><div class="c" style="background:#78c0c0"></div><div class="l">shallow</div><div class="h">#78C0C0</div></div>
-    <div class="s"><div class="c" style="background:#a8c0c0"></div><div class="l">haze</div><div class="h">#A8C0C0</div></div>
-    <div class="s"><div class="c" style="background:#c05a28"></div><div class="l">terracotta</div><div class="h">#C05A28</div></div>
-    <div class="s"><div class="c" style="background:#a87860"></div><div class="l">clay</div><div class="h">#A87860</div></div>
-    <div class="s"><div class="c" style="background:#8a3a22"></div><div class="l">rust</div><div class="h">#8A3A22</div></div>
-    <div class="s"><div class="c" style="background:#c0a860"></div><div class="l">saffron</div><div class="h">#C0A860</div></div>
-    <div class="s"><div class="c" style="background:#907848"></div><div class="l">ochre</div><div class="h">#907848</div></div>
-    <div class="s"><div class="c" style="background:#5f7a46"></div><div class="l">olive</div><div class="h">#5F7A46</div></div>
-    <div class="s"><div class="c" style="background:#34513c"></div><div class="l">forest</div><div class="h">#34513C</div></div>
+  <p>Sampled by frequency from the plates themselves — the palette is not decoration-first.
+  Four to six carry a composition; never more. <strong>Terracotta acts, aegean links,
+  saffron highlights.</strong></p>
+  <div class="sw" style="grid-template-columns:repeat(7,1fr);margin-top:6px">
+    <div class="s"><div class="c" style="background:#1890a8"></div><div class="l">aegean · the sea</div><div class="h">#1890A8</div></div>
+    <div class="s"><div class="c" style="background:#006078"></div><div class="l">water · shadowed</div><div class="h">#006078</div></div>
+    <div class="s"><div class="c" style="background:#78c0c0"></div><div class="l">shallow · the shelf</div><div class="h">#78C0C0</div></div>
+    <div class="s"><div class="c" style="background:#a8c0c0"></div><div class="l">haze · distance</div><div class="h">#A8C0C0</div></div>
+    <div class="s"><div class="c" style="background:#c05a28"></div><div class="l">terracotta · tile, hull</div><div class="h">#C05A28</div></div>
+    <div class="s"><div class="c" style="background:#a87860"></div><div class="l">clay · warm mid</div><div class="h">#A87860</div></div>
+    <div class="s"><div class="c" style="background:#8a3a22"></div><div class="l">rust · in shadow</div><div class="h">#8A3A22</div></div>
+    <div class="s"><div class="c" style="background:#c0a860"></div><div class="l">saffron · krokos</div><div class="h">#C0A860</div></div>
+    <div class="s"><div class="c" style="background:#907848"></div><div class="l">ochre · olive bark</div><div class="h">#907848</div></div>
+    <div class="s"><div class="c" style="background:#5f7a46"></div><div class="l">olive · leaf, scrub</div><div class="h">#5F7A46</div></div>
+    <div class="s"><div class="c" style="background:#34513c"></div><div class="l">forest · cypress</div><div class="h">#34513C</div></div>
     <div class="s"><div class="c" style="background:#6b4426"></div><div class="l">umber</div><div class="h">#6B4426</div></div>
-    <div class="s"><div class="c" style="background:#a8a890"></div><div class="l">slate</div><div class="h">#A8A890</div></div>
+    <div class="s"><div class="c" style="background:#a8a890"></div><div class="l">slate · limestone</div><div class="h">#A8A890</div></div>
   </div>
-  <div style="margin-top:24px" class="cap">Metals — matte, never a gradient, never a shine</div>
-  <div class="sw" style="grid-template-columns:repeat(7,1fr);margin-top:10px">
-    <div class="s"><div class="c" style="background:#c0a860;height:36px"></div><div class="l">gold</div><div class="h">#C0A860</div></div>
-    <div class="s"><div class="c" style="background:#907848;height:36px"></div><div class="l">gold-deep</div><div class="h">#907848</div></div>
-    <div class="s"><div class="c" style="background:#a8a890;height:36px"></div><div class="l">silver</div><div class="h">#A8A890</div></div>
-    <div class="s"><div class="c" style="background:#6e675c;height:36px"></div><div class="l">silver-oxide</div><div class="h">#6E675C</div></div>
-    <div class="s"><div class="c" style="background:#a87860;height:36px"></div><div class="l">bronze</div><div class="h">#A87860</div></div>
+  <div class="two" style="margin-top:20px">
+    <div>
+      <span class="cap">Metals — matte, never a gradient, never a shine</span>
+      <div class="sw" style="grid-template-columns:repeat(5,1fr);margin-top:10px">
+        <div class="s"><div class="c" style="background:#c0a860;height:30px"></div><div class="l">gold</div></div>
+        <div class="s"><div class="c" style="background:#907848;height:30px"></div><div class="l">gold-deep</div></div>
+        <div class="s"><div class="c" style="background:#a8a890;height:30px"></div><div class="l">silver</div></div>
+        <div class="s"><div class="c" style="background:#6e675c;height:30px"></div><div class="l">silver-oxide</div></div>
+        <div class="s"><div class="c" style="background:#a87860;height:30px"></div><div class="l">bronze</div></div>
+      </div>
+    </div>
+    <p style="align-self:end">Ten legacy pigment aliases (<span class="mono">--pigment-red</span>,
+    <span class="mono">-scarlet</span>, <span class="mono">-teal</span>…) still resolve for
+    old markup. New work uses the names above; the aliases retire on a stated schedule.</p>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Colour</span><span>06</span></div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>10</span></div>
 </div>
 
-<!-- 07 · COLOUR: SEMANTIC -->
+<!-- p11 · COLOUR: SEMANTIC -->
 <div class="page">
   <div class="head"><span class="secno">03 · Colour</span><h2>The pigment marks, the ink speaks</h2></div>
   <div class="two">
@@ -212,286 +376,666 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
         <div class="s"><div class="c" style="background:#006078"></div><div class="l">link-hover · focus</div><div class="h">#006078 · 6.67:1</div></div>
         <div class="s"><div class="c" style="background:#6b4426"></div><div class="l">link-visited</div><div class="h">#6B4426 · 7.92:1</div></div>
       </div>
-      <p style="margin-top:18px">Hover darkens one step — the same direction as press. A
-      pigment never lightens under the pointer. Ratios are measured against the page and
-      enforced by <span class="mono">tools/check_contrast.py</span> on every run.</p>
+      <p style="margin-top:16px;font-size:12.5px">Hover darkens one step — the same
+      direction as press. A pigment never lightens under the pointer. The painting pigments
+      keep their full cuts for fields and illustration; the semantic layer takes the deep
+      cuts so 13–17px text on and in them clears AA.</p>
     </div>
     <div>
       <span class="cap">Status — pigment for marks, ink for words</span>
       <div class="sw" style="grid-template-columns:repeat(4,1fr);margin-top:10px">
-        <div class="s"><div class="c" style="background:#c05a28;height:34px"></div><div class="l">stop</div></div>
-        <div class="s"><div class="c" style="background:#c0a860;height:34px"></div><div class="l">warm</div></div>
-        <div class="s"><div class="c" style="background:#1890a8;height:34px"></div><div class="l">calm</div></div>
-        <div class="s"><div class="c" style="background:#34513c;height:34px"></div><div class="l">go</div></div>
-        <div class="s"><div class="c" style="background:#8a3a22;height:34px"></div><div class="l">stop-ink · 7.25:1</div></div>
-        <div class="s"><div class="c" style="background:#7d6a2c;height:34px"></div><div class="l">warm-ink · 4.95:1</div></div>
-        <div class="s"><div class="c" style="background:#117487;height:34px"></div><div class="l">calm-ink · 5.08:1</div></div>
-        <div class="s"><div class="c" style="background:#34513c;height:34px"></div><div class="l">go-ink · 8.23:1</div></div>
+        <div class="s"><div class="c" style="background:#c05a28;height:30px"></div><div class="l">stop</div></div>
+        <div class="s"><div class="c" style="background:#c0a860;height:30px"></div><div class="l">warm</div></div>
+        <div class="s"><div class="c" style="background:#1890a8;height:30px"></div><div class="l">calm</div></div>
+        <div class="s"><div class="c" style="background:#34513c;height:30px"></div><div class="l">go</div></div>
+        <div class="s"><div class="c" style="background:#8a3a22;height:30px"></div><div class="l">stop-ink · 7.25:1</div></div>
+        <div class="s"><div class="c" style="background:#7d6a2c;height:30px"></div><div class="l">warm-ink · 4.95:1</div></div>
+        <div class="s"><div class="c" style="background:#117487;height:30px"></div><div class="l">calm-ink · 5.08:1</div></div>
+        <div class="s"><div class="c" style="background:#34513c;height:30px"></div><div class="l">go-ink · 8.23:1</div></div>
       </div>
-      <p style="margin-top:18px">Wherever a status colour becomes text — a notice label, an
-      error line, a tag — it takes its ink cut, which clears 4.5:1 on paper. The full
-      pigments stay on rules, fills and stamps, where 3:1 is the bar.</p>
+      <p style="margin-top:16px;font-size:12.5px">Wherever a status colour becomes text — a
+      notice label, an error line, a tag — it takes its ink cut, which clears 4.5:1 on
+      paper. The full pigments stay on rules, fills and stamps, where 3:1 is the bar.</p>
+      <div style="margin-top:14px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--rule-soft);border-left:4px solid var(--status-stop);padding:12px 16px;max-width:420px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase;color:var(--status-stop-ink)">Sold out</div>
+        <div style="font-size:13px;margin-top:3px">The rule wears the pigment; the label speaks in the ink.</div>
+      </div>
     </div>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Colour</span><span>07</span></div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>11</span></div>
 </div>
 
-<!-- 08 · TYPE -->
+<!-- p12 · COLOUR: PROOF -->
+<div class="page">
+  <div class="head"><span class="secno">03 · Colour</span><h2>Proof — every role pair, measured</h2></div>
+  <div class="two">
+    <div>
+      <table>
+        <thead><tr><th>Pair</th><th class="num">Measured</th><th class="num">Bar</th></tr></thead>
+        <tbody>
+          <tr><td>Body ink on the page</td><td class="mono num">14.05:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Captions and hints on the page</td><td class="mono num">5.23:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Clerical ink on stone</td><td class="mono num">6.45:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Body links</td><td class="mono num">5.08:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Hovered links</td><td class="mono num">6.67:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Visited links</td><td class="mono num">7.92:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Button label on accent</td><td class="mono num">4.97:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Button label, hovered</td><td class="mono num">5.36:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Button label, pressed</td><td class="mono num">7.25:1</td><td class="mono num">4.5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <thead><tr><th>Pair</th><th class="num">Measured</th><th class="num">Bar</th></tr></thead>
+        <tbody>
+          <tr><td>Stop spoken as text</td><td class="mono num">7.25:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Warm spoken as text</td><td class="mono num">4.95:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Calm spoken as text</td><td class="mono num">5.08:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Go spoken as text</td><td class="mono num">8.23:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Error line on raised paper</td><td class="mono num">7.44:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Display type on the mount</td><td class="mono num">11.84:1</td><td class="mono num">4.5</td></tr>
+          <tr><td>Focus ring on the page</td><td class="mono num">6.67:1</td><td class="mono num">3.0</td></tr>
+          <tr><td>Carbon rule on the page</td><td class="mono num">14.05:1</td><td class="mono num">3.0</td></tr>
+          <tr><td>Accent fill against the page</td><td class="mono num">4.97:1</td><td class="mono num">3.0</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px;font-size:12.5px">Eighteen declared pairs, WCAG 2.x relative
+      luminance, re-measured by <span class="mono">tools/check_contrast.py</span> on every
+      run. A token edit that puts any pair under its bar fails the build — the rigor does
+      not depend on who is paying attention.</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>12</span></div>
+</div>
+
+<!-- p13 · TYPE: FACES -->
 <div class="page">
   <div class="head"><span class="secno">04 · Typography</span><h2>Three faces, three jobs</h2></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px">
-    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
-      <div style="font-family:var(--font-display);font-size:64px;letter-spacing:.09em;line-height:1">AΩ</div>
-      <div class="cap" style="margin-top:12px">GFS Didot — Display</div>
-      <p style="font-size:12.5px;margin-top:8px">Names, headings, prices. Uppercase, tracked
+  <div class="three">
+    <div style="border-top:1px solid var(--paper-500);padding-top:14px">
+      <div style="font-family:var(--font-display);font-size:60px;letter-spacing:.09em;line-height:1">AΩ</div>
+      <div class="cap" style="margin-top:10px">GFS Didot — Display</div>
+      <p style="font-size:12px;margin-top:6px">Names, headings, prices. Uppercase, tracked
       .09–.14em. Greek-capable, which is why it won.</p>
-      <div style="font-family:var(--font-display);font-size:22px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px">Psiloritis · 185 €</div>
+      <div style="font-family:var(--font-display);font-size:21px;letter-spacing:.14em;text-transform:uppercase;margin-top:6px">Psiloritis · 185 €</div>
     </div>
-    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
-      <div style="font-family:var(--font-annotation);font-weight:600;font-size:64px;line-height:1">Aa</div>
-      <div class="cap" style="margin-top:12px">Commissioner — Annotation &amp; UI</div>
-      <p style="font-size:12.5px;margin-top:8px">Labels, buttons, metadata, nav. Always
+    <div style="border-top:1px solid var(--paper-500);padding-top:14px">
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:60px;line-height:1">Aa</div>
+      <div class="cap" style="margin-top:10px">Commissioner — Annotation &amp; UI</div>
+      <p style="font-size:12px;margin-top:6px">Labels, buttons, metadata, nav. Always
       uppercase, tracked .055–.14em, weight 600.</p>
-      <div style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.11em;text-transform:uppercase;margin-top:12px">Four left of twelve · Add to bag</div>
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;margin-top:10px">Four left of twelve · Add to bag</div>
     </div>
-    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
-      <div style="font-family:var(--font-body);font-size:64px;line-height:1">Aa</div>
-      <div class="cap" style="margin-top:12px">Source Serif 4 — Body</div>
-      <p style="font-size:12.5px;margin-top:8px">Prose, descriptions, form values. Sentence
+    <div style="border-top:1px solid var(--paper-500);padding-top:14px">
+      <div style="font-family:var(--font-body);font-size:60px;line-height:1">Aa</div>
+      <div class="cap" style="margin-top:10px">Source Serif 4 — Body</div>
+      <p style="font-size:12px;margin-top:6px">Prose, descriptions, form values. Sentence
       case, 15–17px, line-height 1.7–1.75.</p>
-      <div style="font-size:14px;line-height:1.7;margin-top:8px">Hammered on the bench and
+      <div style="font-size:13.5px;line-height:1.7;margin-top:6px">Hammered on the bench and
       left matte, named for the beach below the village.</div>
     </div>
   </div>
-  <div style="margin-top:30px;border-top:1px solid var(--paper-500);padding-top:14px" class="two">
-    <p>The scale runs 11 / 13 / 15 / 17 / 20 / 25 / 32 / 42 / 58 / 80 / 112px. Wide
-    tracking on display type is the loudest signal in the brand; body copy is never
-    tracked and never uppercase.</p>
+  <div class="two" style="margin-top:24px;border-top:1px solid var(--paper-500);padding-top:14px">
+    <p>All three are Google-hosted substitutions for the painted lettering until licensed
+    faces arrive — the swap happens in <span class="mono">tokens/fonts.css</span> alone, and
+    every one covers Greek as well as Latin. The runner-up direction (GFS Neohellenic)
+    stays documented in <span class="mono">guidelines/font-candidates.html</span>.</p>
     <p>Minimums: 24px type in a 1920×1080 slide, 12pt in print, 44px hit targets on touch
-    surfaces. All three faces are Google-hosted substitutions until licensed files arrive
-    — the swap happens in <span class="mono">tokens/fonts.css</span> alone.</p>
+    surfaces. The system's monospace is the platform stack and appears only in
+    documentation — never on a product surface.</p>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Typography</span><span>08</span></div>
+  <div class="folio"><span>AORI — Brand Book · Typography</span><span>13</span></div>
 </div>
 
-<!-- 09 · ILLUSTRATION: PAINTED -->
+<!-- p14 · TYPE: SCALE -->
+<div class="page">
+  <div class="head"><span class="secno">04 · Typography</span><h2>The scale, all eleven steps</h2></div>
+  <div style="display:flex;flex-direction:column;gap:2px">
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">112 · 6xl</span><span style="font-family:var(--font-display);font-size:64px;letter-spacing:.1em;text-transform:uppercase;line-height:1.05">Play</span><span class="mono" style="color:var(--ink-600)">(shown at 64 — the poster size)</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">80 · 5xl</span><span style="font-family:var(--font-display);font-size:54px;letter-spacing:.1em;text-transform:uppercase;line-height:1.05">Water</span><span class="mono" style="color:var(--ink-600)">(shown at 54)</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">58 · 4xl</span><span style="font-family:var(--font-display);font-size:44px;letter-spacing:.1em;text-transform:uppercase;line-height:1.1">Perspective</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">42 · 3xl</span><span style="font-family:var(--font-display);font-size:36px;letter-spacing:.09em;text-transform:uppercase">Psiloritis</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">32 · 2xl</span><span style="font-family:var(--font-display);font-size:30px;letter-spacing:.09em;text-transform:uppercase">Livyko ring</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">25 · xl</span><span style="font-family:var(--font-display);font-size:25px;letter-spacing:.09em;text-transform:uppercase">Four runs</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">20 · lg</span><span style="font-size:19px">Body large — the standfirst under a heading.</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">17 · md</span><span style="font-size:16px">Body — running prose, product descriptions, form values.</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">15 · sm</span><span style="font-size:14.5px">Body small — dense prose, the clerical register's values.</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">13 · xs</span><span style="font-family:var(--font-annotation);font-weight:600;font-size:12.5px;letter-spacing:.055em;text-transform:uppercase">Caption and small controls</span></div>
+    <div style="display:flex;align-items:baseline;gap:20px"><span class="mono" style="width:84px;flex:none">11 · 2xs</span><span style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.09em;text-transform:uppercase">The smallest annotation · never body text</span></div>
+  </div>
+  <p style="margin-top:20px">Leading runs 0.95 (display) to 1.75 (body). Tracking:
+  display .14em, titles .09em, annotation .055em, prose .01em. Wide tracking on uppercase
+  display is the loudest signal in the brand — and body copy is never tracked, never
+  uppercase.</p>
+  <div class="folio"><span>AORI — Brand Book · Typography</span><span>14</span></div>
+</div>
+
+<!-- p15 · TYPE: SETTING -->
+<div class="page">
+  <div class="head"><span class="secno">04 · Typography</span><h2>Setting the page</h2></div>
+  <div class="two">
+    <ul class="rules">
+      <li><b>Measure</b>Prose measures 62ch; annotation columns 46ch. A line of body serif
+      wider than that stops being a letter and starts being a wall.</li>
+      <li><b>Hierarchy is three levels</b>A display heading, an annotation label, body
+      prose. If a layout needs a fourth level, it is two layouts.</li>
+      <li><b>Prices are display</b>A price is set in GFS Didot with the name, never in the
+      annotation voice — the number is part of the product's name, not its metadata.</li>
+      <li><b>The clerical register</b>Form labels are italic Source Serif or tracked
+      annotation caps on stone; values are body serif. Nothing in the ledger is bold except
+      an emphasised total.</li>
+      <li><b>Numerals</b>Tabular figures wherever numbers align — run counts, prices in a
+      table, the line sheet.</li>
+    </ul>
+    <div>
+      <span class="cap">One block, set right</span>
+      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:28px 30px;max-width:430px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-700)">Run of twelve · Four left</div>
+        <div style="font-family:var(--font-display);font-size:30px;letter-spacing:.09em;text-transform:uppercase;margin-top:8px">Psiloritis · 185 €</div>
+        <p style="font-size:14px;line-height:1.7;margin-top:10px">Named for the mountain you
+        can see from the bench on a clear morning. Twelve were made from one sheet of
+        silver.</p>
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;background:var(--accent);color:var(--paper-200);padding:11px 22px;display:inline-block;margin-top:6px">Add to bag</div>
+      </div>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Typography</span><span>15</span></div>
+</div>
+
+<!-- p16 · ILLUSTRATION: PAINTED HAND -->
 <div class="page">
   <div class="head"><span class="secno">05 · Illustration</span><h2>The painted hand</h2></div>
-  <div class="grid4">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
     <figure class="plate"><img src="../../assets/illustrations-v2-web/cove.jpg" alt=""><figcaption>Cove</figcaption></figure>
     <figure class="plate"><img src="../../assets/illustrations-v2-web/taverna.jpg" alt=""><figcaption>Taverna</figcaption></figure>
     <figure class="plate"><img src="../../assets/illustrations-v2-web/generations.jpg" alt=""><figcaption>Generations</figcaption></figure>
     <figure class="plate"><img src="../../assets/illustrations-v2-web/night.jpg" alt=""><figcaption>Night</figcaption></figure>
   </div>
-  <div class="two" style="margin-top:26px">
+  <div class="two" style="margin-top:22px">
     <p>Saturated fields held inside a drawn contour, the paper reading through the lighter
-    passages, nothing opaque white, nothing greyed to recede. The full plate — 23 places,
-    figures and still lifes — mounts on toned stock with a 5px unpainted margin, so it
-    never floats.</p>
-    <p>A painting opens the site; a photograph never does. Collection tiles are paintings
-    (a tile is a <em>place</em>); product tiles and galleries are photographs. The full
-    image-jobs table is at <span class="mono">guidelines/image-jobs.html</span>; the
-    photography route itself is still an open decision, documented with four costed
-    options in the specification.</p>
+    passages, nothing opaque white, nothing greyed to recede. The full plate mounts on
+    toned stock with a 5px unpainted margin, so it never floats — a painting is an object
+    laid on the page, not a background.</p>
+    <ul class="rules">
+      <li><b>One hand</b>Every plate is the same hand. Commission new plates in it, or a
+      new product starts from this library — the palette comes from the paintings, not the
+      other way round.</li>
+      <li><b>A painting opens the site</b>A photograph never does. A collection tile is a
+      <em>place</em>, so it is a painting; a product tile is a piece, so it is a
+      photograph.</li>
+    </ul>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>09</span></div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>16</span></div>
 </div>
 
-<!-- 10 · MOTIFS & PATTERNS -->
+<!-- p17 · ILLUSTRATION: THE LIBRARY -->
+<div class="page">
+  <div class="head"><span class="secno">05 · Illustration</span><h2>The plate library — 23 paintings</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:10px">
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/amphora.jpg" alt=""><figcaption>Amphora</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/beach.jpg" alt=""><figcaption>Beach</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/beads.jpg" alt=""><figcaption>Beads</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/bench.jpg" alt=""><figcaption>Bench</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/cove.jpg" alt=""><figcaption>Cove</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/fishring.jpg" alt=""><figcaption>Fishring</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/generations.jpg" alt=""><figcaption>Generations</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/hands.jpg" alt=""><figcaption>Hands</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/harbour.jpg" alt=""><figcaption>Harbour</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/hoop.jpg" alt=""><figcaption>Hoop</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/livyko.jpg" alt=""><figcaption>Livyko</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/night.jpg" alt=""><figcaption>Night</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/olive.jpg" alt=""><figcaption>Olive</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/picnic.jpg" alt=""><figcaption>Picnic</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/portrait.jpg" alt=""><figcaption>Portrait</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/psiloritis.jpg" alt=""><figcaption>Psiloritis</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/rocks.jpg" alt=""><figcaption>Rocks</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/spiral.jpg" alt=""><figcaption>Spiral</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/sun-sea.jpg" alt=""><figcaption>Sun &amp; sea</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/taverna.jpg" alt=""><figcaption>Taverna</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/terraces.jpg" alt=""><figcaption>Terraces</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/tree.jpg" alt=""><figcaption>Tree</figcaption></figure>
+    <figure class="plate" style="padding:4px"><img style="border-width:3px" src="../../assets/illustrations-v2-web/village.jpg" alt=""><figcaption>Village</figcaption></figure>
+  </div>
+  <p style="margin-top:16px">Places, figures and still lifes. Screen surfaces use the 900px
+  copies in <span class="mono">illustrations-v2-web/</span>; the print masters live in
+  <span class="mono">illustrations-v2/</span> and exist for pages like this one.</p>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>17</span></div>
+</div>
+
+<!-- p18 · MOTIFS & PATTERNS -->
 <div class="page">
   <div class="head"><span class="secno">05 · Illustration</span><h2>Motifs are circles, patterns are squares</h2></div>
   <div class="two">
     <div>
       <span class="cap">The six lifted details — decoration with provenance</span>
-      <div class="grid6" style="margin-top:12px;grid-template-columns:repeat(3,96px);gap:18px">
-        <img src="../../assets/motifs-v2/dolphin.png" style="width:96px;height:96px;border-radius:50%" alt="Dolphin motif">
-        <img src="../../assets/motifs-v2/octopus.png" style="width:96px;height:96px;border-radius:50%" alt="Octopus motif">
-        <img src="../../assets/motifs-v2/sun.png" style="width:96px;height:96px;border-radius:50%" alt="Sun motif">
-        <img src="../../assets/motifs-v2/olive-wreath.png" style="width:96px;height:96px;border-radius:50%" alt="Olive wreath motif">
-        <img src="../../assets/motifs-v2/spiral.png" style="width:96px;height:96px;border-radius:50%" alt="Spiral motif">
-        <img src="../../assets/motifs-v2/hoop.png" style="width:96px;height:96px;border-radius:50%" alt="Hoop motif">
+      <div style="display:grid;grid-template-columns:repeat(3,96px);gap:16px;margin-top:12px">
+        <img src="../../assets/motifs-v2/dolphin.png" style="width:96px;height:96px;border-radius:50%" alt="Dolphin">
+        <img src="../../assets/motifs-v2/octopus.png" style="width:96px;height:96px;border-radius:50%" alt="Octopus">
+        <img src="../../assets/motifs-v2/sun.png" style="width:96px;height:96px;border-radius:50%" alt="Sun">
+        <img src="../../assets/motifs-v2/olive-wreath.png" style="width:96px;height:96px;border-radius:50%" alt="Olive wreath">
+        <img src="../../assets/motifs-v2/spiral.png" style="width:96px;height:96px;border-radius:50%" alt="Spiral">
+        <img src="../../assets/motifs-v2/hoop.png" style="width:96px;height:96px;border-radius:50%" alt="Hoop">
       </div>
-      <p style="margin-top:16px;font-size:12.5px">Each is cut out of a finished painting and
-      belongs to a place — using one is a claim about which place a page is about. Minimum
-      40px, one per page, never redrawn, never a control.</p>
+      <ul class="rules" style="margin-top:14px">
+        <li><b>Provenance is the rule</b>Each is cut out of a finished painting and belongs
+        to a place — using one is a claim about which place a page is about.</li>
+        <li><b>Limits</b>Minimum 40px (below it the wash muddies — use nothing instead).
+        One motif per page or post. Never redrawn, never a control.</li>
+      </ul>
     </div>
     <div>
       <span class="cap">Three patterns, three strengths</span>
-      <div class="grid6" style="margin-top:12px;grid-template-columns:repeat(3,1fr)">
-        <figure class="plate"><img src="../../assets/patterns/wave.jpg" alt=""><figcaption>Wave</figcaption></figure>
-        <figure class="plate"><img src="../../assets/patterns/spiral.jpg" alt=""><figcaption>Spiral</figcaption></figure>
-        <figure class="plate"><img src="../../assets/patterns/olive.jpg" alt=""><figcaption>Olive</figcaption></figure>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+        <figure class="plate"><img src="../../assets/patterns/wave.jpg" alt=""><figcaption>Wave · full — packaging, one hero band</figcaption></figure>
+        <div style="position:relative;background:var(--paper-200);outline:1px solid var(--paper-400)"><img src="../../assets/patterns/spiral.jpg" style="width:100%;height:100%;object-fit:cover;opacity:.3;display:block" alt=""><figcaption style="position:absolute;inset:auto 0 0;background:var(--paper-100);font-family:var(--font-annotation);font-weight:600;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-700);padding:6px;text-align:center">Spiral · 30% — section grounds</figcaption></div>
+        <div style="position:relative;background:var(--paper-200);outline:1px solid var(--paper-400)"><img src="../../assets/patterns/olive.jpg" style="width:100%;height:100%;object-fit:cover;opacity:.08;display:block" alt=""><div style="position:absolute;inset:14px 14px 34px;font-size:11.5px;line-height:1.6;overflow:hidden">Behind long prose the pattern falls to 8% — present as texture, invisible as image, and the text never loses a point of contrast.</div><figcaption style="position:absolute;inset:auto 0 0;background:var(--paper-100);font-family:var(--font-annotation);font-weight:600;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-700);padding:6px;text-align:center">Olive · 8% — behind prose</figcaption></div>
       </div>
-      <p style="margin-top:16px;font-size:12.5px">Full strength for packaging and one hero
-      band; 30% for section grounds; 8% behind long prose — applied as a
-      <span class="mono">::before</span> layer so the opacity never touches the text. Never
-      two patterns on one screen.</p>
+      <p style="margin-top:14px;font-size:12.5px">Applied as a <span class="mono">::before</span>
+      layer so the opacity never touches the text. Never two patterns on one screen.</p>
     </div>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>10</span></div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>18</span></div>
 </div>
 
-<!-- 11 · DRAWN REGISTER -->
+<!-- p19 · DRAWN REGISTER -->
 <div class="page">
   <div class="head"><span class="secno">05c · Illustration</span><h2>The drawn register</h2></div>
   <div class="two">
-    <div class="grid4" style="grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400)">
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/empty-bag.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">empty-bag</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/no-results.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">no-results</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/letter-sent.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">letter-sent</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/run-closed.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">run-closed</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/bench.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">bench</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/polish-cloth.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">polish-cloth</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/keep-dry.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">keep-dry</figcaption></figure>
-      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/pouch.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">pouch</figcaption></figure>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400)">
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/empty-bag.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">empty-bag</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/no-results.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">no-results</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/letter-sent.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">letter-sent</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/run-closed.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">run-closed</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/bench.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">bench</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/polish-cloth.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">polish-cloth</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/keep-dry.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">keep-dry</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:16px 8px 10px;text-align:center"><img src="../../assets/illustrations-drawn/pouch.svg" style="width:74px;height:74px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:6px">pouch</figcaption></figure>
     </div>
     <ul class="rules">
       <li><b>The third job of the one hand</b>Eight bench drawings on a 96px grid at the
       icons' 2px carbon rule, one pigment accent each. Not paintings — they claim no
       provenance from the plates.</li>
       <li><b>Service, not romance</b>Empty states, care and sizing instructions,
-      transactional email. A drawing never opens a page and never sits beside a painted
-      plate — the painting wins.</li>
-      <li><b>Words beside it</b>Like an icon, a drawing never carries meaning alone: the
-      annotation line under it says the thing plainly. "All twelve gone."</li>
+      transactional email, booking confirmations. A drawing never opens a page and never
+      sits beside a painted plate — the painting wins.</li>
+      <li><b>Sizes and colour</b>96px standard, 64px minimum, 160px maximum. Never
+      recoloured, never given a background of its own.</li>
+      <li><b>Words beside it</b>The annotation line under a drawing says the thing plainly:
+      "All twelve gone." "Keep above the water."</li>
       <li><b>The motif law holds</b>No drawn octopus, no drawn sun, no drawn spiral. Motifs
       stay paintings; drawings depict objects from the bench and the shop.</li>
     </ul>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>11</span></div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>19</span></div>
 </div>
 
-<!-- 12 · ICONOGRAPHY -->
+<!-- p20 · DRAWN IN USE -->
+<div class="page">
+  <div class="head"><span class="secno">05c · Illustration</span><h2>The empty states, set as they ship</h2></div>
+  <div class="three">
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:40px 34px;text-align:center">
+      <img src="../../assets/illustrations-drawn/empty-bag.svg" style="width:96px;height:96px" alt="">
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:16px">The bag is empty</div>
+      <p style="font-size:12.5px;line-height:1.6;color:var(--ink-700);margin:6px auto 0;max-width:26ch">Nothing kept here yet. The current runs are on the collections page.</p>
+    </div>
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:40px 34px;text-align:center">
+      <img src="../../assets/illustrations-drawn/no-results.svg" style="width:96px;height:96px" alt="">
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:16px">Nothing by that name</div>
+      <p style="font-size:12.5px;line-height:1.6;color:var(--ink-700);margin:6px auto 0;max-width:26ch">Try a place — Psiloritis, Livyko, Elia, Knosos — or browse all four runs.</p>
+    </div>
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:40px 34px;text-align:center">
+      <img src="../../assets/illustrations-drawn/run-closed.svg" style="width:96px;height:96px" alt="">
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:16px">All twelve gone</div>
+      <p style="font-size:12.5px;line-height:1.6;color:var(--ink-700);margin:6px auto 0;max-width:26ch">This run is closed and stays on its page. We will make more, but not the same.</p>
+    </div>
+  </div>
+  <div class="two" style="margin-top:24px">
+    <p>The care card (page 28) runs the other half of the set — polish-cloth, keep-dry,
+    pouch — as instructional spots at 64px with annotation heads. That pairing, drawing
+    plus plain words, is the register's whole grammar.</p>
+    <p>Live specimen and full rules: <span class="mono">guidelines/drawn-register.html</span>.
+    The set is authored in-repo and flagged as made-here in
+    <span class="mono">docs/PROVENANCE.md</span> — provenance stays honest.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>20</span></div>
+</div>
+
+<!-- p21 · PHOTOGRAPHY PROBLEM -->
+<div class="page">
+  <div class="head"><span class="secno">05b · Photography</span><h2>The photography problem</h2></div>
+  <p style="max-width:76ch">The paintings are the loudest thing in the system: maximum
+  chroma, hard contour, white paper. Every treatment that makes a photograph quieter moves
+  it <em>further</em> from them. So the question is not "what filter" — it is which of four
+  routes the workshop commits to. <strong>The decision is still open</strong>, documented in
+  full at <span class="mono">guidelines/photo-blending.html</span>.</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px">
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:16px 18px">
+      <div class="secno">Route 1</div>
+      <div class="cap" style="margin-top:4px;color:var(--ink-900)">Paintings are the product imagery</div>
+      <p style="font-size:12px;margin-top:8px">Photographs live only on a plain spec panel.</p>
+      <div class="mono" style="color:var(--ink-600)">Cost: free</div>
+    </div>
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:16px 18px">
+      <div class="secno">Route 2</div>
+      <div class="cap" style="margin-top:4px;color:var(--ink-900)">Have the pieces painted</div>
+      <p style="font-size:12px;margin-top:8px">Send the artist the actual jewellery.</p>
+      <div class="mono" style="color:var(--ink-600)">Cost: artist time</div>
+    </div>
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 2px var(--pigment-terracotta);padding:16px 18px">
+      <div class="secno">Route 3 · recommended now</div>
+      <div class="cap" style="margin-top:4px;color:var(--ink-900)">Shoot on the painted paper</div>
+      <p style="font-size:12px;margin-top:8px">Lay pieces on a real painted sheet in daylight.</p>
+      <div class="mono" style="color:var(--ink-600)">Cost: one afternoon</div>
+    </div>
+    <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:16px 18px">
+      <div class="secno">Route 4</div>
+      <div class="cap" style="margin-top:4px;color:var(--ink-900)">Make the split the identity</div>
+      <p style="font-size:12px;margin-top:8px">Painted world for romance, clerical sheet for evidence.</p>
+      <div class="mono" style="color:var(--ink-600)">Cost: free</div>
+    </div>
+  </div>
+  <div class="two" style="margin-top:20px">
+    <p><strong>Recommendation: route 3 now, route 2 over time.</strong> Nine positions on
+    how a photograph may sit beside a painting are rendered live at
+    <span class="mono">guidelines/illustration-library.html</span> §04.</p>
+    <p>Untreated regardless of route: sizing and fit shots, the one detail shot showing
+    hallmark and finish, and anything sent to a stockist or a magazine. Photographs go full
+    bleed with no border — a border reads as a frame, and the brand does not frame things.
+    The eight photography paths in this repository hold generated placeholder tiles that
+    say so on their face.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Photography</span><span>21</span></div>
+</div>
+
+<!-- p22 · IMAGE JOBS -->
+<div class="page">
+  <div class="head"><span class="secno">05b · Photography</span><h2>Image jobs — which picture goes where</h2></div>
+  <div class="two">
+    <table>
+      <thead><tr><th>Surface</th><th>Painting</th><th>Photograph</th></tr></thead>
+      <tbody>
+        <tr><td>Home hero</td><td><b>Yes</b></td><td>Never — a photograph does not open the site</td></tr>
+        <tr><td>Collection grid tile</td><td><b>Yes</b>, 3:4</td><td>No — a tile is a <em>place</em>, not a piece</td></tr>
+        <tr><td>Product grid tile</td><td>No</td><td><b>Yes</b>, square</td></tr>
+        <tr><td>Product hero and gallery</td><td>No</td><td><b>Yes</b></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead><tr><th>Surface</th><th>Painting</th><th>Photograph</th></tr></thead>
+      <tbody>
+        <tr><td>Sizing, shipping, spec</td><td>No</td><td><b>Yes</b>, untreated</td></tr>
+        <tr><td>Packaging</td><td><b>Yes</b></td><td>Never</td></tr>
+        <tr><td>Instagram place post</td><td><b>Yes</b></td><td>No</td></tr>
+        <tr><td>Instagram product post</td><td>No</td><td><b>Yes</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="two" style="margin-top:22px">
+    <p>The table is the peace treaty between the two image worlds: paintings own the places
+    and the romance, photographs own the pieces and the evidence, and no surface belongs to
+    both. When a layout wants both, they sit in separate registers — a painted hero above,
+    an untreated spec panel below — never blended.</p>
+    <p>Paintings keep the toned mount and the 5px unpainted margin everywhere they appear.
+    Photographs go full bleed, no border, no treatment beyond the shoot itself. Full
+    reasoning and edge cases: <span class="mono">guidelines/image-jobs.html</span>.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Photography</span><span>22</span></div>
+</div>
+
+<!-- p23 · ICONOGRAPHY -->
 <div class="page">
   <div class="head"><span class="secno">06 · Iconography</span><h2>Sixteen marks, one construction</h2></div>
   <div class="two">
-    <div class="grid6" style="grid-template-columns:repeat(8,1fr);gap:1px;background:var(--paper-400)">
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/search.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">search</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/bag.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">bag</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/account.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">account</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/filter.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">filter</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/close.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">close</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/arrow-left.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">arrow-l</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/arrow-right.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">arrow-r</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/plus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">plus</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/minus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">minus</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/check.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">check</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/ruler.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">ruler</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/package.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">package</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/seal.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">seal</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/mail.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">mail</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/pin.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">pin</figcaption></figure>
-      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/sparkle.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">sparkle</figcaption></figure>
+    <div>
+      <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:1px;background:var(--paper-400)">
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/search.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">search</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/bag.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">bag</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/account.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">account</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/filter.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">filter</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/close.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">close</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/arrow-left.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">arrow-l</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/arrow-right.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">arrow-r</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/plus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">plus</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/minus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">minus</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/check.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">check</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/ruler.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">ruler</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/package.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">package</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/seal.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">seal</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/mail.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">mail</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/pin.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">pin</figcaption></figure>
+        <figure style="background:var(--paper-200);padding:16px 6px 10px;text-align:center"><img src="../../assets/icons/sparkle.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">sparkle</figcaption></figure>
+      </div>
+      <div style="display:flex;gap:26px;align-items:flex-end;margin-top:18px">
+        <div style="text-align:center"><img src="../../assets/icons/bag.svg" style="width:16px;height:16px" alt=""><div class="mono" style="margin-top:6px">16 · clerical</div></div>
+        <div style="text-align:center"><img src="../../assets/icons/bag.svg" style="width:24px;height:24px" alt=""><div class="mono" style="margin-top:6px">24 · standard</div></div>
+        <div style="text-align:center"><img src="../../assets/icons/bag.svg" style="width:40px;height:40px" alt=""><div class="mono" style="margin-top:6px">40 · ceiling</div></div>
+      </div>
     </div>
     <ul class="rules">
       <li><b>Construction</b>24px grid, 16px keystone, the system's 2px carbon rule: butt
       caps, mitre joins, square corners, currentColor. One deliberate solid — the seal's
       centre dot.</li>
-      <li><b>Sizes</b>Rendered at 24px, or 16px in the clerical register; never above 40px.</li>
       <li><b>Never alone, never decorating</b>An icon never carries meaning alone — the word
-      sits beside it — and an icon never decorates. Motifs stay paintings; icons do the
-      interface jobs; the two never trade.</li>
+      sits beside it — and an icon never decorates a layout.</li>
+      <li><b>The two sets never trade</b>Motifs are paintings and decoration with
+      provenance; icons do the interface jobs. A motif never acts as a control; an icon
+      never stands where a painting should.</li>
+      <li><b>Inside dense text</b>The typographic characters + − · / remain fine in running
+      copy; every control-surface job belongs to the drawn set.</li>
     </ul>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Iconography</span><span>12</span></div>
+  <div class="folio"><span>AORI — Brand Book · Iconography</span><span>23</span></div>
 </div>
 
-<!-- 13 · SHAPE SPACE MOTION -->
+<!-- p24 · GRID & SPACE -->
 <div class="page">
-  <div class="head"><span class="secno">07 · Shape, space, motion</span><h2>Square, spacious, nearly still</h2></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px">
-    <div>
-      <span class="cap">Edge &amp; depth</span>
-      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:20px">
-        <div style="border-top:2px solid var(--ink-900);padding-top:8px" class="cap">2px carbon — section break</div>
-        <div style="border-top:1px solid var(--ledger-400);margin-top:16px;padding-top:8px" class="cap">1px hairline — row division</div>
-        <div style="margin-top:16px;background:var(--pigment-terracotta);height:26px"></div>
-        <div class="cap" style="margin-top:6px">Flat pigment field</div>
-      </div>
-      <p style="font-size:12.5px;margin-top:12px">Corner radius is zero, everywhere. No
-      shadows, no blur — the one exception is a gradient scrim over a hero painting so
-      white type stays legible.</p>
-    </div>
+  <div class="head"><span class="secno">07 · Grid &amp; layout</span><h2>Unpainted paper is the layout</h2></div>
+  <div class="three">
     <div>
       <span class="cap">Space — 4px base</span>
-      <div style="margin-top:12px;display:grid;gap:6px">
-        <div style="background:var(--pigment-aegean);height:10px;width:8px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:16px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:24px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:32px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:48px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:64px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:96px"></div>
-        <div style="background:var(--pigment-aegean);height:10px;width:128px"></div>
+      <div style="margin-top:12px;display:grid;gap:5px">
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:8px"></div><span class="mono">8</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:16px"></div><span class="mono">16</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:24px"></div><span class="mono">24 · plate gutter</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:32px"></div><span class="mono">32</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:48px"></div><span class="mono">48</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:64px"></div><span class="mono">64 · page margin</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:96px"></div><span class="mono">96</span></div>
+        <div style="display:flex;gap:10px;align-items:center"><div style="background:var(--pigment-aegean);height:9px;width:128px"></div><span class="mono">128 · wide margin</span></div>
       </div>
-      <p style="font-size:12.5px;margin-top:12px">4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 ·
+      <p style="font-size:12px;margin-top:12px">4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 ·
       128 · 176. Page margins are deliberately large — the paintings are surrounded by
-      unpainted paper, and the layout should be too. Prose measures 62ch.</p>
+      unpainted paper, and the layout should be too.</p>
     </div>
     <div>
-      <span class="cap">Motion — from print</span>
+      <span class="cap">Measures &amp; semantics</span>
       <table style="margin-top:12px">
-        <tr><td class="cap" style="border:0;padding:6px 0">instant</td><td class="mono" style="border:0;padding:6px 0">80ms</td></tr>
-        <tr><td class="cap" style="border:0;padding:6px 0">fast</td><td class="mono" style="border:0;padding:6px 0">140ms</td></tr>
-        <tr><td class="cap" style="border:0;padding:6px 0">base</td><td class="mono" style="border:0;padding:6px 0">220ms</td></tr>
-        <tr><td class="cap" style="border:0;padding:6px 0">slow</td><td class="mono" style="border:0;padding:6px 0">420ms</td></tr>
-        <tr><td class="cap" style="border:0;padding:6px 0">page</td><td class="mono" style="border:0;padding:6px 0">700ms</td></tr>
+        <tr><td>Prose measure</td><td class="mono num">62ch</td></tr>
+        <tr><td>Annotation measure</td><td class="mono num">46ch</td></tr>
+        <tr><td>Plate gutter</td><td class="mono num">24px</td></tr>
+        <tr><td>Plate-to-caption gap</td><td class="mono num">12px</td></tr>
+        <tr><td>Control padding</td><td class="mono num">12 × 24px</td></tr>
+        <tr><td>Card padding</td><td class="mono num">24px</td></tr>
+        <tr><td>Page margin / wide</td><td class="mono num">64 / 128px</td></tr>
       </table>
-      <p style="font-size:12.5px;margin-top:12px">Opacity and position only. No bounce, no
-      spring, no scale-on-hover, no parallax. Reduced motion collapses every duration to
-      zero. Focus is a 2px deep-water outline, offset 3px, never removed.</p>
+    </div>
+    <div>
+      <span class="cap">Edge &amp; depth</span>
+      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:18px">
+        <div style="border-top:2px solid var(--ink-900);padding-top:7px" class="cap">2px carbon — section break</div>
+        <div style="border-top:1px solid var(--ledger-400);margin-top:14px;padding-top:7px" class="cap">1px hairline — row division</div>
+        <div style="margin-top:14px;background:var(--pigment-terracotta);height:22px"></div>
+        <div class="cap" style="margin-top:5px">Flat pigment field</div>
+      </div>
+      <p style="font-size:12px;margin-top:12px">Corner radius is zero, everywhere. Cards are
+      a 1px inset hairline on paper-400 or a flat paper-100 panel — no border-radius, no
+      drop shadow, no coloured left border except the notice's status rule. The one
+      transparency in the system is a gradient scrim over a hero painting.</p>
     </div>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Shape, space, motion</span><span>13</span></div>
+  <div class="folio"><span>AORI — Brand Book · Grid &amp; layout</span><span>24</span></div>
 </div>
 
-<!-- 14 · COMPONENTS -->
+<!-- p25 · MOTION & STATES -->
 <div class="page">
-  <div class="head"><span class="secno">08 · Application</span><h2>The component layer</h2></div>
+  <div class="head"><span class="secno">07 · Motion</span><h2>Restrained to the point of near-absence</h2></div>
+  <div class="three">
+    <div>
+      <span class="cap">Durations</span>
+      <table style="margin-top:12px">
+        <tr><td>instant</td><td class="mono num">80ms</td></tr>
+        <tr><td>fast · colour</td><td class="mono num">140ms</td></tr>
+        <tr><td>base · fades</td><td class="mono num">220ms</td></tr>
+        <tr><td>slow</td><td class="mono num">420ms</td></tr>
+        <tr><td>page</td><td class="mono num">700ms</td></tr>
+      </table>
+      <p style="font-size:12px;margin-top:12px">Opacity and position only, standard ease. No
+      bounce, no spring, no scale-on-hover, no parallax, no scroll-triggered reveals.
+      Reduced motion collapses every duration to zero.</p>
+    </div>
+    <div>
+      <span class="cap">Interactive states</span>
+      <ul class="rules" style="margin-top:8px">
+        <li><b>Hover</b>The underline appears, or opacity lifts .62 → 1. On a pigment field
+        the pigment darkens one step — never lightens.</li>
+        <li><b>Press</b>Darkens one more step and travels 1px. Nothing shrinks.</li>
+        <li><b>Focus</b>A 2px deep-water outline, offset 3px so it lands on the paper. Never
+        removed.</li>
+        <li><b>Disabled</b>text-faint on paper-300, no pointer — the one job text-faint
+        has.</li>
+      </ul>
+    </div>
+    <div>
+      <span class="cap">The states, drawn</span>
+      <div style="display:grid;gap:10px;margin-top:12px;max-width:250px">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.055em;text-transform:uppercase;background:#b04e20;color:var(--paper-200);padding:11px 20px;text-align:center">Rest</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.055em;text-transform:uppercase;background:#a84a1e;color:var(--paper-200);padding:11px 20px;text-align:center">Hover — one step deeper</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.055em;text-transform:uppercase;background:#8a3a22;color:var(--paper-200);padding:11px 20px;text-align:center;transform:translateY(1px)">Press — rust, 1px travel</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.055em;text-transform:uppercase;background:#b04e20;color:var(--paper-200);padding:11px 20px;text-align:center;outline:2px solid var(--focus-ring);outline-offset:3px">Focus — ring on the paper</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.055em;text-transform:uppercase;background:var(--paper-300);color:var(--text-faint);padding:11px 20px;text-align:center">Disabled</span>
+      </div>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Motion</span><span>25</span></div>
+</div>
+
+<!-- p26 · COMPONENTS I -->
+<div class="page">
+  <div class="head"><span class="secno">08 · Application</span><h2>The component layer — twenty pieces</h2></div>
   <div class="two">
     <div>
-      <span class="cap">Actions</span>
-      <div style="display:flex;gap:14px;align-items:center;margin-top:12px;flex-wrap:wrap">
-        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;background:var(--accent);color:var(--paper-200);padding:12px 24px">Add to bag</span>
-        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;border:2px solid var(--ink-900);padding:10px 22px">Sizing guide</span>
-        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;color:var(--link);text-decoration:underline;text-underline-offset:4px">Read how it is made</span>
+      <span class="cap">Core — Button, Tag, Rule, Mark</span>
+      <div style="display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12.5px;letter-spacing:.055em;text-transform:uppercase;background:var(--accent);color:var(--paper-200);padding:11px 22px">Add to bag</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12.5px;letter-spacing:.055em;text-transform:uppercase;border:2px solid var(--ink-900);padding:9px 20px">Sizing guide</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:12.5px;letter-spacing:.055em;text-transform:uppercase;color:var(--link);text-decoration:underline;text-underline-offset:4px">Read how it is made</span>
       </div>
-      <span class="cap" style="display:block;margin-top:26px">Form stock</span>
-      <div style="margin-top:12px;max-width:340px">
-        <div style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase">Ring size</div>
-        <div style="border:1px solid var(--ledger-400);background:var(--paper-100);padding:11px 13px;font-size:15px;margin-top:6px">54 — or a string and a ruler</div>
-        <div style="font-size:13px;color:var(--text-muted);margin-top:6px">One free resize, always.</div>
+      <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--rule-hair);padding:4px 10px">Silver 925</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--pigment-forest);color:var(--paper-200);padding:5px 11px">Four left</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--ledger-100);color:var(--ledger-ink);padding:5px 11px">Ref 04</span>
       </div>
-      <span class="cap" style="display:block;margin-top:26px">Notice</span>
-      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--rule-soft);border-left:4px solid var(--status-stop);padding:14px 18px;max-width:420px">
-        <div style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;color:var(--status-stop-ink)">Sold out</div>
-        <div style="font-size:14px;margin-top:4px">Twelve made. All twelve gone. We will make more, but not the same.</div>
+      <span class="cap" style="display:block;margin-top:24px">Content — Plate, Caption, DotChain, PullQuote, StepList</span>
+      <div style="display:flex;gap:16px;margin-top:12px;align-items:flex-start">
+        <figure class="plate" style="width:150px"><img src="../../assets/illustrations-v2-web/livyko.jpg" alt=""><figcaption>Livyko · the run</figcaption></figure>
+        <div style="flex:1">
+          <div style="display:flex;gap:6px;align-items:center"><span style="width:10px;height:10px;border-radius:50%;background:var(--pigment-aegean)"></span><span style="width:10px;height:10px;border-radius:50%;background:var(--pigment-terracotta)"></span><span style="width:10px;height:10px;border-radius:50%;background:var(--pigment-saffron)"></span><span style="width:10px;height:10px;border-radius:50%;background:var(--pigment-olive)"></span><span class="mono" style="margin-left:6px">DotChain</span></div>
+          <div class="q" style="font-size:13.5px;margin:12px 0 0">We will make more, but not the same.</div>
+          <div style="margin-top:12px;font-size:12.5px"><span class="secno" style="margin-right:8px">1</span>Wrap a strip of paper around the finger.<br><span class="secno" style="margin-right:8px">2</span>Mark where it meets; measure the length.<br><span class="secno" style="margin-right:8px">3</span>Read the size off the chart below.</div>
+        </div>
       </div>
     </div>
     <div>
-      <p>Twenty React components in <span class="mono">components/</span> — core, content,
-      forms, feedback, navigation — each with a typed interface and a
-      <span class="mono">.prompt.md</span> contract for agent use, so generated pages
-      inherit the rules.</p>
-      <ul class="rules" style="margin-top:10px">
+      <p>Twenty React components in <span class="mono">components/</span> across five groups
+      — core, content, forms, feedback, navigation — each with a typed interface
+      (<span class="mono">.d.ts</span>) and a <span class="mono">.prompt.md</span> contract
+      for agent use, so generated pages inherit the rules. Two more
+      (<span class="mono">Stamp</span>, <span class="mono">LedgerRow</span>) are specified
+      but unbuilt, and say so.</p>
+      <ul class="rules" style="margin-top:8px">
         <li><b>Behaviour is part of the spec</b>Dialogs trap focus, close on Escape and
-        return focus to the opener. Tabs run the automatic-activation keyboard pattern.
-        Errors are spoken — <span class="mono">aria-invalid</span>, described-by wiring,
-        rust ink at 7.25:1 — never just painted.</li>
-        <li><b>Hover darkens</b>One step, the same direction as press. Nothing scales,
-        nothing lifts, nothing casts.</li>
-        <li><b>The gate holds the line</b>Every colour role a component uses is a measured
-        pair in <span class="mono">tools/check_contrast.py</span>; a token edit that breaks
-        one fails the build.</li>
+        return focus to the opener. Tabs run the automatic-activation keyboard pattern with
+        a roving tabindex. Space and Enter press buttons like the mouse does.</li>
+        <li><b>Errors are spoken, not just painted</b><span class="mono">aria-invalid</span>,
+        described-by wiring, <span class="mono">role="alert"</span>, rust ink at 7.25:1.</li>
+        <li><b>Templates ship too</b>Brand book, collection grid and media kit templates in
+        <span class="mono">templates/</span>; a storefront kit in
+        <span class="mono">ui_kits/storefront/</span>.</li>
       </ul>
     </div>
   </div>
-  <div class="folio"><span>AORI — Brand Book · Application</span><span>14</span></div>
+  <div class="folio"><span>AORI — Brand Book · Application</span><span>26</span></div>
 </div>
 
-<!-- 15 · IN USE -->
+<!-- p27 · COMPONENTS II -->
 <div class="page">
-  <div class="head"><span class="secno">09 · In use</span><h2>Six channels, two products, one system</h2></div>
+  <div class="head"><span class="secno">08 · Application</span><h2>Forms, feedback, navigation</h2></div>
+  <div class="three">
+    <div>
+      <span class="cap">Form stock</span>
+      <div style="margin-top:12px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase">Ring size</div>
+        <div style="border:1px solid var(--ledger-400);background:var(--paper-100);padding:10px 12px;font-size:14px;margin-top:5px">54 — or a string and a ruler</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:5px">One free resize, always.</div>
+      </div>
+      <div style="margin-top:14px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase">Email</div>
+        <div style="border:1px solid var(--status-stop-ink);background:var(--paper-100);padding:10px 12px;font-size:14px;margin-top:5px;color:var(--text-muted)">aori@example</div>
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase;color:var(--status-stop-ink);margin-top:5px">Needs the full address</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;margin-top:14px">
+        <span style="width:16px;height:16px;flex:none;margin-top:2px;border:2px solid var(--rule-ink);background:var(--accent)"></span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase">Gift-wrap in the stamped pouch</span>
+      </div>
+      <div style="margin-top:14px;background:var(--surface-ledger);box-shadow:inset 0 0 0 1px var(--ledger-300);padding:6px 10px 8px;max-width:210px">
+        <div style="font-style:italic;font-size:10.5px;color:var(--ledger-ink)">Order № · LedgerField</div>
+        <div style="font-size:13px;margin-top:2px">2216 — of MMXXVI</div>
+      </div>
+    </div>
+    <div>
+      <span class="cap">Feedback — Notice &amp; Dialog</span>
+      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--rule-soft);border-left:4px solid var(--status-warm);padding:12px 15px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase;color:var(--status-warm-ink)">Made to order</div>
+        <div style="font-size:12.5px;margin-top:3px">Allow ten working days from the workshop in Heraklion.</div>
+      </div>
+      <div style="margin-top:14px;background:var(--surface-raised);box-shadow:0 0 0 1px var(--paper-400), 0 24px 48px -24px rgba(42,38,34,.35);padding:20px 22px 16px">
+        <div style="font-family:var(--font-display);font-size:17px;letter-spacing:.09em;text-transform:uppercase">Finding your size</div>
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.055em;text-transform:uppercase;color:var(--text-muted);margin-top:4px">Rings · 925 silver</div>
+        <div style="border-top:1px solid var(--rule-hair);margin-top:10px;padding-top:10px;font-size:12.5px">Wrap a strip of paper around the base of your finger and mark where it meets.</div>
+        <div style="display:flex;justify-content:flex-end;margin-top:12px"><span style="font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.055em;text-transform:uppercase;border:2px solid var(--ink-900);padding:7px 14px">Close</span></div>
+      </div>
+      <p style="font-size:11.5px;color:var(--ink-700);margin-top:10px">Escape closes; focus is
+      trapped while open and returns to the opener after.</p>
+    </div>
+    <div>
+      <span class="cap">Navigation — NavBar &amp; Tabs</span>
+      <div style="margin-top:12px;border-bottom:2px solid var(--ink-900);padding-bottom:10px;display:flex;gap:18px;align-items:center">
+        <img src="../../assets/logos/wordmark-ink.svg" style="width:64px" alt="">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase">Collections</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)">The workshop</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)">Journal</span>
+        <img src="../../assets/icons/bag.svg" style="width:16px;height:16px;margin-left:auto" alt="Bag">
+      </div>
+      <div style="margin-top:16px;border-bottom:1px solid var(--rule-hair);display:flex;gap:4px">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;background:var(--accent);color:var(--paper-200);padding:8px 14px;margin-bottom:-1px">Description</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;color:var(--text-muted);padding:8px 14px">Materials</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;color:var(--text-muted);padding:8px 14px">Care · 3</span>
+      </div>
+      <p style="font-size:11.5px;color:var(--ink-700);margin-top:10px">Left/Right move and
+      select; Home/End jump; only the selected stamp sits in the tab order.</p>
+      <span class="cap" style="display:block;margin-top:18px">The full inventory</span>
+      <p style="font-size:11.5px;margin-top:8px">Button · Mark · Rule · Tag — Caption · Dot ·
+      DotChain · Plate · PlateCard · PullQuote · StepList — Checkbox · Input · LedgerField ·
+      Select · Textarea — Dialog · Notice — NavBar · Tabs</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Application</span><span>27</span></div>
+</div>
+
+<!-- p28 · IN USE I -->
+<div class="page">
+  <div class="head"><span class="secno">09 · In use</span><h2>The workshop, across six channels</h2></div>
   <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start">
     <figure class="plate"><img src="cases/social-post.png" alt=""><figcaption>Instagram post</figcaption></figure>
     <figure class="plate"><img src="cases/social-story.png" alt=""><figcaption>Instagram story</figcaption></figure>
@@ -500,28 +1044,96 @@ td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;v
     <figure class="plate"><img src="cases/care-card.png" alt=""><figcaption>Care card</figcaption></figure>
     <figure class="plate"><img src="cases/line-sheet.png" alt=""><figcaption>Wholesale line sheet</figcaption></figure>
   </div>
-  <div class="two" style="margin-top:22px">
-    <p>The flagship case across six channels — post, story, email, run card, care card and
-    line sheet — every one composed from the same tokens, registers and rules.</p>
-    <p>And a second product to prove the point: a harbourside taverna website built with
-    nothing reskinned (<span class="mono">cases/taverna-home.html</span>). The palette came
-    from the paintings; everything else carried unchanged.</p>
+  <div class="two" style="margin-top:20px">
+    <p>Screen, print, social and email, every one composed from the same tokens, registers
+    and rules: paintings for the places, photographs for the pieces, the clerical sheet for
+    the arithmetic, and the drawn register for the service moments. Nothing is styled
+    per-channel; the channel only chooses which registers it needs.</p>
+    <p>Sources live in <span class="mono">cases/</span> and render from
+    <span class="mono">styles.css</span> alone. Every collection, price and run count is
+    invented and labelled placeholder — the honesty rules of the voice apply to the
+    system's own documentation too.</p>
   </div>
-  <div class="folio"><span>AORI — Brand Book · In use</span><span>15</span></div>
+  <div class="folio"><span>AORI — Brand Book · In use</span><span>28</span></div>
 </div>
 
-<!-- 16 · BACK COVER -->
+<!-- p29 · IN USE II: TAVERNA -->
+<div class="page">
+  <div class="head"><span class="secno">09 · In use</span><h2>The proof — a second product, nothing reskinned</h2></div>
+  <div class="two">
+    <figure class="plate" style="max-width:470px"><img src="cases/taverna-home.png" alt=""><figcaption>Harbourside taverna — website home</figcaption></figure>
+    <div>
+      <p>The taverna is entirely fictional, and that is the point: it was built from the
+      same tokens, registers and rules with nothing reskinned. The palette came from the
+      paintings; the display face carries the menu the way it carries the runs; the ledger
+      register prices the fish the way it prices the silver.</p>
+      <ul class="rules" style="margin-top:8px">
+        <li><b>What transferred untouched</b>Type, colour, icons, rules, spacing, motion,
+        components — the entire token layer and everything built on it.</li>
+        <li><b>What each product supplies</b>Its own paintings (or a commission in the same
+        hand), its own words in the maker's voice, its own arithmetic.</li>
+        <li><b>The recipe</b>Start from this library, let the palette come from the
+        paintings, keep the registers. If a choice needs a new rule, the rule joins the
+        system — not the product.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · In use</span><span>29</span></div>
+</div>
+
+<!-- p30 · GOVERNANCE -->
+<div class="page">
+  <div class="head"><span class="secno">10 · Governance</span><h2>How the system stays honest</h2></div>
+  <div class="three">
+    <div>
+      <span class="cap">Tokens are the source of truth</span>
+      <p style="font-size:12.5px;margin-top:10px">194 custom properties in
+      <span class="mono">tokens/*.css</span> — colour, type, spacing, shape, elevation,
+      motion, patterns, surfaces. <span class="mono">tools/build_tokens.py</span> regenerates
+      the machine-readable <span class="mono">tokens.json</span>; the CSS is edited, the
+      JSON never is.</p>
+      <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:12px 14px;margin-top:10px" class="mono">$ python3 tools/build_tokens.py<br>tokens/tokens.json: 194 tokens<br>$ python3 tools/check_contrast.py<br>All 18 pairs clear. The gate is open.</div>
+    </div>
+    <div>
+      <span class="cap">The gate</span>
+      <p style="font-size:12.5px;margin-top:10px">Every colour role is a declared pair with a
+      WCAG bar (page 12). The gate re-measures all of them on every run and fails the build
+      when a token edit puts one under its bar. Add a pair whenever a token takes on a new
+      text job — the list is the accessibility contract.</p>
+      <span class="cap" style="display:block;margin-top:16px">Agents are first-class</span>
+      <p style="font-size:12.5px;margin-top:10px"><span class="mono">SKILL.md</span> makes the
+      repository a Claude Code skill; every component's
+      <span class="mono">.prompt.md</span> is its contract for generated use.</p>
+    </div>
+    <div>
+      <span class="cap">Open decisions</span>
+      <ul class="rules" style="margin-top:8px">
+        <li><b>Photography route</b>1, 2, 3 or 4 (page 21). Blocks the shop pages from being
+        real.</li>
+        <li><b>Licensed faces</b>The three faces are Google-hosted substitutions; licensed
+        files swap in via <span class="mono">tokens/fonts.css</span> alone.</li>
+        <li><b>The wordmark original</b>The trace is used flat; the full-size painted
+        artwork is still wanted.</li>
+        <li><b>Three unpainted motifs</b>A spiral, a hoop and a beaded strand painted as
+        marks would complete the disc set.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Governance</span><span>30</span></div>
+</div>
+
+<!-- p31 · BACK COVER -->
 <div class="page" style="background:var(--ink-900);color:var(--paper-200);display:flex;flex-direction:column">
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;max-width:60ch">
-    <img src="../../assets/logos/wordmark-paper.svg" alt="AORI" style="width:180px;margin-bottom:36px">
-    <p style="color:var(--paper-300);font-size:14px">This book is generated from the living
-    system — tokens, guidelines and cases in the repository are the source of truth, and
-    the contrast gate measures every colour role on every run. The workshop is real; every
-    collection, price and run count shown is invented and labelled placeholder.</p>
-    <p style="color:var(--paper-300);font-size:14px">Repository: <span class="mono" style="color:var(--paper-200)">github.com/aposfys/aori-design-system</span><br>
-    Source: <span class="mono" style="color:var(--paper-200)">docs/brandbook/book.html</span> · regenerate the PDF from it after any token change.</p>
+    <img src="../../assets/logos/wordmark-paper.svg" alt="AORI" style="width:180px;margin-bottom:34px">
+    <p style="color:var(--paper-300)">This book is generated from the living system — tokens,
+    guidelines and cases in the repository are the source of truth, and the contrast gate
+    measures every colour role on every run. The workshop is real; every collection, price
+    and run count shown is invented and labelled placeholder.</p>
+    <p style="color:var(--paper-300)">Repository: <span class="mono" style="color:var(--paper-200)">github.com/aposfys/aori-design-system</span><br>
+    Source: <span class="mono" style="color:var(--paper-200)">docs/brandbook/book.html</span> · regenerate the PDF after any token change.</p>
   </div>
-  <div class="folio" style="color:var(--paper-500)"><span>AORI — Brand Book · First edition</span><span>September MMXXVI</span></div>
+  <div class="folio" style="color:var(--paper-500)"><span>AORI — Brand Book · Second edition</span><span>September MMXXVI</span></div>
 </div>
 
 </body></html>
