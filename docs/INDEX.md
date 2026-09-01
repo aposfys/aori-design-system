@@ -6,7 +6,7 @@
 - `README.md` — the overview.
 - `SKILL.md` — Agent Skills front matter, for use in Claude Code.
 
-**`tokens/`** — 187 custom properties across `colors`, `typography`, `fonts`, `spacing`,
+**`tokens/`** — 194 custom properties across `colors`, `typography`, `fonts`, `spacing`,
 `shape`, `elevation`, `motion`, `surfaces`, `patterns`.
 
 **`base/`** — `elements.css`, the element-level defaults.
@@ -31,8 +31,9 @@ documents `photo-blending.html`, `illustration-library.html`, `image-jobs.html`,
 **`assets/icons/`** — the sixteen functional icons, one SVG each, 24px grid, 2px stroke,
 `currentColor`.
 
-**`cases/`** — the four worked-case artboards (Instagram post and story, order email, A5
-run card); their captures live in `docs/brandbook/cases/`.
+**`cases/`** — the six worked-case artboards (Instagram post and story, order email, A5
+run card, care card, wholesale line sheet) plus the taverna website; their captures live
+in `docs/brandbook/cases/`.
 
 **`templates/`** — starting folders a consuming project can copy.
 

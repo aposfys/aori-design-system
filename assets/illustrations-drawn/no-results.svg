@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" stroke="#2A2622" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
+  <!-- The search over the water. The sea runs on; the glass finds nothing. -->
+  <g stroke="#1890A8">
+    <path d="M8 60 L17 54 L26 60 L35 54 L44 60 L53 54 L62 60 L71 54 L80 60 L88 55"/>
+    <path d="M8 74 L17 68 L26 74 L35 68 L44 74 L53 68 L62 74"/>
+  </g>
+  <circle cx="44" cy="38" r="16"/>
+  <path d="M56 50 L74 68"/>
+</svg>

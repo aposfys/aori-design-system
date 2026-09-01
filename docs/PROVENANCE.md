@@ -13,6 +13,11 @@
 
 **Made here, and flagged as such**
 
+- **The drawn register** — eight bench drawings in `assets/illustrations-drawn/`, authored
+  in-repo in the functional icons' construction (96px grid, 2px carbon, one pigment
+  accent). They are not paintings and claim no provenance from the painted plates; the
+  motif law (never redraw a painted mark) is untouched.
+
 - **Photography** — nine free-licence Pexels photographs were sourced into
   `assets/photography/` and referenced throughout the guidelines. **The image files are not
   in this repository** — they were absent from the source folder this was published from.

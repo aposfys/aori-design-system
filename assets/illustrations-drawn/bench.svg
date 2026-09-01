@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" stroke="#2A2622" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter">
+  <!-- The bench, the hammer, and one ring blank waiting on the top. -->
+  <path d="M12 62 H84"/>
+  <path d="M20 62 V84 M76 62 V84"/>
+  <path d="M20 76 H76"/>
+  <path d="M26 24 H44 V36 H26 Z"/>
+  <path d="M44 30 H72"/>
+  <circle cx="60" cy="53" r="9" stroke="#C0A860"/>
+</svg>

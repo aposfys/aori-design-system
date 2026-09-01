@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — Brand Book</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+@page{size:297mm 210mm;margin:0}
+html,body{margin:0;padding:0}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:var(--font-body);color:var(--ink-900)}
+.page{width:1123px;height:794px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper-200);padding:58px 66px 72px;page-break-after:always;break-after:page}
+.folio{position:absolute;left:66px;right:66px;bottom:34px;display:flex;justify-content:space-between;font-family:var(--font-annotation);font-weight:600;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-600)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-700)}
+.secno{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--pigment-terracotta)}
+h2{margin:6px 0 0;font-family:var(--font-display);font-size:40px;letter-spacing:.09em;text-transform:uppercase;font-weight:400;line-height:1.05}
+.head{border-top:2px solid var(--ink-900);padding-top:12px;margin-bottom:30px}
+p{font-size:14px;line-height:1.7;max-width:66ch;margin:0 0 12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.rules{margin:0;padding:0;list-style:none}
+.rules li{padding:11px 0;border-top:1px solid var(--paper-500);font-size:13px;line-height:1.6;max-width:60ch}
+.rules li:first-child{border-top:0}
+.rules b{font-family:var(--font-annotation);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:2px}
+.q{font-family:var(--font-body);font-style:italic;font-size:17px;line-height:1.7;border-left:2px solid var(--ink-900);padding-left:18px;margin:16px 0;max-width:56ch}
+.sw{display:grid;gap:10px}
+.sw .s{display:flex;flex-direction:column}
+.sw .c{height:56px;box-shadow:inset 0 0 0 1px rgba(42,38,34,.12)}
+.sw .l{font-family:var(--font-annotation);font-weight:600;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:5px}
+.sw .h{font-family:var(--font-mono);font-size:9.5px;color:var(--ink-600)}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.plate{background:var(--paper-100);padding:8px}
+.plate img{width:100%;display:block;border:5px solid var(--paper-100);outline:1px solid rgba(42,38,34,.14)}
+.plate figcaption{font-family:var(--font-annotation);font-weight:600;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-700);padding:8px 2px 2px;text-align:center}
+figure{margin:0}
+table{border-collapse:collapse;width:100%}
+th{font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ledger-ink);text-align:left;padding:8px 10px 6px;border-bottom:1px solid var(--ledger-400)}
+td{padding:8px 10px;border-bottom:1px solid var(--ledger-300);font-size:12.5px;vertical-align:top}
+.mono{font-family:var(--font-mono);font-size:11px}
+.contents li{padding:9px 0;border-top:1px solid var(--paper-500);font-size:14px;display:flex;gap:16px;max-width:44ch}
+.contents{list-style:none;margin:0;padding:0}
+.contents .n{font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.1em;color:var(--pigment-terracotta);width:24px;flex:none;padding-top:2px}
+</style></head><body>
+
+<!-- 01 · COVER -->
+<div class="page" style="background:var(--stock-100);display:flex;flex-direction:column;padding-bottom:58px">
+  <span class="cap">Brand book · First edition · September MMXXVI</span>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:34px">
+    <img src="../../assets/logos/wordmark-ink.svg" alt="AORI" style="width:420px">
+    <div class="cap" style="letter-spacing:.22em">Handmade · In runs of twelve · Heraklion, Crete</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/harbour.jpg" alt=""></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/psiloritis.jpg" alt=""></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/livyko.jpg" alt=""></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/olive.jpg" alt=""></figure>
+  </div>
+  <div class="folio"><span>AORI — Design System</span><span>All product data placeholder</span></div>
+</div>
+
+<!-- 02 · CONTENTS + PHILOSOPHY -->
+<div class="page">
+  <div class="head"><span class="secno">The system</span><h2>What this book holds</h2></div>
+  <div class="two">
+    <div>
+      <ol class="contents">
+        <li><span class="n">01</span>Philosophy — the workshop, and the voice it speaks in</li>
+        <li><span class="n">02</span>Logotype — the wordmark and its space</li>
+        <li><span class="n">03</span>Colour — grounds, pigments, and the two registers</li>
+        <li><span class="n">04</span>Typography — three faces, three jobs</li>
+        <li><span class="n">05</span>Illustration — the painted hand and the drawn register</li>
+        <li><span class="n">06</span>Iconography — the motif law and the functional set</li>
+        <li><span class="n">07</span>Shape, space and motion</li>
+        <li><span class="n">08</span>Application — the component layer</li>
+        <li><span class="n">09</span>In use — six channels, two products</li>
+      </ol>
+    </div>
+    <div>
+      <p>AORI is a design system, not a brand: the rules are the system's, and the worked
+      examples speak in the voice of its flagship case — a handmade-jewellery workshop in
+      Heraklion, real on Instagram, its product data invented and labelled so. A harbourside
+      taverna is built from the same tokens to prove the system carries across products.</p>
+      <p>Everything visual is watercolour and gouache on cotton paper. Corner radius is
+      zero, there are no shadows, and depth is a 2px carbon rule, a 1px hairline, or a flat
+      pigment field — never a blur.</p>
+      <div class="q">We make twelve. When they are gone we make something else.</div>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book</span><span>02</span></div>
+</div>
+
+<!-- 03 · VOICE -->
+<div class="page">
+  <div class="head"><span class="secno">01 · Philosophy</span><h2>The voice is a maker talking</h2></div>
+  <div class="two">
+    <ul class="rules">
+      <li><b>Person</b>First person plural for the workshop, second person for the reader.
+      Never "AORI is proud to present".</li>
+      <li><b>Casing</b>Sentence case in prose. Uppercase only in the annotation voice —
+      labels, buttons, metadata — where it is always tracked. Display headings are uppercase
+      and tracked; body copy never is.</li>
+      <li><b>Numbers are load-bearing</b>Twelve in a run. Four left. Silver 925. Two working
+      days. The brand's honesty is arithmetic; numbers are stated plainly and never rounded
+      up for effect.</li>
+      <li><b>Scarcity is stated, never sold</b>"Four left of twelve", not "Selling fast". A
+      closed run says "All twelve gone" and keeps its page.</li>
+      <li><b>No exclamation marks. No emoji.</b>Greek is reserved for the brand book;
+      product surfaces are Latin only.</li>
+    </ul>
+    <div>
+      <span class="cap">Verbatim, from the system</span>
+      <div class="q">Made by hand in Heraklion, in runs of twelve, and named after the
+      places they came from.</div>
+      <div class="q">Silver 925, hammered on the bench and left matte. Named for the beach
+      below the village, where the water goes flat at six in the evening.</div>
+      <div class="q">We will make more, but not the same.</div>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Philosophy</span><span>03</span></div>
+</div>
+
+<!-- 04 · LOGOTYPE -->
+<div class="page">
+  <div class="head"><span class="secno">02 · Logotype</span><h2>One wordmark, and its subordinates</h2></div>
+  <div class="two">
+    <div>
+      <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:44px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-ink.svg" style="width:300px" alt="AORI wordmark, ink"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
+        <div style="background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:22px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-terracotta.svg" style="width:150px" alt="Wordmark, terracotta"></div>
+        <div style="background:var(--ink-900);padding:22px;display:flex;justify-content:center"><img src="../../assets/logos/wordmark-paper.svg" style="width:150px" alt="Wordmark, paper on ink"></div>
+      </div>
+    </div>
+    <ul class="rules">
+      <li><b>The only mark</b>The wordmark — a vector trace of painted lettering supplied by
+      the workshop — is the only logo. No mark was invented for this system.</li>
+      <li><b>Emblems sit under it</b>The five painted emblem files contain no readable brand
+      name; they are filed as emblems and always sit subordinate to the wordmark, never in
+      its place.</li>
+      <li><b>Colour</b>The wordmark runs in ink, terracotta, aegean, olive or paper — the
+      palette and nothing outside it. Never on a photograph, never over a pattern at full
+      strength.</li>
+      <li><b>Space and minimums</b>Clear space, minimum sizes, placement and the eight
+      misuses are drawn in full at <span class="mono">guidelines/logotype.html</span>.</li>
+    </ul>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Logotype</span><span>04</span></div>
+</div>
+
+<!-- 05 · COLOUR: GROUNDS -->
+<div class="page">
+  <div class="head"><span class="secno">03 · Colour</span><h2>Grounds — plaster, stock, stone, carbon</h2></div>
+  <p>Lime plaster carries every page; toned stock is the paper the paintings are drawn on;
+  stone is the clerical register; carbon is fresco black, thinned. Laid flat and opaque,
+  never tinted, never gradiented.</p>
+  <div class="sw" style="grid-template-columns:repeat(5,1fr);margin-top:8px">
+    <div class="s"><div class="c" style="background:#fdfaf4"></div><div class="l">paper-100</div><div class="h">#FDFAF4</div></div>
+    <div class="s"><div class="c" style="background:#fbf7ef"></div><div class="l">paper-200 · the page</div><div class="h">#FBF7EF</div></div>
+    <div class="s"><div class="c" style="background:#f5efe3"></div><div class="l">paper-300</div><div class="h">#F5EFE3</div></div>
+    <div class="s"><div class="c" style="background:#ebe2d2"></div><div class="l">paper-400</div><div class="h">#EBE2D2</div></div>
+    <div class="s"><div class="c" style="background:#d8cdb8"></div><div class="l">paper-500</div><div class="h">#D8CDB8</div></div>
+    <div class="s"><div class="c" style="background:#efe3cf"></div><div class="l">stock-100 · the mount</div><div class="h">#EFE3CF</div></div>
+    <div class="s"><div class="c" style="background:#d8c0a8"></div><div class="l">stock-200</div><div class="h">#D8C0A8</div></div>
+    <div class="s"><div class="c" style="background:#f1f1ee"></div><div class="l">ledger-100 · stone</div><div class="h">#F1F1EE</div></div>
+    <div class="s"><div class="c" style="background:#4a5a52"></div><div class="l">ledger-ink</div><div class="h">#4A5A52</div></div>
+    <div class="s"><div class="c" style="background:#2a2622"></div><div class="l">ink-900 · carbon</div><div class="h">#2A2622</div></div>
+  </div>
+  <p style="margin-top:26px">Maximum two background colours in any one document. The stone
+  register takes anything administrative — sizing, shipping, order status, specification —
+  with form-green ink and 1px hairlines.</p>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>05</span></div>
+</div>
+
+<!-- 06 · COLOUR: PIGMENTS -->
+<div class="page">
+  <div class="head"><span class="secno">03 · Colour</span><h2>Thirteen pigments, out of the paintings</h2></div>
+  <p>Sampled by frequency from the plates themselves. Four to six carry a composition;
+  never more. <strong>Terracotta acts, aegean links, saffron highlights.</strong></p>
+  <div class="sw" style="grid-template-columns:repeat(7,1fr);margin-top:8px">
+    <div class="s"><div class="c" style="background:#1890a8"></div><div class="l">aegean</div><div class="h">#1890A8</div></div>
+    <div class="s"><div class="c" style="background:#006078"></div><div class="l">water</div><div class="h">#006078</div></div>
+    <div class="s"><div class="c" style="background:#78c0c0"></div><div class="l">shallow</div><div class="h">#78C0C0</div></div>
+    <div class="s"><div class="c" style="background:#a8c0c0"></div><div class="l">haze</div><div class="h">#A8C0C0</div></div>
+    <div class="s"><div class="c" style="background:#c05a28"></div><div class="l">terracotta</div><div class="h">#C05A28</div></div>
+    <div class="s"><div class="c" style="background:#a87860"></div><div class="l">clay</div><div class="h">#A87860</div></div>
+    <div class="s"><div class="c" style="background:#8a3a22"></div><div class="l">rust</div><div class="h">#8A3A22</div></div>
+    <div class="s"><div class="c" style="background:#c0a860"></div><div class="l">saffron</div><div class="h">#C0A860</div></div>
+    <div class="s"><div class="c" style="background:#907848"></div><div class="l">ochre</div><div class="h">#907848</div></div>
+    <div class="s"><div class="c" style="background:#5f7a46"></div><div class="l">olive</div><div class="h">#5F7A46</div></div>
+    <div class="s"><div class="c" style="background:#34513c"></div><div class="l">forest</div><div class="h">#34513C</div></div>
+    <div class="s"><div class="c" style="background:#6b4426"></div><div class="l">umber</div><div class="h">#6B4426</div></div>
+    <div class="s"><div class="c" style="background:#a8a890"></div><div class="l">slate</div><div class="h">#A8A890</div></div>
+  </div>
+  <div style="margin-top:24px" class="cap">Metals — matte, never a gradient, never a shine</div>
+  <div class="sw" style="grid-template-columns:repeat(7,1fr);margin-top:10px">
+    <div class="s"><div class="c" style="background:#c0a860;height:36px"></div><div class="l">gold</div><div class="h">#C0A860</div></div>
+    <div class="s"><div class="c" style="background:#907848;height:36px"></div><div class="l">gold-deep</div><div class="h">#907848</div></div>
+    <div class="s"><div class="c" style="background:#a8a890;height:36px"></div><div class="l">silver</div><div class="h">#A8A890</div></div>
+    <div class="s"><div class="c" style="background:#6e675c;height:36px"></div><div class="l">silver-oxide</div><div class="h">#6E675C</div></div>
+    <div class="s"><div class="c" style="background:#a87860;height:36px"></div><div class="l">bronze</div><div class="h">#A87860</div></div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>06</span></div>
+</div>
+
+<!-- 07 · COLOUR: SEMANTIC -->
+<div class="page">
+  <div class="head"><span class="secno">03 · Colour</span><h2>The pigment marks, the ink speaks</h2></div>
+  <div class="two">
+    <div>
+      <span class="cap">Action — each through its ink cut</span>
+      <div class="sw" style="grid-template-columns:repeat(3,1fr);margin-top:10px">
+        <div class="s"><div class="c" style="background:#b04e20"></div><div class="l">accent</div><div class="h">#B04E20 · 4.97:1</div></div>
+        <div class="s"><div class="c" style="background:#a84a1e"></div><div class="l">accent-hover</div><div class="h">#A84A1E · 5.36:1</div></div>
+        <div class="s"><div class="c" style="background:#8a3a22"></div><div class="l">accent-press</div><div class="h">#8A3A22 · 7.25:1</div></div>
+        <div class="s"><div class="c" style="background:#117487"></div><div class="l">link</div><div class="h">#117487 · 5.08:1</div></div>
+        <div class="s"><div class="c" style="background:#006078"></div><div class="l">link-hover · focus</div><div class="h">#006078 · 6.67:1</div></div>
+        <div class="s"><div class="c" style="background:#6b4426"></div><div class="l">link-visited</div><div class="h">#6B4426 · 7.92:1</div></div>
+      </div>
+      <p style="margin-top:18px">Hover darkens one step — the same direction as press. A
+      pigment never lightens under the pointer. Ratios are measured against the page and
+      enforced by <span class="mono">tools/check_contrast.py</span> on every run.</p>
+    </div>
+    <div>
+      <span class="cap">Status — pigment for marks, ink for words</span>
+      <div class="sw" style="grid-template-columns:repeat(4,1fr);margin-top:10px">
+        <div class="s"><div class="c" style="background:#c05a28;height:34px"></div><div class="l">stop</div></div>
+        <div class="s"><div class="c" style="background:#c0a860;height:34px"></div><div class="l">warm</div></div>
+        <div class="s"><div class="c" style="background:#1890a8;height:34px"></div><div class="l">calm</div></div>
+        <div class="s"><div class="c" style="background:#34513c;height:34px"></div><div class="l">go</div></div>
+        <div class="s"><div class="c" style="background:#8a3a22;height:34px"></div><div class="l">stop-ink · 7.25:1</div></div>
+        <div class="s"><div class="c" style="background:#7d6a2c;height:34px"></div><div class="l">warm-ink · 4.95:1</div></div>
+        <div class="s"><div class="c" style="background:#117487;height:34px"></div><div class="l">calm-ink · 5.08:1</div></div>
+        <div class="s"><div class="c" style="background:#34513c;height:34px"></div><div class="l">go-ink · 8.23:1</div></div>
+      </div>
+      <p style="margin-top:18px">Wherever a status colour becomes text — a notice label, an
+      error line, a tag — it takes its ink cut, which clears 4.5:1 on paper. The full
+      pigments stay on rules, fills and stamps, where 3:1 is the bar.</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Colour</span><span>07</span></div>
+</div>
+
+<!-- 08 · TYPE -->
+<div class="page">
+  <div class="head"><span class="secno">04 · Typography</span><h2>Three faces, three jobs</h2></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px">
+    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
+      <div style="font-family:var(--font-display);font-size:64px;letter-spacing:.09em;line-height:1">AΩ</div>
+      <div class="cap" style="margin-top:12px">GFS Didot — Display</div>
+      <p style="font-size:12.5px;margin-top:8px">Names, headings, prices. Uppercase, tracked
+      .09–.14em. Greek-capable, which is why it won.</p>
+      <div style="font-family:var(--font-display);font-size:22px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px">Psiloritis · 185 €</div>
+    </div>
+    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:64px;line-height:1">Aa</div>
+      <div class="cap" style="margin-top:12px">Commissioner — Annotation &amp; UI</div>
+      <p style="font-size:12.5px;margin-top:8px">Labels, buttons, metadata, nav. Always
+      uppercase, tracked .055–.14em, weight 600.</p>
+      <div style="font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.11em;text-transform:uppercase;margin-top:12px">Four left of twelve · Add to bag</div>
+    </div>
+    <div style="border-top:1px solid var(--paper-500);padding-top:16px">
+      <div style="font-family:var(--font-body);font-size:64px;line-height:1">Aa</div>
+      <div class="cap" style="margin-top:12px">Source Serif 4 — Body</div>
+      <p style="font-size:12.5px;margin-top:8px">Prose, descriptions, form values. Sentence
+      case, 15–17px, line-height 1.7–1.75.</p>
+      <div style="font-size:14px;line-height:1.7;margin-top:8px">Hammered on the bench and
+      left matte, named for the beach below the village.</div>
+    </div>
+  </div>
+  <div style="margin-top:30px;border-top:1px solid var(--paper-500);padding-top:14px" class="two">
+    <p>The scale runs 11 / 13 / 15 / 17 / 20 / 25 / 32 / 42 / 58 / 80 / 112px. Wide
+    tracking on display type is the loudest signal in the brand; body copy is never
+    tracked and never uppercase.</p>
+    <p>Minimums: 24px type in a 1920×1080 slide, 12pt in print, 44px hit targets on touch
+    surfaces. All three faces are Google-hosted substitutions until licensed files arrive
+    — the swap happens in <span class="mono">tokens/fonts.css</span> alone.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Typography</span><span>08</span></div>
+</div>
+
+<!-- 09 · ILLUSTRATION: PAINTED -->
+<div class="page">
+  <div class="head"><span class="secno">05 · Illustration</span><h2>The painted hand</h2></div>
+  <div class="grid4">
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/cove.jpg" alt=""><figcaption>Cove</figcaption></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/taverna.jpg" alt=""><figcaption>Taverna</figcaption></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/generations.jpg" alt=""><figcaption>Generations</figcaption></figure>
+    <figure class="plate"><img src="../../assets/illustrations-v2-web/night.jpg" alt=""><figcaption>Night</figcaption></figure>
+  </div>
+  <div class="two" style="margin-top:26px">
+    <p>Saturated fields held inside a drawn contour, the paper reading through the lighter
+    passages, nothing opaque white, nothing greyed to recede. The full plate — 23 places,
+    figures and still lifes — mounts on toned stock with a 5px unpainted margin, so it
+    never floats.</p>
+    <p>A painting opens the site; a photograph never does. Collection tiles are paintings
+    (a tile is a <em>place</em>); product tiles and galleries are photographs. The full
+    image-jobs table is at <span class="mono">guidelines/image-jobs.html</span>; the
+    photography route itself is still an open decision, documented with four costed
+    options in the specification.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>09</span></div>
+</div>
+
+<!-- 10 · MOTIFS & PATTERNS -->
+<div class="page">
+  <div class="head"><span class="secno">05 · Illustration</span><h2>Motifs are circles, patterns are squares</h2></div>
+  <div class="two">
+    <div>
+      <span class="cap">The six lifted details — decoration with provenance</span>
+      <div class="grid6" style="margin-top:12px;grid-template-columns:repeat(3,96px);gap:18px">
+        <img src="../../assets/motifs-v2/dolphin.png" style="width:96px;height:96px;border-radius:50%" alt="Dolphin motif">
+        <img src="../../assets/motifs-v2/octopus.png" style="width:96px;height:96px;border-radius:50%" alt="Octopus motif">
+        <img src="../../assets/motifs-v2/sun.png" style="width:96px;height:96px;border-radius:50%" alt="Sun motif">
+        <img src="../../assets/motifs-v2/olive-wreath.png" style="width:96px;height:96px;border-radius:50%" alt="Olive wreath motif">
+        <img src="../../assets/motifs-v2/spiral.png" style="width:96px;height:96px;border-radius:50%" alt="Spiral motif">
+        <img src="../../assets/motifs-v2/hoop.png" style="width:96px;height:96px;border-radius:50%" alt="Hoop motif">
+      </div>
+      <p style="margin-top:16px;font-size:12.5px">Each is cut out of a finished painting and
+      belongs to a place — using one is a claim about which place a page is about. Minimum
+      40px, one per page, never redrawn, never a control.</p>
+    </div>
+    <div>
+      <span class="cap">Three patterns, three strengths</span>
+      <div class="grid6" style="margin-top:12px;grid-template-columns:repeat(3,1fr)">
+        <figure class="plate"><img src="../../assets/patterns/wave.jpg" alt=""><figcaption>Wave</figcaption></figure>
+        <figure class="plate"><img src="../../assets/patterns/spiral.jpg" alt=""><figcaption>Spiral</figcaption></figure>
+        <figure class="plate"><img src="../../assets/patterns/olive.jpg" alt=""><figcaption>Olive</figcaption></figure>
+      </div>
+      <p style="margin-top:16px;font-size:12.5px">Full strength for packaging and one hero
+      band; 30% for section grounds; 8% behind long prose — applied as a
+      <span class="mono">::before</span> layer so the opacity never touches the text. Never
+      two patterns on one screen.</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>10</span></div>
+</div>
+
+<!-- 11 · DRAWN REGISTER -->
+<div class="page">
+  <div class="head"><span class="secno">05c · Illustration</span><h2>The drawn register</h2></div>
+  <div class="two">
+    <div class="grid4" style="grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400)">
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/empty-bag.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">empty-bag</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/no-results.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">no-results</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/letter-sent.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">letter-sent</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/run-closed.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">run-closed</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/bench.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">bench</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/polish-cloth.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">polish-cloth</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/keep-dry.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">keep-dry</figcaption></figure>
+      <figure style="background:var(--paper-100);padding:18px 8px 12px;text-align:center"><img src="../../assets/illustrations-drawn/pouch.svg" style="width:76px;height:76px" alt=""><figcaption style="font-family:var(--font-annotation);font-weight:600;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);margin-top:8px">pouch</figcaption></figure>
+    </div>
+    <ul class="rules">
+      <li><b>The third job of the one hand</b>Eight bench drawings on a 96px grid at the
+      icons' 2px carbon rule, one pigment accent each. Not paintings — they claim no
+      provenance from the plates.</li>
+      <li><b>Service, not romance</b>Empty states, care and sizing instructions,
+      transactional email. A drawing never opens a page and never sits beside a painted
+      plate — the painting wins.</li>
+      <li><b>Words beside it</b>Like an icon, a drawing never carries meaning alone: the
+      annotation line under it says the thing plainly. "All twelve gone."</li>
+      <li><b>The motif law holds</b>No drawn octopus, no drawn sun, no drawn spiral. Motifs
+      stay paintings; drawings depict objects from the bench and the shop.</li>
+    </ul>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Illustration</span><span>11</span></div>
+</div>
+
+<!-- 12 · ICONOGRAPHY -->
+<div class="page">
+  <div class="head"><span class="secno">06 · Iconography</span><h2>Sixteen marks, one construction</h2></div>
+  <div class="two">
+    <div class="grid6" style="grid-template-columns:repeat(8,1fr);gap:1px;background:var(--paper-400)">
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/search.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">search</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/bag.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">bag</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/account.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">account</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/filter.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">filter</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/close.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">close</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/arrow-left.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">arrow-l</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/arrow-right.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">arrow-r</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/plus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">plus</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/minus.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">minus</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/check.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">check</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/ruler.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">ruler</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/package.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">package</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/seal.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">seal</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/mail.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">mail</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/pin.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">pin</figcaption></figure>
+      <figure style="background:var(--paper-200);padding:20px 6px 12px;text-align:center"><img src="../../assets/icons/sparkle.svg" style="width:24px;height:24px" alt=""><figcaption style="font-size:7.5px;font-family:var(--font-annotation);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-700);margin-top:10px">sparkle</figcaption></figure>
+    </div>
+    <ul class="rules">
+      <li><b>Construction</b>24px grid, 16px keystone, the system's 2px carbon rule: butt
+      caps, mitre joins, square corners, currentColor. One deliberate solid — the seal's
+      centre dot.</li>
+      <li><b>Sizes</b>Rendered at 24px, or 16px in the clerical register; never above 40px.</li>
+      <li><b>Never alone, never decorating</b>An icon never carries meaning alone — the word
+      sits beside it — and an icon never decorates. Motifs stay paintings; icons do the
+      interface jobs; the two never trade.</li>
+    </ul>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Iconography</span><span>12</span></div>
+</div>
+
+<!-- 13 · SHAPE SPACE MOTION -->
+<div class="page">
+  <div class="head"><span class="secno">07 · Shape, space, motion</span><h2>Square, spacious, nearly still</h2></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px">
+    <div>
+      <span class="cap">Edge &amp; depth</span>
+      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:20px">
+        <div style="border-top:2px solid var(--ink-900);padding-top:8px" class="cap">2px carbon — section break</div>
+        <div style="border-top:1px solid var(--ledger-400);margin-top:16px;padding-top:8px" class="cap">1px hairline — row division</div>
+        <div style="margin-top:16px;background:var(--pigment-terracotta);height:26px"></div>
+        <div class="cap" style="margin-top:6px">Flat pigment field</div>
+      </div>
+      <p style="font-size:12.5px;margin-top:12px">Corner radius is zero, everywhere. No
+      shadows, no blur — the one exception is a gradient scrim over a hero painting so
+      white type stays legible.</p>
+    </div>
+    <div>
+      <span class="cap">Space — 4px base</span>
+      <div style="margin-top:12px;display:grid;gap:6px">
+        <div style="background:var(--pigment-aegean);height:10px;width:8px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:16px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:24px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:32px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:48px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:64px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:96px"></div>
+        <div style="background:var(--pigment-aegean);height:10px;width:128px"></div>
+      </div>
+      <p style="font-size:12.5px;margin-top:12px">4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 ·
+      128 · 176. Page margins are deliberately large — the paintings are surrounded by
+      unpainted paper, and the layout should be too. Prose measures 62ch.</p>
+    </div>
+    <div>
+      <span class="cap">Motion — from print</span>
+      <table style="margin-top:12px">
+        <tr><td class="cap" style="border:0;padding:6px 0">instant</td><td class="mono" style="border:0;padding:6px 0">80ms</td></tr>
+        <tr><td class="cap" style="border:0;padding:6px 0">fast</td><td class="mono" style="border:0;padding:6px 0">140ms</td></tr>
+        <tr><td class="cap" style="border:0;padding:6px 0">base</td><td class="mono" style="border:0;padding:6px 0">220ms</td></tr>
+        <tr><td class="cap" style="border:0;padding:6px 0">slow</td><td class="mono" style="border:0;padding:6px 0">420ms</td></tr>
+        <tr><td class="cap" style="border:0;padding:6px 0">page</td><td class="mono" style="border:0;padding:6px 0">700ms</td></tr>
+      </table>
+      <p style="font-size:12.5px;margin-top:12px">Opacity and position only. No bounce, no
+      spring, no scale-on-hover, no parallax. Reduced motion collapses every duration to
+      zero. Focus is a 2px deep-water outline, offset 3px, never removed.</p>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Shape, space, motion</span><span>13</span></div>
+</div>
+
+<!-- 14 · COMPONENTS -->
+<div class="page">
+  <div class="head"><span class="secno">08 · Application</span><h2>The component layer</h2></div>
+  <div class="two">
+    <div>
+      <span class="cap">Actions</span>
+      <div style="display:flex;gap:14px;align-items:center;margin-top:12px;flex-wrap:wrap">
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;background:var(--accent);color:var(--paper-200);padding:12px 24px">Add to bag</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;border:2px solid var(--ink-900);padding:10px 22px">Sizing guide</span>
+        <span style="font-family:var(--font-annotation);font-weight:600;font-size:13px;letter-spacing:.055em;text-transform:uppercase;color:var(--link);text-decoration:underline;text-underline-offset:4px">Read how it is made</span>
+      </div>
+      <span class="cap" style="display:block;margin-top:26px">Form stock</span>
+      <div style="margin-top:12px;max-width:340px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase">Ring size</div>
+        <div style="border:1px solid var(--ledger-400);background:var(--paper-100);padding:11px 13px;font-size:15px;margin-top:6px">54 — or a string and a ruler</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:6px">One free resize, always.</div>
+      </div>
+      <span class="cap" style="display:block;margin-top:26px">Notice</span>
+      <div style="margin-top:12px;background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--rule-soft);border-left:4px solid var(--status-stop);padding:14px 18px;max-width:420px">
+        <div style="font-family:var(--font-annotation);font-weight:600;font-size:11px;letter-spacing:.055em;text-transform:uppercase;color:var(--status-stop-ink)">Sold out</div>
+        <div style="font-size:14px;margin-top:4px">Twelve made. All twelve gone. We will make more, but not the same.</div>
+      </div>
+    </div>
+    <div>
+      <p>Twenty React components in <span class="mono">components/</span> — core, content,
+      forms, feedback, navigation — each with a typed interface and a
+      <span class="mono">.prompt.md</span> contract for agent use, so generated pages
+      inherit the rules.</p>
+      <ul class="rules" style="margin-top:10px">
+        <li><b>Behaviour is part of the spec</b>Dialogs trap focus, close on Escape and
+        return focus to the opener. Tabs run the automatic-activation keyboard pattern.
+        Errors are spoken — <span class="mono">aria-invalid</span>, described-by wiring,
+        rust ink at 7.25:1 — never just painted.</li>
+        <li><b>Hover darkens</b>One step, the same direction as press. Nothing scales,
+        nothing lifts, nothing casts.</li>
+        <li><b>The gate holds the line</b>Every colour role a component uses is a measured
+        pair in <span class="mono">tools/check_contrast.py</span>; a token edit that breaks
+        one fails the build.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · Application</span><span>14</span></div>
+</div>
+
+<!-- 15 · IN USE -->
+<div class="page">
+  <div class="head"><span class="secno">09 · In use</span><h2>Six channels, two products, one system</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start">
+    <figure class="plate"><img src="cases/social-post.png" alt=""><figcaption>Instagram post</figcaption></figure>
+    <figure class="plate"><img src="cases/social-story.png" alt=""><figcaption>Instagram story</figcaption></figure>
+    <figure class="plate"><img src="cases/email-order.png" alt=""><figcaption>Order email</figcaption></figure>
+    <figure class="plate"><img src="cases/run-card.png" alt=""><figcaption>A5 run card</figcaption></figure>
+    <figure class="plate"><img src="cases/care-card.png" alt=""><figcaption>Care card</figcaption></figure>
+    <figure class="plate"><img src="cases/line-sheet.png" alt=""><figcaption>Wholesale line sheet</figcaption></figure>
+  </div>
+  <div class="two" style="margin-top:22px">
+    <p>The flagship case across six channels — post, story, email, run card, care card and
+    line sheet — every one composed from the same tokens, registers and rules.</p>
+    <p>And a second product to prove the point: a harbourside taverna website built with
+    nothing reskinned (<span class="mono">cases/taverna-home.html</span>). The palette came
+    from the paintings; everything else carried unchanged.</p>
+  </div>
+  <div class="folio"><span>AORI — Brand Book · In use</span><span>15</span></div>
+</div>
+
+<!-- 16 · BACK COVER -->
+<div class="page" style="background:var(--ink-900);color:var(--paper-200);display:flex;flex-direction:column">
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;max-width:60ch">
+    <img src="../../assets/logos/wordmark-paper.svg" alt="AORI" style="width:180px;margin-bottom:36px">
+    <p style="color:var(--paper-300);font-size:14px">This book is generated from the living
+    system — tokens, guidelines and cases in the repository are the source of truth, and
+    the contrast gate measures every colour role on every run. The workshop is real; every
+    collection, price and run count shown is invented and labelled placeholder.</p>
+    <p style="color:var(--paper-300);font-size:14px">Repository: <span class="mono" style="color:var(--paper-200)">github.com/aposfys/aori-design-system</span><br>
+    Source: <span class="mono" style="color:var(--paper-200)">docs/brandbook/book.html</span> · regenerate the PDF from it after any token change.</p>
+  </div>
+  <div class="folio" style="color:var(--paper-500)"><span>AORI — Brand Book · First edition</span><span>September MMXXVI</span></div>
+</div>
+
+</body></html>
