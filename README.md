@@ -1,7 +1,7 @@
 # AORI Design System
-Brand and interface system for a handmade silver jewellery workshop in Heraklion, Crete.
+A playful, illustration-driven design system — watercolour plates, flat pigment, zero radius, no shadows — for websites and brands that should feel handmade. Not tied to any product.
 
-AORI (written **AÓRI**, styled AŌRI in the Instagram bio) makes pieces in **runs of twelve**, each run named for a place on the island. When a run is gone it is not remade. The system exists to make one thing possible: a shop, a document or a post that looks like it came from a workshop rather than a brand studio.
+The system exists to make one thing possible: a shop, a document or a post that looks like it came from a workshop rather than a brand studio. Its flagship case is **AÓRI**, a fictional handmade-jewellery workshop that makes pieces in runs of twelve; a harbourside **taverna** is built from the same tokens to prove the system carries across products.
 
 **[Open the brand book →](index.html)** — the whole system on one page, in the eight sections a complete brand book carries.
 
@@ -18,17 +18,25 @@ rule — motifs stay paintings, icons do the interface jobs, and the two never t
 ![Earth](docs/brandbook/cards/colors-reds.png)
 ![Two seas](docs/brandbook/cards/colors-cools.png)
 
-### In use
+### In use — two products, one system
+
+A second product, a harbourside taverna, built from the same tokens, registers and rules with nothing reskinned:
+
+![Taverna website home](docs/brandbook/cases/taverna-home.png)
+
+The flagship case — the jewellery workshop — across four channels:
 
 | | |
 |---|---|
 | ![Instagram post](docs/brandbook/cases/social-post.png) | ![Instagram story](docs/brandbook/cases/social-story.png) |
 | ![Order email](docs/brandbook/cases/email-order.png) | ![A5 run card](docs/brandbook/cases/run-card.png) |
 
+**Taking it to a new product.** The palette is not decoration-first — the thirteen pigments are sampled by frequency from the paintings. Commission plates in the same hand (or start from this library) and let the palette come from the paintings; the registers, type, icons and rules carry unchanged.
+
 ### What is real and what is placeholder
 
 - **No logo was invented.** The wordmark supplied by the workshop is the only mark. The five painted files that arrived named as logos contain no readable brand name; they are filed as **emblems** and always sit subordinate to the wordmark.
-- **Product data is invented** — collections, prices, run counts and the Heraklion workshop address are placeholders, labelled as such wherever they appear.
+- **Both case products are fictional** — the workshop and the taverna alike. Collections, prices, run counts, addresses and menus are placeholders, labelled as such wherever they appear.
 - **Eight photography paths hold generated placeholder tiles** that say so on their face. The photography route is still an open decision.
 
 ### Contents
@@ -43,7 +51,7 @@ rule — motifs stay paintings, icons do the interface jobs, and the two never t
 | 06 | Iconography — the motif law, plus a sixteen-icon functional set | Documented |
 | 07 | Grid & layout — spacing, edges, elevation, motion | Documented |
 | 08 | Application — components, templates, storefront kit | Documented |
-| 09 | In use — four worked cases: social, email, print | Documented |
+| 09 | In use — two products: the workshop across four channels, and a taverna website | Documented |
 
 20 components, 35 guideline pages, 187 tokens (also machine-readable in `tokens/tokens.json`), 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
 

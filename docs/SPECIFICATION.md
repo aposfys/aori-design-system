@@ -1,5 +1,11 @@
 # The written specification
 
+AORI is a design system, not a brand: the rules below are the system's, and the worked
+examples speak in the voice of its flagship case, a fictional jewellery workshop. A second
+case — a harbourside taverna in `cases/taverna-home.html` — is built from the same tokens
+with nothing reskinned. "The workshop" in what follows reads as "the maker behind the
+product", whoever that is.
+
 ## Content fundamentals
 
 The voice is a maker talking, not a brand announcing.

@@ -1,6 +1,6 @@
 ---
 name: aori-design
-description: Use this skill to generate well-branded interfaces and assets for AORI, the handmade silver jewellery workshop in Heraklion, Crete, either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for protoyping.
+description: Use this skill to design interfaces and assets in AORI, a playful watercolour-illustration design system (flat pigment, zero radius, painted plates, a clerical ledger register) for websites and brands that should feel handmade — a jewellery workshop, a taverna, a guesthouse, any maker-led product. Contains design guidelines, colors, type, fonts, assets, icons, and UI kit components for production or prototyping.
 user-invocable: true
 ---
 
