@@ -13,10 +13,11 @@
 
 **Made here, and flagged as such**
 
-- **The drawn register** — eight bench drawings in `assets/illustrations-drawn/`, authored
-  in-repo in the functional icons' construction (96px grid, 2px carbon, one pigment
-  accent). They are not paintings and claim no provenance from the painted plates; the
-  motif law (never redraw a painted mark) is untouched.
+- **The spot register** — eight small paintings in `assets/spots/`, grown in-repo by the
+  seeded painting engine `tools/spot-painter.html` (seed 7; manifesto in
+  `tools/spot-painter.md`). Simulated gouache in the system's own pigments; they claim no
+  provenance from the painted plates, and the motif law (never redraw a painted mark) is
+  untouched.
 
 - **Photography** — nine free-licence Pexels photographs were sourced into
   `assets/photography/` and referenced throughout the guidelines. **The image files are not

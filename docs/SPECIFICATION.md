@@ -103,12 +103,13 @@ opaque white, nothing greyed to recede.
 **Motifs are circles. Patterns are squares.** That is the shape rule, and it holds
 everywhere.
 
-**The drawn register** is the third job of the one hand: eight bench drawings on a 96px
-grid at the icons' own 2px carbon rule, one pigment accent each
-(`assets/illustrations-drawn/`, rules at `guidelines/drawn-register.html`). They take the
-service surfaces — empty states, care and sizing instructions, transactional email —
-where a painting is too loud and an icon too small. A drawing never opens a page, never
-sits beside a painted plate, and never redraws a motif: motifs stay paintings.
+**The spot register** is the third job of the one hand: eight small paintings — washes,
+pooled edges, granulation, a drawn carbon contour — grown by the seeded engine in
+`tools/spot-painter.html` (`assets/spots/`, rules at `guidelines/spot-register.html`).
+They take the service surfaces — empty states, care and sizing instructions,
+transactional email — where a full plate is too loud and an icon too small. A spot never
+opens a page, never sits beside a painted plate, and never repaints a motif: motifs stay
+lifted from finished plates.
 
 Three patterns (`wave`, `spiral`, `olive`) at three strengths — full for packaging and one
 hero band, 30% for section grounds, 8% behind long prose. Never two patterns on one screen.

@@ -1,0 +1,99 @@
+<!-- @dsCard group="Brand" viewport="1400x900" name="Spot register" subtitle="Eight small paintings — the service surfaces, in the painted hand" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — the spot register</title><link rel="stylesheet" href="../styles.css">
+<style>
+body{background:var(--surface-page);color:var(--text-body);margin:0 auto;padding:52px 58px 120px;max-width:1400px;font-family:var(--font-body)}
+.cap{font-family:var(--font-annotation);font-weight:600;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-muted)}
+.cap b{color:var(--ink-900);font-weight:600}
+h2{margin:0;font-family:var(--font-display);font-size:29px;letter-spacing:.09em;text-transform:uppercase;font-weight:400}
+.sec{margin-top:58px;border-top:2px solid var(--ink-900);padding-top:13px;display:flex;gap:16px;align-items:baseline}
+p{max-width:78ch;font-size:15px;line-height:1.75}
+code{font-size:12.5px;background:var(--paper-400);padding:1px 4px}
+.set{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--paper-400);margin-top:22px}
+.set figure{margin:0;background:var(--paper-200);padding:26px 10px 18px;text-align:center}
+.set img{width:150px;height:150px;display:block;margin:0 auto}
+.set figcaption{margin-top:10px;font-family:var(--font-annotation);font-weight:600;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700)}
+.set figcaption i{display:block;font-style:normal;font-family:var(--font-body);font-size:12px;letter-spacing:0;text-transform:none;color:var(--text-muted);margin-top:4px}
+.rules{margin:22px 0 0;padding:0;list-style:none;max-width:80ch}
+.rules li{padding:11px 0;border-top:1px solid var(--paper-400);font-size:14.5px;line-height:1.6}
+.rules li:first-child{border-top:0}
+.rules b{font-family:var(--font-annotation);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--pigment-terracotta);display:block;margin-bottom:3px}
+.demo{display:flex;gap:22px;margin-top:24px;flex-wrap:wrap}
+.state{background:var(--paper-100);box-shadow:inset 0 0 0 1px var(--paper-400);padding:40px 40px;width:300px;text-align:center}
+.state img{width:120px;height:120px}
+.state .h{font-family:var(--font-annotation);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:14px}
+.state p{font-size:13.5px;line-height:1.65;color:var(--text-muted);margin:8px auto 0;max-width:26ch}
+.state a{color:var(--link)}
+</style></head><body>
+
+<div class="sec"><span class="cap">Illustration · 05c</span><h2>The spot register</h2></div>
+<p>One hand, three jobs. The full plates carry the romance and the icons do the interface
+work; between them sat a gap — the quiet, service moments where a plate is too loud and a
+24px icon is too small. An empty bag. A search that found nothing. A care instruction. The
+spot register fills that gap with <strong>small paintings</strong>: pigment washes pooling
+at their own edges, granulation settling into the paper, and a drawn carbon contour that
+never quite agrees with the wash it encloses — the registration slip that signs every
+plate in the system. Each spot touches at most four pigments, and <strong>one of them
+carries the meaning</strong>.</p>
+<p>The spots are grown, not drawn: <code>tools/spot-painter.html</code> is a seeded
+painting algorithm (its manifesto is <code>tools/spot-painter.md</code>), and the shipped
+set is seed 7 at 768px masters. The same seed regrows the identical set forever; a
+neighbouring seed grows its sibling. They are flagged made-here in
+<code>docs/PROVENANCE.md</code> and claim no provenance from the painted plates.</p>
+
+<div class="set">
+  <figure><img src="../assets/spots/empty-bag.png" alt="A painted open bag with an olive sprig leaning out"><figcaption>empty-bag<i>The bag is empty</i></figcaption></figure>
+  <figure><img src="../assets/spots/no-results.png" alt="A painted magnifier over the sea, finding nothing"><figcaption>no-results<i>Nothing by that name</i></figcaption></figure>
+  <figure><img src="../assets/spots/letter-sent.png" alt="A painted sealed envelope"><figcaption>letter-sent<i>Order confirmed</i></figcaption></figure>
+  <figure><img src="../assets/spots/run-closed.png" alt="Twelve painted tally strokes struck through"><figcaption>run-closed<i>All twelve gone</i></figcaption></figure>
+  <figure><img src="../assets/spots/bench.png" alt="A painted workbench with hammer and one ring blank"><figcaption>bench<i>Made by hand</i></figcaption></figure>
+  <figure><img src="../assets/spots/polish-cloth.png" alt="A painted ring above a soft cloth"><figcaption>polish-cloth<i>Polish with the cloth</i></figcaption></figure>
+  <figure><img src="../assets/spots/keep-dry.png" alt="A painted ring held above the waterline"><figcaption>keep-dry<i>Keep above the water</i></figcaption></figure>
+  <figure><img src="../assets/spots/pouch.png" alt="A painted tied pouch with the stamp"><figcaption>pouch<i>Store in the pouch</i></figcaption></figure>
+</div>
+
+<div class="sec"><span class="cap">Rules</span><h2>Where a spot goes, and where it never does</h2></div>
+<ul class="rules">
+  <li><b>Service, not romance</b>Spots take the service surfaces: empty states, care and
+  sizing instructions, transactional email, booking confirmations. A spot never opens a
+  page, never sells a piece, and never sits on the same surface as a full plate — beside a
+  plate, the plate wins and the spot goes.</li>
+  <li><b>Construction</b>Painted at 768px masters by the seeded engine: recursive-deformation
+  washes, pooled edges, granulation, and a stamped-daub carbon line with dry-brush dropout.
+  Rendered at 96–150px, at 72px minimum, at 200px maximum. Never recoloured, never given a
+  background of its own — the ground is transparent so the surface's paper is the
+  painting's paper.</li>
+  <li><b>One accent</b>At most four pigments per spot, and exactly one — aegean, terracotta,
+  saffron or olive — on the element that carries the meaning.</li>
+  <li><b>Words beside it</b>Like an icon, a spot never carries meaning alone: the annotation
+  line under it says the thing plainly. "All twelve gone." "Keep above the water."</li>
+  <li><b>The motif law holds</b>A spot never repaints a motif — no grown octopus, no grown
+  sun, no grown spiral. Motifs are lifted from finished plates and belong to places; spots
+  depict objects from the bench and the shop, nothing with a place's name on it.</li>
+  <li><b>Regrowing the set</b>Change a composition or add a subject in
+  <code>tools/spot-painter.html</code>, choose a seed on the sheet
+  (<code>?mode=sheet&amp;seed=N</code>), render each spot at 768 with a transparent ground,
+  and re-ship the whole set together — the register is one painting session, never a mixed
+  batch of seeds.</li>
+</ul>
+
+<div class="sec"><span class="cap">In use</span><h2>The empty states, set as they ship</h2></div>
+<div class="demo">
+  <div class="state">
+    <img src="../assets/spots/empty-bag.png" alt="">
+    <div class="h">The bag is empty</div>
+    <p>Nothing kept here yet. The current runs are on the <a href="#">collections page</a>.</p>
+  </div>
+  <div class="state">
+    <img src="../assets/spots/no-results.png" alt="">
+    <div class="h">Nothing by that name</div>
+    <p>Try a place — Psiloritis, Livyko, Elia, Knosos — or browse all four runs.</p>
+  </div>
+  <div class="state">
+    <img src="../assets/spots/run-closed.png" alt="">
+    <div class="h">All twelve gone</div>
+    <p>This run is closed and stays on its page. We will make more, but not the same.</p>
+  </div>
+</div>
+
+</body></html>

@@ -25,14 +25,14 @@ flat pigment field — never a blur.
 | 02 | Logotype — clear space, minimums, placement, eight misuses | Documented |
 | 03 | Colour — two registers, laid flat and opaque | Documented |
 | 04 | Typography — three faces, three jobs | Documented |
-| 05 | Illustration & photography — the painted hand, the drawn register, and the open question | Documented |
+| 05 | Illustration & photography — the painted hand, the spot register, and the open question | Documented |
 | 06 | Iconography — the motif law, plus a sixteen-icon functional set | Documented |
 | 07 | Grid & layout — spacing, edges, elevation, motion | Documented |
 | 08 | Application — components, templates, storefront kit | Documented |
 | 09 | In use — the workshop across six channels, and a taverna website | Documented |
 
 20 components, 36 guideline pages, 194 tokens (machine-readable in `tokens/tokens.json`),
-16 icons, 8 bench drawings, 6 worked cases. `styles.css` is the entry point; `SKILL.md`
+16 icons, 8 painted spots, 6 worked cases. `styles.css` is the entry point; `SKILL.md`
 carries Agent Skills front matter for use in Claude Code.
 
 ## The tools
@@ -54,8 +54,8 @@ carries Agent Skills front matter for use in Claude Code.
 - **Eight photography paths hold generated placeholder tiles** that say so on their face.
   The photography route is still an open decision — see
   [PROVENANCE.md](PROVENANCE.md#open-decisions).
-- **The drawn register is made here**, in the icons' construction, and claims no
-  provenance from the painted plates.
+- **The spot register is grown here** by the seeded painting engine in
+  `tools/spot-painter.html`, and claims no provenance from the painted plates.
 
 ## Taking it to a new product
 

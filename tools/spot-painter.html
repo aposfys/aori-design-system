@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>AORI — spot painter</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+<style>
+  html,body{margin:0;padding:0;background:transparent}
+  body.sheet{background:#fbf7ef}
+  main{display:block}
+  canvas{display:block}
+</style></head><body>
+<script>
+/* Wet Ledger — the AORI spot painter. Philosophy in spot-painter.md.
+   Modes (query string):
+     ?spot=empty-bag&seed=7        one 768x768 spot, transparent ground (for asset export)
+     ?mode=sheet&seed=7            all eight on paper, for choosing a seed
+   Palette and subjects are fixed; the seed grows the painting. */
+
+const P = {
+  aegean:'#1890a8', water:'#006078', shallow:'#78c0c0', haze:'#a8c0c0',
+  terracotta:'#c05a28', clay:'#a87860', rust:'#8a3a22',
+  saffron:'#c0a860', ochre:'#907848', olive:'#5f7a46', forest:'#34513c',
+  umber:'#6b4426', slate:'#a8a890', ink:'#2a2622', paper:'#fbf7ef'
+};
+const SPOTS = ['empty-bag','no-results','letter-sent','run-closed','bench','polish-cloth','keep-dry','pouch'];
+const q = new URLSearchParams(location.search);
+const MODE = q.get('mode') || (q.get('spot') ? 'single' : 'sheet');
+const SPOT = q.get('spot') || 'empty-bag';
+const SEED = parseInt(q.get('seed') || '7', 10);
+const S = 768;                       // master size of one spot
+
+function setup(){
+  if (MODE === 'sheet'){
+    document.body.classList.add('sheet');
+    createCanvas(4*420, 2*470);
+    background(P.paper);
+    textFont('monospace'); textSize(20); fill(60);
+    SPOTS.forEach((name,i)=>{
+      const g = paintSpot(name, SEED);
+      const x=(i%4)*420, y=floor(i/4)*470;
+      image(g, x+26, y+26, 368, 368);
+      fill(87,80,74); noStroke();
+      text(name+' · seed '+SEED, x+26, y+424);
+    });
+  } else {
+    createCanvas(S, S);
+    clear();
+    image(paintSpot(SPOT, SEED), 0, 0);
+  }
+  noLoop();
+}
+
+/* ---------- the engine ---------- */
+
+let G;                                // current graphics buffer
+function paintSpot(name, seed){
+  G = createGraphics(S, S);
+  randomSeed(seed*7919 + hash(name)); noiseSeed(seed*104729 + hash(name));
+  G.clear(); G.noStroke();
+  COMPOSE[name]();
+  return G;
+}
+function hash(s){ let h=0; for(const c of s) h=(h*31+c.charCodeAt(0))|0; return abs(h); }
+function C(hex, a){ const c=color(hex); c.setAlpha(a); return c; }
+
+/* A wash: coarse polygon -> recursive midpoint deformation, many translucent layers.
+   pts: [{x,y,v}] where v is the vertex's own edge-variance. */
+function deform(pts, passes){
+  let p=pts;
+  for(let k=0;k<passes;k++){
+    const out=[];
+    for(let i=0;i<p.length;i++){
+      const a=p[i], b=p[(i+1)%p.length];
+      out.push(a);
+      out.push({ x:(a.x+b.x)/2 + randomGaussian()*a.v,
+                 y:(a.y+b.y)/2 + randomGaussian()*a.v,
+                 v:a.v*0.55 });
+    }
+    p=out;
+  }
+  return p;
+}
+function poly(d){ G.beginShape(); for(const pt of d) G.vertex(pt.x,pt.y); G.endShape(CLOSE); }
+function wash(pts, hex, opt={}){
+  const layers = opt.layers ?? 17, alpha = opt.alpha ?? 13, passes = opt.passes ?? 4;
+  G.noStroke();
+  // body layers
+  for(let i=0;i<layers;i++){
+    G.fill(C(hex, alpha + (i<3 ? 9 : 0)));
+    poly(deform(pts, passes));
+  }
+  // pooled edge: two tight, darker rims
+  const dark = lerpColor(color(hex), color(P.ink), 0.22);
+  for(let i=0;i<2;i++){ G.fill(red(dark),green(dark),blue(dark), 10); poly(deform(pts, passes+1)); }
+  // granulation
+  const body = deform(pts, passes);
+  const n = opt.grain ?? 140;
+  for(let i=0;i<n;i++){
+    const a=body[floor(random(body.length))];
+    const x=a.x+randomGaussian()*9, y=a.y+randomGaussian()*9;
+    if (inPoly(x,y,body)){ G.fill(C(hex, random(25,60))); G.circle(x,y,random(1.2,3.4)); }
+  }
+}
+function inPoly(x,y,p){
+  let inside=false;
+  for(let i=0,j=p.length-1;i<p.length;j=i++){
+    if(((p[i].y>y)!==(p[j].y>y)) && (x < (p[j].x-p[i].x)*(y-p[i].y)/(p[j].y-p[i].y)+p[i].x)) inside=!inside;
+  }
+  return inside;
+}
+/* shape helpers -> coarse polygons with per-vertex variance */
+function blobShape(cx,cy,rx,ry,irr=0.16,v=13,n=9){
+  const ph=random(1000), pts=[];
+  for(let i=0;i<n;i++){
+    const a=TWO_PI*i/n, r=1+ (noise(ph+i*0.7)-0.5)*2*irr;
+    pts.push({x:cx+cos(a)*rx*r, y:cy+sin(a)*ry*r, v:v*(0.6+random(0.8))});
+  }
+  return pts;
+}
+function quadShape(x0,y0,x1,y1,x2,y2,x3,y3,v=11){
+  const c=[[x0,y0],[x1,y1],[x2,y2],[x3,y3]], pts=[];
+  for(let i=0;i<4;i++){
+    const a=c[i], b=c[(i+1)%4];
+    for(let t=0;t<3;t++){
+      const f=t/3;
+      pts.push({x:lerp(a[0],b[0],f)+randomGaussian()*2, y:lerp(a[1],b[1],f)+randomGaussian()*2, v:v*(0.6+random(0.8))});
+    }
+  }
+  return pts;
+}
+
+/* The carbon line: stamped daubs, wrist wobble, dry-brush dropout, overshoot. */
+function brushPath(path, w, hex=P.ink, opt={}){
+  const drop = opt.drop ?? 0.06, jit = opt.jit ?? 1.6, over = opt.over ?? 6, aBase = opt.alpha ?? 225;
+  // resample
+  let pts=[];
+  for(let i=0;i<path.length-1;i++){
+    const a=path[i], b=path[i+1], d=dist(a[0],a[1],b[0],b[1]), n=max(2,floor(d/2.2));
+    for(let t=0;t<n;t++) pts.push([lerp(a[0],b[0],t/n), lerp(a[1],b[1],t/n)]);
+  }
+  pts.push(path[path.length-1]);
+  // overshoot both ends along end tangents
+  if(over>0 && pts.length>3){
+    const s0=pts[0], s1=pts[2], e0=pts[pts.length-1], e1=pts[pts.length-3];
+    const d0=createVector(s0[0]-s1[0], s0[1]-s1[1]).setMag(over);
+    const d1=createVector(e0[0]-e1[0], e0[1]-e1[1]).setMag(over);
+    pts.unshift([s0[0]+d0.x, s0[1]+d0.y]); pts.push([e0[0]+d1.x, e0[1]+d1.y]);
+  }
+  const ph=random(1000);
+  G.noStroke();
+  for(let i=0;i<pts.length;i++){
+    const t=i/pts.length;
+    if(random()<drop) continue;                       // dry brush
+    const swell = 0.55 + noise(ph + i*0.045)*0.9;
+    const taper = min(1, min(i, pts.length-1-i)/8 + 0.35);
+    const r = w*swell*taper;
+    const jx = (noise(ph+40+i*0.06)-0.5)*2*jit, jy=(noise(ph+80+i*0.06)-0.5)*2*jit;
+    G.fill(C(hex, aBase - noise(ph+120+i*0.1)*70));
+    G.circle(pts[i][0]+jx, pts[i][1]+jy, r*2);
+  }
+}
+function brushCircle(cx,cy,r,w,hex=P.ink,opt={}){
+  const n=40, path=[]; const a0=random(TWO_PI);
+  for(let i=0;i<=n;i++){ const a=a0+TWO_PI*i/n; path.push([cx+cos(a)*r, cy+sin(a)*r]); }
+  brushPath(path, w, hex, {over:0, ...opt});
+}
+function leaf(cx,cy,ang,len,hex){
+  const pts=[];
+  const n=8;
+  for(let i=0;i<n;i++){
+    const t=i/n, a=t*TWO_PI;
+    // pointed ellipse
+    const rr = sin(t*PI); const lx = (t-0.5)*len, ly = rr*len*0.30*(random(0.85,1.15));
+    const x = cx + cos(ang)*lx - sin(ang)*(i<n/2?ly:-ly);
+    const y = cy + sin(ang)*lx + cos(ang)*(i<n/2?ly:-ly);
+    pts.push({x,y,v:6});
+  }
+  wash(pts, hex, {layers:18, alpha:24, grain:40});
+  brushPath([[cx-cos(ang)*len*0.45, cy-sin(ang)*len*0.45],[cx+cos(ang)*len*0.45, cy+sin(ang)*len*0.45]], 2.6, P.forest, {alpha:170, over:2});
+}
+
+/* ---------- the eight compositions ---------- */
+
+const COMPOSE = {
+  'empty-bag'(){
+    // body: terracotta wash, slightly trapezoid, contour drawn loose around it
+    wash(quadShape(232,318, 542,310, 556,636, 214,642, 12), P.terracotta, {layers:19});
+    // paper gap: lighter inner passage
+    wash(quadShape(300,380, 470,376, 480,560, 292,566, 9), P.paper, {layers:6, alpha:10, grain:0});
+    brushPath([[236,320],[224,640],[552,634]], 5.2);
+    brushPath([[236,320],[540,314]], 4.6);
+    brushPath([[540,314],[550,636]], 5.0);
+    // handle
+    const h=[]; for(let i=0;i<=22;i++){const a=PI+PI*i/22; h.push([388+cos(a)*92, 318+sin(a)*118]);}
+    brushPath(h, 4.6, P.ink, {over:4});
+    // the sprig leans out
+    brushPath([[418,318],[452,180],[440,120]], 4.2, P.forest, {alpha:210});
+    leaf(392,208, -0.55, 96, P.olive);
+    leaf(486,158, 0.35, 92, P.olive);
+    leaf(430,104, -1.25, 78, P.forest);
+  },
+  'no-results'(){
+    // the sea: two elongated aegean fields with a paper gap between
+    wash(quadShape(96,460, 676,442, 688,540, 88,556, 14), P.aegean, {layers:18});
+    wash(quadShape(120,586, 640,570, 652,650, 112,664, 12), P.shallow, {layers:14});
+    // the glass
+    wash(blobShape(356,306,112,108,0.10,10), P.haze, {layers:8, alpha:9, grain:40});
+    brushCircle(356,306,118,5.4);
+    brushPath([[444,390],[566,512]], 6.4);
+    // one wave drawn over the field — the contour disagrees with the wash
+    brushPath([[120,500],[200,470],[280,502],[360,472],[440,504],[520,474],[600,502]], 3.6, P.water, {alpha:190, drop:0.1});
+  },
+  'letter-sent'(){
+    wash(quadShape(160,262, 610,258, 616,548, 152,552, 12), P.clay, {layers:12, alpha:10});
+    brushPath([[160,264],[608,258],[614,548],[154,552],[160,264]], 5.0);
+    brushPath([[162,266],[386,436],[608,260]], 4.6);
+    // the seal
+    wash(blobShape(386,478,46,46,0.18,9), P.terracotta, {layers:16});
+    brushPath([[386,432],[432,478],[386,524],[340,478],[386,432]], 3.8, P.rust, {alpha:200});
+    G.fill(C(P.rust,235)); G.circle(386,478,10);
+  },
+  'run-closed'(){
+    // twelve strokes, three gates, one strike
+    const groups=[[176,262],[352,438],[528,614]];
+    for(const [x0,x1] of groups){
+      for(let i=0;i<4;i++){
+        const x=lerp(x0,x1,i/3.6)+randomGaussian()*3;
+        brushPath([[x,236+random(-8,6)],[x+random(-7,7),470+random(-6,10)]], 5.6);
+      }
+    }
+    brushPath([[120,560],[660,552]], 4.4);
+    // the strike carries the accent
+    wash(quadShape(96,392, 690,332, 694,368, 100,428, 8), P.terracotta, {layers:10, alpha:9, grain:50});
+    brushPath([[92,412],[694,348]], 6.8, P.rust, {alpha:215, drop:0.05});
+  },
+  'bench'(){
+    // top
+    wash(quadShape(120,462, 656,454, 662,516, 114,524, 10), P.ochre, {layers:14});
+    brushPath([[112,464],[664,456]], 5.4);
+    brushPath([[118,522],[658,514]], 3.8);
+    brushPath([[176,522],[172,678]], 6.4); brushPath([[596,514],[602,678]], 6.4);
+    brushPath([[172,622],[600,616]], 4.4);
+    // the blank — saffron carries the accent
+    wash(blobShape(508,404,52,50,0.14,8), P.saffron, {layers:15});
+    brushCircle(508,404,56,4.4);
+    // hammer
+    wash(quadShape(220,220, 352,214, 356,300, 216,306, 8), P.rust, {layers:14});
+    brushPath([[218,222],[354,216],[358,300],[214,306],[218,222]], 4.6);
+    brushPath([[356,258],[520,268]], 6.2);
+  },
+  'polish-cloth'(){
+    // cloth
+    wash(quadShape(150,552, 428,540, 610,432, 330,444, 11), P.clay, {layers:14});
+    brushPath([[146,554],[430,542],[612,432],[332,444],[146,554]], 4.4);
+    brushPath([[332,446],[150,552]], 3.4);
+    // the ring above
+    wash(blobShape(420,318,58,56,0.12,8), P.haze, {layers:7, alpha:8, grain:30});
+    brushCircle(420,316,62,5.2);
+    brushCircle(420,316,40,3.4);
+    // the light it gives back
+    brushPath([[576,164],[576,244]], 4.6, P.saffron, {alpha:220});
+    brushPath([[536,204],[616,204]], 4.6, P.saffron, {alpha:220});
+    wash(blobShape(576,204,14,14,0.3,5), P.saffron, {layers:8, alpha:16, grain:16});
+  },
+  'keep-dry'(){
+    wash(blobShape(384,214,66,64,0.10,8), P.haze, {layers:6, alpha:7, grain:24});
+    brushCircle(384,212,70,5.4);
+    brushCircle(384,212,46,3.6);
+    // the rule
+    brushPath([[132,388],[642,382]], 5.2);
+    // the sea below
+    wash(quadShape(104,460, 668,448, 676,538, 96,552, 13), P.aegean, {layers:17});
+    wash(quadShape(150,588, 620,576, 628,652, 142,666, 11), P.shallow, {layers:13});
+    brushPath([[128,502],[212,472],[296,504],[380,474],[464,506],[548,476],[632,504]], 3.6, P.water, {alpha:190, drop:0.1});
+  },
+  'pouch'(){
+    wash(quadShape(258,258, 510,252, 570,624, 200,632, 13), P.umber, {layers:16, alpha:11});
+    // paper breathing through mid-body
+    wash(quadShape(310,360, 460,356, 486,540, 288,546, 9), P.paper, {layers:5, alpha:9, grain:0});
+    brushPath([[262,260],[204,630],[566,622],[508,254]], 5.2);
+    // gather + tie
+    brushPath([[256,262],[512,256]], 4.2);
+    brushPath([[240,318],[532,312]], 4.8);
+    brushPath([[532,312],[600,362]], 3.8);
+    // the stamp
+    wash(blobShape(386,470,44,44,0.16,8), P.terracotta, {layers:15});
+    brushPath([[386,426],[430,470],[386,514],[342,470],[386,426]], 3.6, P.rust, {alpha:205});
+    G.fill(C(P.rust,235)); G.circle(386,470,9);
+  }
+};
+</script></body></html>
