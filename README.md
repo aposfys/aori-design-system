@@ -45,7 +45,7 @@ rule — motifs stay paintings, icons do the interface jobs, and the two never t
 | 08 | Application — components, templates, storefront kit | Documented |
 | 09 | In use — four worked cases: social, email, print | Documented |
 
-20 components, 35 guideline pages, 187 tokens, 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
+20 components, 35 guideline pages, 187 tokens (also machine-readable in `tokens/tokens.json`), 16 icons, 4 worked cases. `styles.css` is the entry point; `SKILL.md` carries Agent Skills front matter for use in Claude Code.
 
 ### More
 
