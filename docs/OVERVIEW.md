@@ -35,6 +35,15 @@ flat pigment field — never a blur.
 16 icons, 8 painted spots, 6 worked cases. `styles.css` is the entry point; `SKILL.md`
 carries Agent Skills front matter for use in Claude Code.
 
+## The Figma library
+
+The system also lives as a Figma file — [AORI Design System](https://www.figma.com/design/6TQy0y8XuQQPpGThxXeNlw)
+(access on request; it sits in the maintainer's Figma team). It carries the same tokens as
+bound variables with their CSS names for Dev Mode, the component sets, in-file
+documentation (getting started, voice, accessibility proof, button anatomy), a one-sheet
+holding the whole system, three UI proposals and an applications board. The repository
+remains the source of truth; the Figma file is generated from it and follows it.
+
 ## The tools
 
 - `tools/build_tokens.py` regenerates `tokens/tokens.json` from `tokens/*.css` — edit the

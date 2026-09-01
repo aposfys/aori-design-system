@@ -8,6 +8,7 @@ that should feel handmade. **Terracotta acts, aegean links, saffron highlights.*
 - **[Brand book (PDF)](docs/aori-brand-book.pdf)** — the guidelines as one printable document
 - **[Brand book (live)](index.html)** — the whole system on one page
 - **[Written specification](docs/SPECIFICATION.md)** · [repository overview](docs/OVERVIEW.md) · [provenance](docs/PROVENANCE.md)
+- **[Figma library](https://www.figma.com/design/6TQy0y8XuQQPpGThxXeNlw)** — the system as a Figma file: 55 bound variables, component sets, in-file documentation, the one-sheet, three UI proposals and the applications board
 
 ## Use it
 
