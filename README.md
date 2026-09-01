@@ -1,7 +1,7 @@
 # AORI Design System
 A playful, illustration-driven design system — watercolour plates, flat pigment, zero radius, no shadows — for websites and brands that should feel handmade. Not tied to any product.
 
-The system exists to make one thing possible: a shop, a document or a post that looks like it came from a workshop rather than a brand studio. Its flagship case is **AÓRI**, a fictional handmade-jewellery workshop that makes pieces in runs of twelve; a harbourside **taverna** is built from the same tokens to prove the system carries across products.
+The system exists to make one thing possible: a shop, a document or a post that looks like it came from a workshop rather than a brand studio. Its flagship case is **AÓRI**, the handmade-jewellery workshop the system grew out of — real on Instagram, with every collection, price and run count in these pages invented; a harbourside **taverna** is built from the same tokens to prove the system carries across products.
 
 **[Open the brand book →](index.html)** — the whole system on one page, in the eight sections a complete brand book carries.
 
@@ -36,7 +36,7 @@ The flagship case — the jewellery workshop — across four channels:
 ### What is real and what is placeholder
 
 - **No logo was invented.** The wordmark supplied by the workshop is the only mark. The five painted files that arrived named as logos contain no readable brand name; they are filed as **emblems** and always sit subordinate to the wordmark.
-- **Both case products are fictional** — the workshop and the taverna alike. Collections, prices, run counts, addresses and menus are placeholders, labelled as such wherever they appear.
+- **The product data is invented in both cases.** The workshop exists (the Instagram account is real); its collections, prices, run counts and address here are placeholders. The taverna is entirely fictional. Both are labelled as such wherever they appear.
 - **Eight photography paths hold generated placeholder tiles** that say so on their face. The photography route is still an open decision.
 
 ### Contents
