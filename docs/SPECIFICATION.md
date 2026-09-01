@@ -157,17 +157,27 @@ ease. No bounce, no spring, no scale-on-hover, no parallax, no scroll-triggered 
 
 ## Iconography
 
-**There is no icon set, and that is deliberate.** The six painted motif discs do the job an
-icon library would do elsewhere — a section opener, a divider, a stamp on a pouch, a
-highlight cover. Each belongs to a place, so using one is a claim about which place a page
-is about.
+Two sets with two jobs, and they never trade.
+
+**The motifs.** The six painted motif discs are decoration with provenance — a section
+opener, a divider, a stamp on a pouch, a highlight cover. Each belongs to a place, so using
+one is a claim about which place a page is about.
 
 - Minimum 40px. Below that the wash muddies; use nothing instead.
 - On lime, on stock, or on a pigment field — the knocked-out marks hold on all three.
 - One motif per page or per post. Two is a pattern, and patterns have their own rules.
 - **Never redraw one.** A mark that does not exist in a painting does not exist.
+- **A motif never acts as a control.**
 
-Where a functional glyph is genuinely needed, the system uses **typographic characters** in
-Commissioner — `+` and `−` for accordions, `·` as a separator, `/` in breadcrumbs. No icon
-font, no SVG sprite, no emoji. The `Mark` component wraps the motif set; it is **not** a
-logo component.
+**The functional set.** Sixteen icons in `assets/icons/` do the interface jobs — search,
+bag, account, filter, close, arrows, plus, minus, check, ruler, package, seal, mail, pin,
+sparkle. Drawn on a 24px grid with a 16px keystone at the system's own 2px carbon rule:
+butt caps, mitre joins, square corners, `currentColor`, one deliberate solid (the seal's
+centre dot). Rendered at 24px, or 16px in the clerical register; never above 40px. An icon
+never carries meaning alone — the word sits beside it — and an icon never decorates.
+Construction, sizes and the misuse sheet: `guidelines/iconography.html`.
+
+An earlier edition of this file said there was no icon set and that typographic characters
+(`+`, `−`, `·`, `/`) stood in. Those characters remain fine inside dense text, but the
+functional set now exists and takes every control-surface job. The `Mark` component wraps
+the motif set; it is **not** a logo component and does not render the functional icons.
